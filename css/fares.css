@@ -1,3 +1,77 @@
-.h1{
-    color:blue;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+html{
+    font-size:62.5%;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+}
+
+#bluebox{
+    font-size: 30px;
+    display:flex;
+    line-height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    width:auto;
+    padding-left:30rem;
+    padding-right:30rem;
+    padding-top:15rem;
+    height: 442px;
+    
+    background-color: #EAFCFB;
+    text-align: center;
+
+}
+
+#introText1{
+    width:468px;
+    height:271px;
+}
+#introText2{
+    height:280px;
+    margin-bottom: 15rem;
+    border-left: 1px solid black;
+    top:0;
+}
+#introText3{
+    width:470px;
+    height:293px;
+}
+/* #introText{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    list-style-type: none;
+    margin-left: 30rem;
+    margin-right: 30rem;
+} */
+#verticalLine {
+    border-left: 18px solid black;
+    /* border-color: black; */
+    height: 10rem;
+    position: absolute;
+    margin-left: -3px;
+    top: 0;
 }
