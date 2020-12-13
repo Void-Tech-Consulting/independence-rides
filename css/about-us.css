@@ -1,32 +1,24 @@
 html {
     font-size: 62.5%;
 }
-.header-box {
-    width: 60.3rem;
-    height: 7.8rem;
-}
-.header {
+.header-text {
+    padding-bottom: 2rem;
     font-size: 5.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 5.5rem;
     color: black;
-    padding-bottom: 
 }
 .about-us-text-box {
     padding-left: 18.9rem;
 }
-.line {
+.header-line {
     width: 8.9rem;
     height: 0rem;
     border: 1px solid black;
 }
-.paragraph-box {
-    padding-top: 4.5rem;
-    width: 104.7rem;
-    height: 36.2rem;
-}
 .about-us-paragraph {
+    padding-top: 4.5rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 3.0rem;
     font-weight: 400;
