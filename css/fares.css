@@ -32,8 +32,8 @@ ul{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    padding-left:17.5%;
-    padding-right:17.5%;
+    padding-left:30rem;
+    padding-right:30rem;
     width:auto;
     
     background-color: #EAFCFB;
@@ -57,26 +57,20 @@ ul{
 
 @media only screen and (max-width: 1800px) {
     .blue-box{
-        padding-left: 12.5%;
-        padding-right: 12.5%;
+        padding-left: 20rem;
+        padding-right: 20rem;
     }
 }
 @media only screen and (max-width: 1600px) {
     .blue-box{
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 }
 @media only screen and (max-width: 1400px) {
     .blue-box{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-@media only screen and (max-width: 1000px) {
-    .blue-box{
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media only screen and (max-width: 770px) {
