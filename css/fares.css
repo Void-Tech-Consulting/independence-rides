@@ -57,11 +57,23 @@ ul{
 
 @media only screen and (max-width: 1800px) {
     .blue-box{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
     }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1600px) {
+    .blue-box{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .blue-box{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media only screen and (max-width: 1000px) {
     .blue-box{
         padding-left: 0%;
         padding-right: 0%;
