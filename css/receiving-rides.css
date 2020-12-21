@@ -1,0 +1,32 @@
+.top-section {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url("../driver.jpg");
+    height: 700px;
+    display: flex;
+    align-items: baseline;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.top-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.top-header {
+    color: #100F0F, 100%;
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.apply-button {
+    background: #5C6E93;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 36px;
+    font-size: 2rem;
+    border: none;
+    padding: 15px;
+}
