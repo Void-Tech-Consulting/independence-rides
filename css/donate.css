@@ -2,4 +2,16 @@
 
 .donate-header {
     color: blue;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+@font-face
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick.Roboto-Regular.ttf');
 }
