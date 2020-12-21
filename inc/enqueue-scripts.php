@@ -47,5 +47,7 @@ function add_styles() {
   wp_enqueue_style( "style", get_stylesheet_uri());
   wp_enqueue_style( "home", get_theme_file_uri('/css/home.css'));
   wp_enqueue_style( "about-us", get_theme_file_uri('/css/about-us.css'));
+  wp_enqueue_style( "donate", get_theme_file_uri('/css/donate.css'));
+
 }
 add_action('wp_enqueue_scripts', 'add_styles');
