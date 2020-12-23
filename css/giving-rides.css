@@ -58,3 +58,44 @@ ul{
     margin-right: 18rem;
 }
 
+#info-icon-list{
+    margin-top: 20rem;
+    margin-right: 16rem;
+    margin-left: 16rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.info-icon-box{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #807C7C;
+    background-color: #F1F1F1;
+    width: 30%;
+    /* height: 40rem; */
+    line-height: 3.4rem;
+}
+.info-icon-text{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+}
+.info-icon-image1{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -6rem;
+    width:17rem;
+}
+.info-icon-image2{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -6rem;
+    width:17rem;
+}
+.info-icon-image3{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -6rem;
+    width:17rem;
+}

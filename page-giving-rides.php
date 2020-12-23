@@ -23,20 +23,21 @@
       <li class="info-list-item">Independence Rides is a 501(c)(3) public charity to help keep rides affordable.</li>
       <li class="info-list-item">This service is in collaboration with ITNAmerica, a national nonprofit senior transportation service. </li>
     </ul>
-    <ul class="info-icon-list">
+    <ul id="info-icon-list">
       <li class="info-icon-box">
-        <div class="info-icon-image1"></div>
-        <div class="info-icon-text1"></div>
+      <img class = "info-icon-image1" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png">
+        <div class="info-icon-text">In nearly all cases the drivers will be providing the rides in their own vehicles. </div>
       </li>
       <li class="info-icon-box">
-        <div class="info-icon-image2"></div>
-        <div class="info-icon-text2"></div>
+        <img class = "info-icon-image2" src = "<?php echo get_template_directory_uri();?>/images/arm-icon.png">
+        <div class="info-icon-text">Riders who use walkers and folding wheelchairs will be paired with drivers who can lift and stow these devices. </div>
       </li>
       <li class="info-icon-box">
-        <div class="info-icon-image3"></div>
-        <div class="info-icon-text3"></div>
+        <img class = "info-icon-image3" src = "<?php echo get_template_directory_uri();?>/images/dollar-icon.png">
+        <div class="info-icon-text">Paid drivers, with the same training and background checks, may be used during overnight hours to ensure that all ride requests can be met.</div>
       </li>
     </ul>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
 
