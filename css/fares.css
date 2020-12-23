@@ -56,36 +56,6 @@ ul{
     border-left: 1px solid black;
 }
 
-.important-info{
-    margin-top:8rem;
-    width: auto;
-    height: 13rem;
-    background-color: #DFF4F3;
-    font-size: 4rem;
-    display: flex;
-    align-items: center;
-    padding-left:22rem; 
-    
-}
-#info-list li::before{
-    content: "\25A0";
-    color: #5C6E93;
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 5rem; /* Also needed for space (tweak if needed) */
-    padding-top: 2rem;
-    margin-left: -5rem; /* Also needed for space (tweak if needed) */
-}
-#info-list{
-    margin-top: 4rem;
-    display:flex;
-    /* list-style-type: square; */
-    flex-direction:column;
-    font-size: 2.5rem;
-    margin-left: 18rem;
-    margin-right: 18rem;
-}
-
-
 @media only screen and (max-width: 1800px) {
     .blue-box{
         padding-left: 17rem;
