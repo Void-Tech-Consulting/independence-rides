@@ -1,6 +1,6 @@
 .top-section {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url("../driver.jpg");
-    height: 700px;
+    background: url("../images/receiving-rides-cover-pic.png");
+    height: 655px;
     display: flex;
     align-items: baseline;
     flex-flow: column;
@@ -13,11 +13,12 @@
     justify-content: center;
     align-items: center;
     margin-left: 5rem;
+    margin-bottom: 10rem;
 }
 
 .top-header {
     color: #100F0F, 100%;
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -26,7 +27,105 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
     border-radius: 36px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border: none;
-    padding: 15px;
+    padding: 20px;
+    margin: 1rem;
+}
+
+.steps-section {
+    padding: 3rem 20rem;
+}
+
+.steps-name {
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #5C6E93;
+}
+
+.steps-underline {
+    border-bottom: 1px solid black;
+    width: 10rem;
+    margin-top: 2rem;
+}
+
+.steps-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps-timeline ul li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 20px;
+    list-style-type: square;
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.steps-joint-bullet-1:before {
+    background-color: black;
+    width: 1px;
+    height: 33rem;
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    bottom: 0px;
+    left: -2.7rem;
+}
+
+.steps-joint-bullet-2:before {
+    background-color: black;
+    width: 1px;
+    height: 27rem;
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    bottom: 0px;
+    left: -2.7rem;
+}
+
+
+.steps-timeline ul li h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+}
+
+.steps-timeline ul li h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color:#807C7C;
+    font-size: 2.2rem;
+}
+.steps-image {
+    background: url("../images/receiving-rides-steps.png");
+    height: 67rem;
+    width: 40rem;
+    margin-top: 4rem;
+}
+
+.steps-timeline {
+    width: 60%;
+    padding: 0rem 5rem;
+}
+
+.steps-button {
+    background: #5C6E93;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 15px;
+    font-size: 3rem;
+    border: none;
+    padding: 1rem 3rem;
+    margin: 4rem 0rem;
 }
