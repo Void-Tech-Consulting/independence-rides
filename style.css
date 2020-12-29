@@ -58,6 +58,10 @@ textarea,
 select {
   font: inherit;
 }
+@font-face {
+  font-family: SeoulHangang;
+  src: url(https://www.wfonts.com/font/seoulhangang-m);
+}
 
 html {
   font-size: 62.5%;
