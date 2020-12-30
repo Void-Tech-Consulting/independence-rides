@@ -25,7 +25,7 @@
     </ul>
     <ul id="info-icon-list">
       <li class="info-icon-box">
-      <img class = "info-icon-image1" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png">
+        <img class = "info-icon-image1" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png">
         <div class="info-icon-text">In nearly all cases the drivers will be providing the rides in their own vehicles. </div>
       </li>
       <li class="info-icon-box">
@@ -37,7 +37,6 @@
         <div class="info-icon-text">Paid drivers, with the same training and background checks, may be used during overnight hours to ensure that all ride requests can be met.</div>
       </li>
     </ul>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
 

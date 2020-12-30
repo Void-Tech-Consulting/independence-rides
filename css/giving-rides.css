@@ -71,7 +71,7 @@ ul{
     font-size: 2.5rem;
     color: #807C7C;
     background-color: #F1F1F1;
-    width: 30%;
+    width: 28%;
     /* height: 40rem; */
     line-height: 3.4rem;
 }
@@ -79,23 +79,23 @@ ul{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 3rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
 }
 .info-icon-image1{
     margin-left:auto;
     margin-right:auto;
-    margin-top: -6rem;
+    margin-top: -5rem;
     width:17rem;
 }
 .info-icon-image2{
     margin-left:auto;
     margin-right:auto;
-    margin-top: -6rem;
+    margin-top: -5rem;
     width:17rem;
 }
 .info-icon-image3{
     margin-left:auto;
     margin-right:auto;
-    margin-top: -6rem;
+    margin-top: -5rem;
     width:17rem;
 }
