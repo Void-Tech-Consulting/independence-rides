@@ -49,5 +49,58 @@ for seniors and vision impaired adults.
   </div>
 </div>
 
+<!-- <div class="next-step-section">
+  <h1 class="next-step-header">Next steps...</h1>
+  <div class="header-line" id="next-step-header-line"></div>
+  <div class="page-box-container">
+    <div class="box-container-top">
+      <div class="next-step-box" id="giving-rides-box">
+        <div class="box-header-black">Giving Rides</div>
+        <p class="box-description-black">
+        Join our team of volunteers and give back to your community.
+        </p>
+        <button type="button" class="learn-more-button-black">Learn more</button>
+      </div>
+      <div class="next-step-box" id="receiving-rides-box">
+        <div class="box-header-white">Receiving Rides</div>
+        <p class="box-description-white">
+        Become an Independence Rides member.
+        </p>
+        <button type="button" class="learn-more-button-white">Learn more</button>
+      </div>
+      <div class="next-step-box" id="contact-us-box">
+        <div class="box-header-black">Contact Us</div>
+        <p class="box-description-black">
+        We’re here to answer any questions you have.
+        </p>
+        <button type="button" class="learn-more-button-black">Learn more</button>
+      </div>
+    </div>
+    <div class="box-container-bottom">
+      <div class="next-step-box" id="donate-page-box">
+        <div class="box-header-white">Donate</div>
+        <p class="box-description-white">
+        Help us grow to serve more of our community.
+        </p>
+        <button type="button" class="learn-more-button-white">Learn more</button>
+      </div>
+      <div class="next-step-box" id="fares-page-box">
+        <div class="box-header-black">Fares</div>
+        <p class="box-description-black">
+        Membership fee and ride fares.
+        </p>
+        <button type="button" class="learn-more-button-black">Learn more</button>
+      </div>
+      <div class="next-step-box" id="volunteer-with-us-box">
+        <div class="box-header-white">Volunteer with Us</div>
+        <p class="box-description-white">
+        Assist us in ensuring our rides run smoothly.
+        </p>
+        <button type="button" class="learn-more-button-white">Learn more</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
 
 <?php get_footer(); ?>

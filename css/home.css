@@ -1,1 +1,138 @@
 /* home css styles */
+
+.next-step-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    width: 65%;
+    margin: 0 auto;
+}
+.next-step-header {
+    font-family: SeoulHangang;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.0rem;
+    line-height: 4.5rem;
+    padding-bottom: 3.5rem;
+}
+.next-step-header-line {
+    width: 8.0rem;
+    height: 0rem;
+    border: 1px solid black;
+    margin-left: 4.5rem;
+}
+.page-box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 4.5rem;
+}
+.box-container-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+.box-container-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.next-step-box {
+    width: 29rem;
+    height: 25rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.box-header-black {
+    font-family: 'Orienta', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    color: black;
+    padding-left: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.box-header-white {
+    font-family: 'Orienta', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    color: white;
+    padding-left: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.box-description-black {
+    width: 90%;
+    height: 8.5rem;
+    font-family: 'Orienta', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    color: black;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.box-description-white {
+    width: 90%;
+    height: 8.5rem;
+    font-family: 'Orienta', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    color: white;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.learn-more-button-black {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+    margin-left: 2.0rem;
+    padding: 0.5rem;
+    font-family: Orienta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+    line-height: 2.0rem;
+    text-align: center;
+}
+.learn-more-button-white {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-left: 2.0rem;
+    padding: 0.5rem;
+    font-family: Orienta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+    line-height: 2.0rem;
+    text-align: center;
+}
+
+/* background images for next-step boxes */
+#giving-rides-box {
+    background-image: url(../images/givingrides.png);
+}
+#receiving-rides-box {
+    background-image: url(../images/receivingrides.png);
+}
+#contact-us-box {
+    background-image: url(../images/contactus.png);
+}
+#donate-page-box {
+    background-image: url(../images/donate.png);
+}
+#fares-page-box {
+    background-image: url(../images/fares.png);
+}
+#volunteer-with-us-box {
+    background-image: url(../images/volunteerwithus.png);
+}
