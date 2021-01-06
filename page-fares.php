@@ -21,6 +21,11 @@
             <div class="intro-vertline"></div>
             <div class="intro-text">If a driver is requested to wait longer than 15 minutes, a $20 per hour wait fee is charged.</div>
     </div>
+
+    <p class="fares-paragraph">
+    Drivers do not usually stay with the client during an appointment or activity. The same or a 
+    different driver will pick them up for their pre-scheduled return ride. 
+    </p>
 </body>
 </html>
 

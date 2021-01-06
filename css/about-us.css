@@ -28,7 +28,7 @@ html {
     line-height: 4.085rem;
     color: black;
 }
-.middle-section {
+.about-us-middle-section {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -74,7 +74,7 @@ html {
     height: 100%;
 }
 .text-why-we-here {
-    width: 55%;
+    width: 60%;
     padding-top: 25rem;
     padding-bottom: 15rem;
     margin: 0 auto;
@@ -83,8 +83,9 @@ html {
     font-style: normal;
     font-size: 3.5rem;
     line-height: 5.0rem;
+    text-align: center;
 }
-.bottom-section {
+.about-us-bottom-section {
     background-image: url(../images/about\ us\ info.png);
     display: flex;
     align-items: center;
