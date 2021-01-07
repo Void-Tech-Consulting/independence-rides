@@ -40,8 +40,6 @@ ul{
     
     background-color: #EAFCFB;
     font-size: 3rem;
-    line-height: 4rem;
-    line-height: 4rem;
     text-align: center;
 }
 
@@ -60,6 +58,20 @@ ul{
     .blue-box{
         padding-left: 17rem;
         padding-right: 17rem;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .blue-box{
+        font-size: 2.4rem;
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .blue-box{
+        font-size:2.3rem;
+        padding-left: 11rem;
+        padding-right: 11rem;
     }
 }
 @media only screen and (max-width: 770px) {

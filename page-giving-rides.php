@@ -16,6 +16,11 @@
 </head>
 
 <body>
+    <div class="blue-box">
+      <div class="intro-text">Independence Rides is entirely volunteer-driven.</div>
+      <div class="intro-vertline"></div>
+      <div class="intro-text"> All drivers are courteous and trained volunteers who have passed criminal background and driving record checks. </div>
+    </div>
     <div class="important-info">Important Information</div>
     <ul id="info-list">
       <li class="info-list-item">We make sure that the vehicle and all occupants are fully insured according to Michigan state law. </li>
@@ -26,7 +31,7 @@
     <ul id="info-icon-list">
       <li class="info-icon-box">
         <img class = "info-icon-image1" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png">
-        <div class="info-icon-text">In nearly all cases the drivers will be providing the rides in their own vehicles. </div>
+        <div class="info-icon-text2">In nearly all cases the drivers will be providing the rides in their own vehicles. </div>
       </li>
       <li class="info-icon-box">
         <img class = "info-icon-image2" src = "<?php echo get_template_directory_uri();?>/images/arm-icon.png">
