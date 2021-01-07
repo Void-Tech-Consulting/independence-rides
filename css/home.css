@@ -4,10 +4,12 @@
 {
     width: 100%;
     height: auto;
+    max-height: 785px
 }
 .home-section-1
 {
     position: relative;
+    text-align: center;
 }
 
 .section-1-heading
@@ -16,31 +18,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
 }
 
 .section-1-title
 {
-    text-align: center;
-    font-size: 7rem;
-    color: white;
+    font-size: 8rem;
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
-    font-family: SeoulHangang;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .title-text
 {
-    text-align: center;
     font-size: 2rem;
-    color: white;
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
+    background: rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.5);
 }
+
 .get-started-button
 {
-    color: white;
-    text-align: center;
     font-size: 3rem;
     margin-top: 5%;
     background-color: #5C6E93;
@@ -48,6 +49,160 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+}
+
+.section-1-bottom-text
+{
+    font-size: 4rem;
+    margin-top: 4%;
+}
+
+.section-1-horizontal-line
+{
+    border: .5px solid #000000;
+    background-color: black;
+    max-width: 90px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.info-section
+{
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    height: 38rem;
 
 
+}
+
+.assistance-box
+{
+    max-width: 23rem;
+    display: inline-block;
+    background-color: #F1F1F1;
+
+}
+
+.payment-box
+{
+    max-width: 30rem;
+    display: inline-block;
+
+
+}
+
+.availability-box
+{
+    max-width: 23rem;
+    display: inline-block;
+    background-color: #F1F1F1;
+
+
+}
+
+.drivers-box
+{
+    max-width: 30rem;
+    display: inline-block;
+
+
+}
+
+.assistance-text
+{
+    color: #807C7C;
+    font-size: 2rem;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+
+}
+
+.assistance-arms
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.availability-clock
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.availability-text
+{
+    color: #807C7C;
+    font-size: 2rem;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+}
+
+.footer
+{
+    width: 100%;
+    height: 40rem;
+    max-height: 386px;
+    background-color: #DFF4F3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rides-contact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-heading
+{
+    color: black;
+    font-size: 2.5rem;
+}
+.ITN-footer
+{
+    color: #6C7EA2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.footer-title
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #5C6E93;
+}
+
+.footer-contact
+{
+    font-size: 2rem;
+    color: #5C6E93;
+}
+
+.info-footer
+{
+    color: #807C7C;
+    font-size: 2rem;
+
+}
+
+.footer-section
+{
+    max-width: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.transparency-seal
+{
+    max-height: 215px;
+    max-width: 218px;
 }
