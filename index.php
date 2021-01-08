@@ -33,7 +33,6 @@
   <h1 class="next-step-header">Next steps...</h1>
   <div class="next-step-header-line"></div>
   <div class="page-box-container">
-    <div class="box-container-top">
       <div class="next-step-box" id="giving-rides-box">
         <div class="box-header-black">Giving Rides</div>
         <p class="box-description-black">
@@ -55,8 +54,7 @@
         </p>
         <button type="button" class="learn-more-button-black">Learn more</button>
       </div>
-    </div>
-    <div class="box-container-bottom">
+    
       <div class="next-step-box" id="donate-page-box">
         <div class="box-header-white">Donate</div>
         <p class="box-description-white">
@@ -78,7 +76,6 @@
         </p>
         <button type="button" class="learn-more-button-white">Learn more</button>
       </div>
-    </div>
   </div>
 </div>
 

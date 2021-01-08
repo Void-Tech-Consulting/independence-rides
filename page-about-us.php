@@ -20,10 +20,10 @@
 
 <div class="about-us-middle-section">
   <div class="quote-container">
+    <img class="quotation-mark-left" src="<?php echo get_template_directory_uri();?>/images/quotation marks left.png">
     <p class="quotation-text">
       Just getting around from day to day need not be so difficult.
     </p>
-    <img class="quotation-mark-left" src="<?php echo get_template_directory_uri();?>/images/quotation marks left.png">
     <img class="quotation-mark-right" src="<?php echo get_template_directory_uri();?>/images/quotation marks right.png">
   </div>
   <div class="video-container">

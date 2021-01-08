@@ -55,14 +55,12 @@ html {
     line-height: 4.25rem;
 }
 .quotation-mark-left {
-    position: absolute;
+    position: relative;
     top: -7.0rem;
-    left: 0rem;
 }
 .quotation-mark-right {
-    position: absolute;
+    position: relative;
     top: 14.5rem;
-    left: 53.0rem;
 }
 .video-container {
     position: relative;
@@ -87,6 +85,7 @@ html {
 }
 .about-us-bottom-section {
     background-image: url(../images/about\ us\ info.png);
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -110,6 +109,21 @@ html {
     line-height: 3.0rem;
 }
 
+@media only screen and (max-width: 1300px) {
+    .quote-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .quotation-mark-right {
+    }
+    .quotation-text {
+        text-align: center;
+    }
+    .video-container {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     html {
         font-size: 50%;
@@ -120,6 +134,7 @@ html {
     .about-us-text-box {
         margin: 0 auto;
         width: 72.5%;
+        padding-bottom: 15rem;
     }
     .header-line {
         margin: 0 auto;
@@ -129,6 +144,17 @@ html {
         text-align: center;
         font-size: 2.5rem;
         line-height: 3.5rem;
+    }
+    .text-why-we-here {
+        width: 100%;
+        padding-top: 15rem;
+    }
+    .about-us-bottom-section {
+        height: 35rem;
+    }
+    .image-text {
+        font-size: 1.5rem;
+        line-height: 2.0rem;
     }
 }
 @media only screen and (max-width: 600px) {
