@@ -28,20 +28,20 @@
       <li class="info-list-item">Independence Rides is a 501(c)(3) public charity to help keep rides affordable.</li>
       <li class="info-list-item">This service is in collaboration with ITNAmerica, a national nonprofit senior transportation service. </li>
     </ul>
-    <ul id="info-icon-list">
-      <li class="info-icon-box">
-        <img class = "info-icon-image1" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png">
-        <div class="info-icon-text2">In nearly all cases the drivers will be providing the rides in their own vehicles. </div>
-      </li>
-      <li class="info-icon-box">
-        <img class = "info-icon-image2" src = "<?php echo get_template_directory_uri();?>/images/arm-icon.png">
+    <div class="info-icon-list">
+      <div class="info-icon-box">
+        <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png"></img>
+        <div class="info-icon-text">In nearly all cases the drivers will be providing the rides in their own vehicles. </div>
+      </div>
+      <div class="info-icon-box">
+        <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/arm-icon.png"></img>
         <div class="info-icon-text">Riders who use walkers and folding wheelchairs will be paired with drivers who can lift and stow these devices. </div>
-      </li>
-      <li class="info-icon-box">
-        <img class = "info-icon-image3" src = "<?php echo get_template_directory_uri();?>/images/dollar-icon.png">
+      </div>
+      <div class="info-icon-box">
+        <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/dollar-icon.png"></img>
         <div class="info-icon-text">Paid drivers, with the same training and background checks, may be used during overnight hours to ensure that all ride requests can be met.</div>
-      </li>
-    </ul>
+      </div>
+    </div>
 </body>
 </html>
 

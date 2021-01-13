@@ -34,12 +34,12 @@ ul{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    padding-left:30rem;
-    padding-right:30rem;
+    padding-left:25rem;
+    padding-right:23rem;
     width:auto;
     
     background-color: #EAFCFB;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -48,39 +48,27 @@ ul{
 }
 
 .intro-vertline{
-    margin-top: 7.5rem;
-    margin-bottom: 8.5rem;
-    height:28rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    height:18rem;
     border-left: 1px solid black;
 }
 
-@media only screen and (max-width: 1800px) {
-    .blue-box{
-        padding-left: 17rem;
-        padding-right: 17rem;
-    }
-}
-@media only screen and (max-width: 1500px) {
-    .blue-box{
-        font-size: 2.4rem;
-        padding-left: 14rem;
-        padding-right: 14rem;
-    }
-}
 @media only screen and (max-width: 1200px) {
     .blue-box{
-        font-size:2.3rem;
-        padding-left: 11rem;
-        padding-right: 11rem;
+        font-size:1.7rem;
+        padding-left: 20rem;
+        padding-right: 18rem;
     }
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
     .blue-box{
-        font-size: 1.2rem;
-        line-height: 1.63rem;
+        font-size: 1.3rem;
+        padding-left: 9rem;
+        padding-right: 8rem;
     }
     .intro-text{
-        width:32.7%;
+        width:40%;
     }
     
     .intro-vertline{
@@ -89,14 +77,31 @@ ul{
         height:7.8rem;
         border-left: 1px solid black;
     }
+}
+@media only screen and (max-width: 500px) {
+    .blue-box{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        padding-left: 3rem;
+        padding-right: 4rem;
+    }
+    .intro-text{
+        width:44%;
+    }
     
+    .intro-vertline{
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+        height:7.8rem;
+        border-left: 1px solid black;
+    }
 }
 @media only screen and (max-width: 350px) {
     .blue-box{
         font-size: 1.1rem;
-        line-height: 1.53rem;
+        line-height: 1.6rem;
     }
     .intro-text{
-        width:40%;
+        width:45%;
     }    
 }
