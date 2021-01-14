@@ -1,10 +1,16 @@
 .top-section {
-    background: url("../images/receiving-rides-cover-pic.png");
-    height: 655px;
+    width: 100%;
+    height: 65%;
     display: flex;
     align-items: baseline;
     flex-flow: column;
     justify-content: center;
+}
+
+#receiving-rides-top {
+    background: url("../images/receiving-rides-cover-pic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .top-info {
@@ -12,13 +18,12 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin-left: 5rem;
-    margin-bottom: 10rem;
+    margin: 5rem 5rem;
 }
 
 .top-header {
     color: #100F0F, 100%;
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -27,28 +32,24 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
     border-radius: 36px;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     border: none;
-    padding: 20px;
+    padding: 1rem 1.5rem;
     margin: 1rem;
 }
 
 .steps-section {
-    padding: 3rem 20rem;
-}
-
-.steps-name {
-    font-size: 4rem;
+    display: flex;
+    justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color: #5C6E93;
 }
 
-.steps-underline {
-    border-bottom: 1px solid black;
-    width: 10rem;
-    margin-top: 2rem;
+.steps-content {
+    width: 70%;
+}
+
+.steps-header {
+    padding: 3rem 0rem;
 }
 
 .steps-body {
@@ -56,76 +57,164 @@
     justify-content: space-between;
 }
 
-.steps-timeline ul li {
-    position: relative;
-    margin: 0;
-    padding-bottom: 1em;
-    padding-left: 20px;
-    list-style-type: square;
-    font-size: 4rem;
-    font-family: 'Open Sans', sans-serif;
+.steps-timeline {
+     width: 70%;
+     height: auto;
+}
+
+.steps-name {
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: normal;
+    color: #5C6E93;
+    padding-bottom: 1rem;
 }
 
-.steps-joint-bullet-1:before {
-    background-color: black;
-    width: 1px;
-    height: 33rem;
-    content: '';
-    position: absolute;
-    top: 3.5rem;
-    bottom: 0px;
-    left: -2.7rem;
+.steps-underline {
+    border-bottom: 1px solid black;
+    width: 10rem;
 }
 
-.steps-joint-bullet-2:before {
-    background-color: black;
-    width: 1px;
-    height: 27rem;
-    content: '';
-    position: absolute;
-    top: 3.5rem;
-    bottom: 0px;
-    left: -2.7rem;
-}
-
-
-.steps-timeline ul li h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 4rem;
-}
-
-.steps-timeline ul li h4 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color:#807C7C;
-    font-size: 2.2rem;
-}
-.steps-image {
-    background: url("../images/receiving-rides-steps.png");
-    height: 67rem;
-    width: 40rem;
-    margin-top: 4rem;
+.steps-img {
+    width: 25%;
+    height: 70%;
 }
 
 .steps-timeline {
-    width: 60%;
-    padding: 0rem 5rem;
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+.steps-bullet {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1rem;
+    list-style-type: square;
+    font-size: 4rem;
+}
+
+.steps-bullet:before {
+    width: 1px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: -3.1rem;
+    border-left: 1px solid black;
+}
+
+.steps-bullet:first-child:before {
+    top: 3rem;
+}
+
+.steps-bullet:last-child:before {
+    height: 3.5rem;
+}
+
+.steps-subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.steps-sub-info {
+    font-style: normal;
+    font-weight: normal;
+    color:#807C7C;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 90%;
 }
 
 .steps-button {
     background: #5C6E93;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     border-radius: 15px;
-    font-size: 3rem;
+    font-size: 2rem;
     border: none;
-    padding: 1rem 3rem;
-    margin: 4rem 0rem;
+    padding: 0.8rem 1.5rem;
+    margin: 2rem 0rem;
+}
+
+
+
+@media (max-width: 1100px) {
+    .top-section {
+        height: 40%;
+    }
+    .steps-body img {
+        max-height: 60rem;
+    }
+}
+@media (max-width: 500px) {
+    .top-section {
+        height: 30%;
+    }
+    .top-header {
+        font-size: 4rem;
+    }
+    .top-info {
+        margin: 2.5rem 3rem;
+    }
+    .steps-content {
+        width: 80%;
+    }
+    .steps-body img {
+        max-height: 40rem;
+        width: 100%;
+    }
+    .steps-button {
+        margin: 3rem 0rem;
+    }
+    .steps-body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .steps-sub-info {
+        width: 100%;
+    }
+
+    .steps-timeline {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0rem;
+   }
+
+   .steps-button {
+        padding: 1.5rem 2.5rem;
+        margin: 2rem;
+        font-size: 1.7rem;
+        margin-left: 20rem;
+    }
+  
+}
+@media (max-width: 370px) {
+    .top-section {
+        height: 30%;
+    }
+    .steps-body img {
+        max-height: 30rem;
+    }
+    .steps-button {
+        margin-left: 15rem;
+    }
+    .top-info {
+        margin: 2.5rem 3rem;
+    }
+    
+    .top-header {
+        font-size: 4rem;
+    }
+    
+    .apply-button {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .steps-button {
+        margin-left: 10rem;
+    }
 }
