@@ -21,7 +21,7 @@ dd {
 }
 
 html{
-    font-size:62.5%;
+    /* font-size:62.5%; */
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
@@ -130,7 +130,7 @@ ul{
 
 @media only screen and (max-width: 1300px) {
     #info-list{
-        font-size: 1.4rem;
+        /* font-size: 1.4rem; */
         margin-left: 20rem;
         margin-right: 20rem;
     }
@@ -141,7 +141,7 @@ ul{
     }
     .info-icon-list{
         margin-top: 8rem;
-        font-size: 1.4rem;
+        /* font-size: 1.4rem; */
         margin-right: 17rem;
         margin-left: 17rem;
     }
@@ -155,7 +155,7 @@ ul{
 }
 @media only screen and (max-width: 950px) {
     #info-list{
-        font-size: 1.4rem;
+        /* font-size: 1.4rem; */
         margin-left: 13rem;
         margin-right: 13rem;
     }
@@ -166,12 +166,12 @@ ul{
     }
     .info-icon-list{
         margin-top: 8rem;
-        font-size: 1.4rem;
+        /* font-size: 1.4rem; */
         margin-right: 10rem;
         margin-left: 10rem;
     }
     .info-icon-text{
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     .info-icon-list-home{
         margin-right: 9rem;
@@ -184,7 +184,7 @@ ul{
 
 @media only screen and (max-width: 825px) {
     #info-list{
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
         margin-left: 10rem;
         margin-right: 10rem;
     }
@@ -195,12 +195,12 @@ ul{
     }
     .info-icon-list{
         margin-top: 7rem;
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
         margin-right: 7rem;
         margin-left: 7rem;
     }
     .info-icon-text{
-        font-size: 1.1rem;
+        /* font-size: 1.1rem; */
     }
     .info-icon-list-home{
         margin-right: 6rem;
@@ -223,18 +223,18 @@ ul{
     .important-info{
         padding: 0;
         justify-content: center;
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         height: 6rem;
     }
     #info-list{
         margin-top: 0rem;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         margin-left: 2rem;
         margin-right: 2rem;
     }
     .info-icon-list{
         margin-top: 3rem;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -252,27 +252,27 @@ ul{
         margin-left: 0;
         margin-right: 0;
         margin-top: 0rem;
-        font-size: 1.1rem;
+        /* font-size: 1.1rem; */
         margin-bottom:0rem;
         color: #000000;
     }
     .info-icon-text{
-        font-size: 1rem;
+        /* font-size: 1rem; */
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
     }
     .info-icon-text-home{
-        font-size: .8rem;
+        /* font-size: .8rem; */
         margin-left: 0.8rem;
         margin-right: 0.8rem;
         margin-bottom: 1rem;
     }
     .info-icon-list-home{
         margin-top: 7rem;
-        font-size: 1rem;
-        margin-left: 6.6rem;
-        margin-right: 6.6rem;
+        /* font-size: 1rem; */
+        margin-left: 7.5rem;
+        margin-right: 7.5rem;
         display:flex;
         flex-direction:column;
     }
@@ -283,7 +283,6 @@ ul{
         width:50%;
         margin-left: 1rem;
         margin-right: 1rem;
-        /* height: 33rem; */
     }
     .info-icon-box-white{
         text-align: center;
@@ -292,7 +291,6 @@ ul{
         width:50%;
         margin-left: 1rem;
         margin-right: 1rem;
-        /* height: 33rem; */
     }
     .box-bot{
         margin-top: 3.4rem;

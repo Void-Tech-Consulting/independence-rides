@@ -21,7 +21,7 @@ dd {
 }
 
 html{
-    font-size:62.5%;
+    /* font-size:62.5%; */
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
@@ -56,14 +56,14 @@ ul{
 
 @media only screen and (max-width: 1200px) {
     .blue-box{
-        font-size:1.7rem;
+        /* font-size:1.7rem; */
         padding-left: 20rem;
         padding-right: 18rem;
     }
 }
 @media only screen and (max-width: 800px) {
     .blue-box{
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
         padding-left: 9rem;
         padding-right: 8rem;
     }
@@ -80,7 +80,7 @@ ul{
 }
 @media only screen and (max-width: 500px) {
     .blue-box{
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         padding-left: 3rem;
         padding-right: 4rem;
     }
@@ -97,7 +97,7 @@ ul{
 }
 @media only screen and (max-width: 350px) {
     .blue-box{
-        font-size: 1.1rem;
+        /* font-size: 1.1rem; */
     }
     .intro-text{
         width:45%;
