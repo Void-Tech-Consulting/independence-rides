@@ -70,3 +70,20 @@ html {
 /* 
   Put styles here 
 */
+
+html {
+  font-size: 58%; }
+@media (min-width: 112.5em) {
+  html {
+  font-size: 68%; } }
+@media (max-width: 75em) {
+  html {
+  font-size: 50%; } }
+@media (max-width: 56.25em) {
+  html {
+  font-size: 40%; } }
+@media (max-width: 37.5em) {
+  html {
+  font-size: 30%; } }
+
+
