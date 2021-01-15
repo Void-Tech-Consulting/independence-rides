@@ -154,8 +154,8 @@ html {
     }
     .text-why-we-here {
         width: 70%;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
     .about-us-bottom-section {
         width: 75%;
@@ -189,8 +189,6 @@ html {
     .text-why-we-here {
         font-size: 2.2rem;
         line-height: 3.0rem;
-        padding-top: 7.5rem;
-        padding-bottom: 7.5rem;
     }
     .about-us-bottom-section {
         height: 40rem;
@@ -251,8 +249,6 @@ html {
     .text-why-we-here {
         font-size: 1.75rem;
         line-height: 2.5rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
     }
     .about-us-bottom-section {
         width: 80%;
@@ -301,8 +297,6 @@ html {
     }
     .text-why-we-here {
         width: 85%;
-        padding-top: 3.5rem;
-        padding-bottom: 3.5rem;
         font-size: 1.5rem;
         line-height: 2.0rem;
     }
@@ -351,11 +345,9 @@ html {
         margin-right: 0.5rem;
     }
     .text-why-we-here {
-        width: 100%;
+        width: 95%;
         font-size: 1.3rem;
         line-height: 1.77rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
     }
     .about-us-bottom-section {
         width: 100%;
@@ -364,5 +356,69 @@ html {
     .image-text {
         font-size: 1.0rem;
         line-height: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .about-us-text-box {
+        width: 90%;
+    }
+    .image-text {
+        font-size: 0.5rem;
+        font-weight: normal;
+        line-height: 0.85rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .header-text {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding-bottom: 0.75rem;
+    }
+    .header-line {
+        border: 0.25px solid black;
+    }
+    .about-us-paragraph {
+        font-size: 1.0rem;
+        line-height: 1.3rem;
+        padding-top: 0.9rem;
+    }
+    .quotation-text {
+        font-size: 1.0rem;
+        line-height: 1.4rem;
+    }
+    .quotation-mark-left {
+        top: -2.5rem;
+        width: 3rem;
+        height: 2.25rem;
+        margin-left: 0.25rem;
+    }
+    .quotation-mark-right {
+        top: 2.5rem;
+        width: 3rem;
+        height: 2.25rem;
+        margin-left: 0.25rem;
+    }
+    .video-container {
+        width: 15em;
+        height: 10.5rem;
+        margin-top: 1rem;
+    }
+    .text-why-we-here {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .about-us-bottom-section {
+        height: 14rem;
+    }
+    .image-text {
+        font-size: 0.2rem;
+        line-height: 0.8rem;
+    }
+    .image-text-container {
+        width: 45%;
+        padding-left: 1.5rem;
     }
 }
