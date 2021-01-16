@@ -22,7 +22,7 @@
       <div class="intro-text"> All drivers are courteous and trained volunteers who have passed criminal background and driving record checks. </div>
     </div>
     <div class="important-info">Important Information</div>
-    <ul id="info-list">
+    <ul class="info-list">
       <li class="info-list-item">We make sure that the vehicle and all occupants are fully insured according to Michigan state law. </li>
       <li class="info-list-item">All drivers are able to help carry groceries, and provide walking assistance to any rider who desires it. </li>
       <li class="info-list-item">Independence Rides is a 501(c)(3) public charity to help keep rides affordable.</li>

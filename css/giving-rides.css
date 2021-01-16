@@ -1,3 +1,7 @@
+ul{
+    list-style-type: none;
+}
+
 .important-info{
     width: auto;
     height: 8.5rem;
@@ -7,7 +11,7 @@
     align-items: center;
     padding-left:11rem; 
 }
-#info-list li::before{
+ul.info-list li::before{
     content: "\25A0";
     color: #5C6E93;
     display: inline-block; /* Needed to add space between the bullet and the text */
@@ -15,14 +19,12 @@
     padding-top: 2rem;
     margin-left: -5rem; /* Also needed for space (tweak if needed) */
 }
-#info-list{
+ul.info-list{
     margin-top: 2rem;
     display:flex;
-    /* list-style-type: square; */
     flex-direction:column;
     font-size: 1.6rem;
-    margin-left: 37rem;
-    /* margin-right: 35rem; */
+    margin-left: 41rem;
 }
 .info-icon-list{
     margin-top: 10rem;
@@ -184,7 +186,7 @@
         content: "\25A0";
         color: #5C6E93;
         display: inline-block; /* Needed to add space between the bullet and the text */
-        width: 5rem; /* Also needed for space (tweak if needed) */
+        width: 1rem; /* Also needed for space (tweak if needed) */
         padding-top: 1.4rem;
         margin-left: -5rem; /* Also needed for space (tweak if needed) */
     }
