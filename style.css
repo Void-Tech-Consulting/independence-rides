@@ -58,14 +58,34 @@ textarea,
 select {
   font: inherit;
 }
-
-html {
-  font-size: 62.5%;
-}
 /* END Reset */
-/* 
+
+
+/*
   Put styles here 
 */
+
+
+/* Responsive Styling */
+
+html {
+  font-size: 62.5%; }
+@media (min-width: 112.5em) {
+  html {
+  font-size: 75%; } }
+@media (max-width: 75em) {
+  html {
+  font-size: 56.25%; } }
+@media (max-width: 56.25em) {
+  html {
+  font-size: 50%; } }
+@media (max-width: 37.5em) {
+  html {
+  font-size: 40%; } }
+
+
+
+
 
 /* NAVBAR STYLING */
 
@@ -117,7 +137,7 @@ html {
 .nav-links {
   width: 95rem;
   display: flex;  
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -131,6 +151,12 @@ html {
   align-items: center;
 }
 
+.nav-links li a:hover {
+  color: #5C6E93;
+  background-color: white;
+}
+
+/* Donate & Contact us */
 .nav-links > li:last-child a, .nav-links > li:nth-last-child(2) a{
   background-color: #5C6E93;
   color: white;
@@ -141,12 +167,10 @@ html {
   justify-content: center;
   border-radius: 0.5rem;
   font-size: 1.6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.nav-links li a:hover {
-  color: #5C6E93;
-  background-color: white;
-}
 
 .nav-links > li:nth-last-child(2) a:hover, .nav-links > li:last-child a:hover {
   opacity: 0.71;
@@ -154,11 +178,13 @@ html {
   color: white;
 }
 
+
+/* Drop-down menu in nav bar */
 .nav-links li:hover > .sub-menu {
   display: block;
 }
 
-.nav-links > li:hover {
+.nav-links > li:hover > a {
   background-color: white;
   color: #5C6E93;
 }
@@ -170,13 +196,23 @@ html {
   z-index: 99999;
 }
 
-.sub-menu .menu-item a {
+.sub-menu .menu-item li {
   font-size: 1.6rem;
+  width: inherit;
   background-color: white;
 }
+
+.sub-menu .menu-item a {
+  background-color: white;
+}
+
 
 .sub-menu .menu-item a:hover {
   background-color: #5C6E93;
   color: white;
 }
+
+
+
+
 
