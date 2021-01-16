@@ -9,7 +9,7 @@ ul{
     font-size: 2.6rem;
     display: flex;
     align-items: center;
-    padding-left:11rem; 
+    padding-left:8%; 
 }
 ul.info-list li::before{
     content: "\25A0";
@@ -20,32 +20,26 @@ ul.info-list li::before{
     margin-left: -5rem; /* Also needed for space (tweak if needed) */
 }
 ul.info-list{
-    margin-top: 2rem;
     display:flex;
     flex-direction:column;
     font-size: 1.6rem;
-    margin-left: 41rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 .info-icon-list{
     margin: 0 auto;
-    margin-top: 10rem;
-    width: 60%;
-    min-width: 60%;
-    padding: 0;
+    margin-top: 6%;
+    width: 50%;
+    min-width: 50%;
     font-size: 1.6rem;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .info-icon-list-home{
-    margin-top: 10rem;
-    margin-right: 27rem;
-    margin-left: 27rem;
-    padding: 0;
-    font-size: 1.6rem;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 65%;
+    min-width: 65%;
 }
 .info-icon-box{
     text-align: center;
@@ -72,20 +66,20 @@ ul.info-list{
 .info-icon-text{
     margin-left: 1.2rem;
     margin-right: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 10%;
 }
 .info-icon-text-subtitle{
     margin-left: 0rem;
     margin-right: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 10%;
     color: #000000;
 }
 .info-icon-image{
     margin-left:auto;
     margin-right:auto;
-    margin-top: -5rem;
-    margin-bottom: 2rem;
-    width:11rem;
+    margin-top: -23%;
+    margin-bottom: 10%;
+    width:40%;
 }
 .box-bot{
     display: flex;
@@ -100,115 +94,39 @@ ul.info-list{
 }
 
 @media only screen and (max-width: 1300px) {
-    #info-list{
-        margin-left: 20rem;
-        margin-right: 20rem;
-    }
-    .info-icon-image{
-        margin-top: -4rem;
-        margin-bottom: 2rem;
-        width:9rem;
-    }
-    /* .info-icon-list{
-        margin-top: 8rem;
-        margin-right: 17rem;
-        margin-left: 17rem;
-    } */
-    /* .info-icon-list-home{
-        margin-right: 13rem;
-        margin-left: 13rem;
-    } */
-    .important-info{
-        padding-left:8rem; 
-    }
-}
-@media only screen and (max-width: 950px) {
-    #info-list{
-        margin-left: 13rem;
-        margin-right: 13rem;
-    }
-    .info-icon-image{
-        margin-top: -3rem;
-        margin-bottom: 2rem;
-        width:7rem;
-    }
-    /* .info-icon-list{
-        margin-top: 8rem;
-        margin-right: 10rem;
-        margin-left: 10rem;
-    } */
-    /* .info-icon-list-home{
-        margin-right: 9rem;
-        margin-left: 9rem;
-    } */
-    .important-info{
-        padding-left:7rem; 
+    ul.info-list li::before{
+        width: 4rem; /* Also needed for space (tweak if needed) */
+        margin-left: -4rem; /* Also needed for space (tweak if needed) */
     }
 }
 
-@media only screen and (max-width: 825px) {
-    #info-list{
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }
-    .info-icon-image{
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-        width:5rem;
-    }
-    /* .info-icon-list{
-        margin-top: 7rem;
-        margin-right: 7rem;
-        margin-left: 7rem;
-    }
-    .info-icon-list-home{
-        margin-right: 6rem;
-        margin-left: 6rem;
-    } */
-    .important-info{
-        padding-left:5rem; 
+@media only screen and (max-width: 1000px) {
+    ul.info-list li::before{
+        width: 3rem; /* Also needed for space (tweak if needed) */
+        margin-left: -3rem; /* Also needed for space (tweak if needed) */
     }
 }
-
+  
 @media only screen and (max-width: 550px) {
-    #info-list li::before{
-        content: "\25A0";
-        color: #5C6E93;
-        display: inline-block; /* Needed to add space between the bullet and the text */
-        width: 1rem; /* Also needed for space (tweak if needed) */
+    ul.info-list li::before{
+        width: 2rem; /* Also needed for space (tweak if needed) */
         padding-top: 1.4rem;
-        margin-left: -5rem; /* Also needed for space (tweak if needed) */
+        margin-left: -2rem; /* Also needed for space (tweak if needed) */
+    }
+    ul.info-list{
+        width: 80%;
     }
     .important-info{
         padding: 0;
         justify-content: center;
         height: 6rem;
     }
-    #info-list{
-        margin-top: 0rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
     .info-icon-list{
-        margin-top: 3rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .info-icon-box{
-        width: 29%;
-    }
-    .info-icon-image{
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: -2.5rem;
-        width:6rem;
-        margin-bottom: 1rem;
+        margin-top: 10%;
+        min-width: 85%;
     }
     .info-icon-text-subtitle{
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0rem;
-        margin-bottom:0rem;
+        margin: 0;
         color: #000000;
     }
     .info-icon-text{
