@@ -151,9 +151,9 @@
     .top-section {
         height: 30%;
     }
-    .top-header {
+    /* .top-header {
         font-size: 4rem;
-    }
+    } */
     .top-info {
         margin: 2.5rem 3rem;
     }
@@ -185,7 +185,7 @@
    .steps-button {
         padding: 1.5rem 2.5rem;
         margin: 2rem;
-        font-size: 1.7rem;
+        /* font-size: 1.7rem; */
         margin-left: 20rem;
     }
   
@@ -204,13 +204,6 @@
         margin: 2.5rem 3rem;
     }
     
-    .top-header {
-        font-size: 4rem;
-    }
-    
-    .apply-button {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 300px) {
