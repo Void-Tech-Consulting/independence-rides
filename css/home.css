@@ -111,6 +111,8 @@
     order: 5;
 }
 
+/* responsive design */
+
 @media only screen and (max-width: 1350px) {
     .next-step-section {
         width: 70%;
