@@ -48,6 +48,12 @@
   </div>
   
 </div>
+
+<p class="receiving-rides-paragraph">
+  Our service Is specifically designed for people age 60 & over, 
+  and vision impaired adults, age 18 & over.
+</p>
+
 </body>
 
 <?php get_footer(); ?>

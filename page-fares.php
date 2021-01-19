@@ -73,6 +73,10 @@
   </div>
   
 </div>
+    <p class="fares-paragraph">
+    Drivers do not usually stay with the client during an appointment or activity. The same or a 
+    different driver will pick them up for their pre-scheduled return ride. 
+    </p>
 </body>
 </html>
 

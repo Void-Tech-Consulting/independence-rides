@@ -18,5 +18,35 @@
   </p>
 </div>
 
+<div class="about-us-middle-section">
+  <div class="quote-container">
+    <img class="quotation-mark-left" src="<?php echo get_template_directory_uri();?>/images/quotation marks left.png">
+    <p class="quotation-text">
+      Just getting around from day to day need not be so difficult.
+    </p>
+    <img class="quotation-mark-right" src="<?php echo get_template_directory_uri();?>/images/quotation marks right.png">
+  </div>
+  <div class="video-container">
+    <img id="video-screenshot" src="<?php echo get_template_directory_uri();?>/images/video pic.png">
+  </div>
+</div>
+
+<p class="text-why-we-here">
+That's why we're here. Dignified transportation freedom 
+for seniors and vision impaired adults.
+</p>
+
+<div class="about-us-bottom-section">
+  <div class="image-text-container">
+    <p class="image-text">
+    The rides are available 24 hours a day, 7 days a week, and can be 
+    scheduled for any reason. 
+    <br><br>
+    A key feature is ‘door-through-door’ and ‘arm-through-arm’ assistance. 
+    This means we provide personal walking assistance as needed from the 
+    departure door to the car, and from the car through the destination door.
+    </p>
+  </div>
+</div>
 
 <?php get_footer(); ?>

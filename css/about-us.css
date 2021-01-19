@@ -1,77 +1,438 @@
 html {
     font-size: 62.5%;
 }
+
+/* why-we-are-here section */
+
 .header-text {
-    padding-bottom: 2rem;
-    font-size: 5.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 5.5rem;
+    line-height: 3.6rem;
     color: black;
 }
 .about-us-text-box {
-   width: 75%;
+   width: 60%;
    margin: 0 auto;
+   margin-bottom: 17.5rem;
 }
 .header-line {
-    width: 8.9rem;
+    width: 7.1rem;
     height: 0rem;
     border: 1px solid black;
+    margin-left: 4.5rem;
 }
 .about-us-paragraph {
-    padding-top: 4.5rem;
+    margin-left: 4.5rem;
+    padding-top: 3.5rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: 3.0rem;
+    font-size: 2.0rem;
     font-weight: 400;
     font-style: normal;
-    line-height: 4.085rem;
+    line-height: 2.7rem;
     color: black;
 }
-@media only screen and (max-width: 800px) {
-    html {
-        font-size: 50%;
+
+/* middle section in about-us page */
+
+.about-us-middle-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #5C6E93;
+    width: 100%;
+    height: 18.5rem;
+}
+.quote-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.quotation-text {
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 3.1rem;
+}
+.quotation-mark-left {
+    margin-left: 1.0rem;
+    position: relative;
+    top: -8.0rem;
+    width: 11rem;
+    height: 8.5rem;
+}
+.quotation-mark-right {
+    margin-right: 2.0rem;
+    position: relative;
+    top: 8.0rem;
+    width: 11rem;
+    height: 8.5rem;
+}
+.video-container {
+    position: relative;
+    width: 50%;
+    height: 38.5rem;
+}
+#video-screenshot {
+    width: 63.2rem;
+    height: 100%;
+}
+
+/* middle paragraph explaining why we are here */
+
+.text-why-we-here {
+    width: 60%;
+    padding-top: 17.5rem;
+    padding-bottom: 10rem;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+/* bottom section in about-us page */
+
+.about-us-bottom-section {
+    background-image: url(../images/about\ us\ info.png);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    height: 50rem;
+}
+.image-text-container {
+    width: 45%;
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+}
+.image-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 2.7rem;
+    margin-bottom: 4.5rem;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 1300px) {
+    .about-us-text-box {
+        margin-bottom: 10rem;
     }
+    .about-us-middle-section {
+        background-color: transparent;
+        flex-direction: column;
+        height: auto;
+    }
+    .quote-container {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #5C6E93;
+        height: 15rem;
+    }
+    .video-container {
+        margin-top: 7rem;
+        width: 40%;
+        height: 30rem;
+    } 
+    .quotation-text {
+        text-align: center;
+    }
+    .quotation-mark-left {
+        width: 10rem;
+        height: 7rem;
+        top: -7.5rem;
+        margin-left: 15rem;
+    }
+    .quotation-mark-right {
+        width: 10rem;
+        height: 7rem;
+        top: 7.5rem;
+        margin-right: 15rem;
+    }
+    .text-why-we-here {
+        width: 70%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .about-us-bottom-section {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .header-text {
+        font-size: 3.0rem;
+        line-height: 3.0rem;
+    }
+    .about-us-paragraph {
+        font-size: 1.75rem;
+        line-height: 2.4rem;
+    }
+    .quote-container {
+        height: 12rem;
+    }
+    .quotation-text {
+        font-size: 2.0rem;
+        line-height: 2.75rem;
+    }
+    .quotation-mark-left {
+        top: -5.0rem;
+        margin-left: 10rem;
+    }
+    .quotation-mark-right {
+        top: 5.0rem;
+        margin-right: 10rem;
+    }
+    .text-why-we-here {
+        font-size: 2.2rem;
+        line-height: 3.0rem;
+    }
+    .about-us-bottom-section {
+        height: 40rem;
+    }
+    .image-text {
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+   .video-container {
+       height: 22.5rem;
+   }
+   .quote-container {
+       height: 9.5rem;
+   }
+   .quotation-mark-left {
+       width: 7rem;
+       height: 4.5rem;
+       margin-left: 7rem;
+   }
+   .quotation-mark-right {
+       width: 7rem;
+       height: 4.5rem;
+       margin-right: 7rem;
+   }
+}
+
+@media only screen and (max-width: 800px) {
     .header-text {
         text-align: center;
     }
     .about-us-text-box {
         margin: 0 auto;
-        width: 72.5%;
+        width: 70%;
+        padding-bottom: 5rem;
     }
     .header-line {
         margin: 0 auto;
+        width: 3.5rem;
     }
     .about-us-paragraph {
+        margin: 0 auto;
         padding-top: 2rem;
         text-align: center;
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+    .quotation-text {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+    .video-container {
+        height: 17rem;
+        margin-top: 3rem;
+    }
+    .text-why-we-here {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+    .about-us-bottom-section {
+        width: 80%;
+        height: 27.5rem;
+    }
+    .image-text {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin-bottom: 2rem;
     }
 }
 @media only screen and (max-width: 600px) {
-    html {
-        font-size: 35%;
-    }
-}
-/* @media only screen and (max-width: 500px) {
-    .header-text {
-        text-align: center;
-        font-size: 3.0rem;
-        line-height: 3.0rem;
-        padding-bottom: 1.5rem;
-    }
     .about-us-text-box {
-        width: 72.5%;
-        margin: 0 auto;
+        width: 75%;
     }
     .header-line {
-        margin: 0 auto;
-        width: 2.6rem;
+        width: 3.0rem;
+    }
+    .quote-container {
+        height: 7.5rem;
+    }
+    .quotation-text {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    .quotation-mark-left {
+        top: -3.25rem;
+        width: 4.5rem;
+        height: 3.25rem;
+        margin-left: 3.5rem;
+    }
+    .quotation-mark-right {
+        top: 3.25rem;
+        width: 4.5rem;
+        height: 3.25rem;
+        margin-right: 3.5rem;
+    }
+    .video-container {
+        width: 18.5em;
+        height: 12.2rem;
+        margin-top: 2rem;
+    }
+    #video-screenshot {
+        width: 100%;
+        height: 100%;
+    }
+    .text-why-we-here {
+        width: 85%;
+        font-size: 1.5rem;
+        line-height: 2.0rem;
+    }
+    .about-us-bottom-section {
+        width: 90%;
+        height: 23rem;
+    }
+    .image-text {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .about-us-text-box {
+        width: 65%;
+        padding-bottom: 2rem;
+    }
+    .header-text {
+        padding-bottom: 1.0rem;
+    }
+    .header-line {
+        width: 2.5rem;
     }
     .about-us-paragraph {
-        text-align: center;
         font-size: 1.3rem;
         line-height: 1.77rem;
-        padding-top: 1.5rem;
+        padding-top: 1.2rem;
     }
-} */
+    .quote-container {
+        height: 6.03rem;
+    }
+    .quotation-text {
+         width: 70%;
+    }
+    .quotation-mark-left {
+        top: -2.5rem;
+        width: 3.5rem;
+        height: 2.75rem;
+        margin-left: 0.5rem;
+    }
+    .quotation-mark-right {
+        top: 2.5rem;
+        width: 3.5rem;
+        height: 2.75rem;
+        margin-right: 0.5rem;
+    }
+    .text-why-we-here {
+        width: 95%;
+        font-size: 1.3rem;
+        line-height: 1.77rem;
+    }
+    .about-us-bottom-section {
+        width: 100%;
+        height: 18.7rem;
+    }
+    .image-text {
+        font-size: 1.0rem;
+        line-height: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .about-us-text-box {
+        width: 90%;
+    }
+    .image-text {
+        font-size: 0.5rem;
+        font-weight: normal;
+        line-height: 0.85rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .header-text {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding-bottom: 0.75rem;
+    }
+    .header-line {
+        border: 0.25px solid black;
+    }
+    .about-us-paragraph {
+        font-size: 1.0rem;
+        line-height: 1.3rem;
+        padding-top: 0.9rem;
+    }
+    .quotation-text {
+        font-size: 1.0rem;
+        line-height: 1.4rem;
+    }
+    .quotation-mark-left {
+        top: -2.5rem;
+        width: 3rem;
+        height: 2.25rem;
+        margin-left: 0.25rem;
+    }
+    .quotation-mark-right {
+        top: 2.5rem;
+        width: 3rem;
+        height: 2.25rem;
+        margin-left: 0.25rem;
+    }
+    .video-container {
+        width: 15em;
+        height: 10.5rem;
+        margin-top: 1rem;
+    }
+    .text-why-we-here {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .about-us-bottom-section {
+        height: 14rem;
+    }
+    .image-text {
+        font-size: 0.2rem;
+        line-height: 0.8rem;
+    }
+    .image-text-container {
+        width: 45%;
+        padding-left: 1.5rem;
+    }
+}
