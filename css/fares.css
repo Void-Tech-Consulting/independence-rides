@@ -72,19 +72,6 @@
     border-left: 1px solid black;
 }
 
-.fares-paragraph {
-    width: 70%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 3.5rem;
-    line-height: 5.0rem;
-    text-align: center;
-}
-
 @media only screen and (max-width: 1200px) {
     .blue-box{
         /* font-size:1.7rem; */

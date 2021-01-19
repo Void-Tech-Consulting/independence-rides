@@ -22,7 +22,7 @@
 Any time of the day and for any reason we are here for you or your loved one. </div>
 </div>
 
-<p class="receiving-rides-paragraph">
+<p class="page-paragraph">
   Our service Is specifically designed for people age 60 & over, 
   and vision impaired adults, age 18 & over.
 </p>
