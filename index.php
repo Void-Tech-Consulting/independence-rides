@@ -24,7 +24,6 @@
   frameborder="0" 
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-<<<<<<< HEAD
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Orienta&display=swap');
@@ -80,7 +79,6 @@
   </div>
 </div>
 
-=======
 <div class="info-icon-list info-icon-list-home">
       <div class="box-top">
         <div class="info-icon-box-gray light-arms-box">
@@ -107,5 +105,4 @@
         </div>
       </div>
     </div>
->>>>>>> justin
 <?php get_footer(); ?>
