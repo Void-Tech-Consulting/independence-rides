@@ -65,9 +65,12 @@ select {
 /*
   Put styles here 
 */
+<<<<<<< HEAD
 
 
 /* Responsive Styling */
+=======
+>>>>>>> justin
 html {
   font-size: 62.5%; }
 @media (min-width: 112.5em) {
@@ -81,6 +84,7 @@ html {
   font-size: 50%; } }
 @media (max-width: 37.5em) {
   html {
+<<<<<<< HEAD
   font-size: 40%; } }
 
 /* NAVBAR STYLING */
@@ -208,3 +212,7 @@ html {
   color: white;
 }
 
+=======
+  font-size: 40%; } 
+}
+>>>>>>> justin

@@ -48,6 +48,7 @@ function add_styles() {
   wp_enqueue_style( "home", get_theme_file_uri('/css/home.css'));
   wp_enqueue_style( "fares", get_theme_file_uri('/css/fares.css'));
   wp_enqueue_style( "receiving-rides", get_theme_file_uri('/css/receiving-rides.css'));
+  wp_enqueue_style( "giving-rides", get_theme_file_uri('/css/giving-rides.css'));
   wp_enqueue_style( "about-us", get_theme_file_uri('/css/about-us.css'));
   wp_enqueue_style( "donate", get_theme_file_uri('/css/donate.css'));
 }

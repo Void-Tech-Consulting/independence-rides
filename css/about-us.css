@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
 }
 
 /* why-we-are-here section */
@@ -275,8 +275,13 @@ html {
     }
 }
 @media only screen and (max-width: 600px) {
+<<<<<<< HEAD
     .about-us-text-box {
         width: 75%;
+=======
+    html {
+        /* font-size: 35%; */
+>>>>>>> justin
     }
     .header-line {
         width: 3.0rem;

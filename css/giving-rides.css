@@ -1,0 +1,183 @@
+ul{
+    list-style-type: none;
+}
+.important-info{
+    width: auto;
+    height: 8.5rem;
+    background-color: #DFF4F3;
+    font-size: 2.6rem;
+    display: flex;
+    align-items: center;
+    padding-left:8%; 
+}
+ul.info-list li::before{
+    content: "\25A0";
+    color: #5C6E93;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 5rem; /* Also needed for space (tweak if needed) */
+    padding-top: 2rem;
+    margin-left: -5rem; /* Also needed for space (tweak if needed) */
+}
+ul.info-list{
+    display:flex;
+    flex-direction:column;
+    font-size: 1.6rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.info-icon-list{
+    margin: 0 auto;
+    margin-top: 6%;
+    width: 50%;
+    min-width: 50%;
+    font-size: 1.6rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.info-icon-list-home{
+    width: 65%;
+    min-width: 65%;
+}
+.info-icon-box{
+    text-align: center;
+    color: #807C7C;
+    background-color: #F1F1F1;
+    width: 30%;
+    min-width: 30%;
+}
+.info-icon-box-gray{
+    text-align: center;
+    color: #807C7C;
+    background-color: #F1F1F1;
+    width:50%;
+    min-width:50%;
+}
+.info-icon-box-white{
+    text-align: center;
+    color: #807C7C;
+    resize: none;
+    background-color: #FFFFFF;
+    width:50%;
+    min-width:50%;
+}
+.info-icon-text{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 10%;
+}
+.info-icon-text-subtitle{
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 10%;
+    color: #000000;
+}
+.info-icon-image{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -23%;
+    margin-bottom: 10%;
+    width:40%;
+}
+.box-bot{
+    display: flex;
+    width:50%;
+    flex-direction: row;
+}
+.box-top{
+    display: flex;
+    width:50%;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1300px) {
+    ul.info-list li::before{
+        width: 4rem; /* Also needed for space (tweak if needed) */
+        margin-left: -4rem; /* Also needed for space (tweak if needed) */
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    ul.info-list li::before{
+        width: 3rem; /* Also needed for space (tweak if needed) */
+        margin-left: -3rem; /* Also needed for space (tweak if needed) */
+    }
+}
+  
+@media only screen and (max-width: 550px) {
+    ul.info-list li::before{
+        width: 2rem; /* Also needed for space (tweak if needed) */
+        padding-top: 1.4rem;
+        margin-left: -2rem; /* Also needed for space (tweak if needed) */
+    }
+    ul.info-list{
+        width: 80%;
+    }
+    .important-info{
+        padding: 0;
+        justify-content: center;
+        height: 6rem;
+    }
+    .info-icon-list{
+        margin-top: 10%;
+        min-width: 85%;
+    }
+    .info-icon-text-subtitle{
+        margin: 0;
+        color: #000000;
+    }
+    .info-icon-text{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .info-icon-text-home{
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .info-icon-list-home{
+        margin-top: 7rem;
+        width: 60%;
+        display:flex;
+        flex-direction:column;
+    }
+    .info-icon-box-gray{
+        text-align: center;
+        color: #807C7C;
+        background-color: #F1F1F1;
+        min-width:40%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .info-icon-box-white{
+        text-align: center;
+        color: #807C7C;
+        background-color: #F1F1F1;
+        min-width:40%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .box-bot{
+        margin-top: 3.4rem;
+        width:auto;
+        /* display:flex;
+        flex-direction: row-reverse; */
+    }
+    .box-top{
+        width:auto;
+    }
+    .light-arms-box{
+        order: 1;
+    }
+    .dollar-box{
+        order: 2;
+    }
+    .light-clock-box{
+        order: 4;
+    }
+    .wheel-box{
+        order: 3;
+    }
+}
