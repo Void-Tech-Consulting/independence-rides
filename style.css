@@ -59,13 +59,15 @@ select {
   font: inherit;
 }
 
-/* html {
-  font-size: 62.5%;
-} */
 /* END Reset */
-/* 
+
+
+/*
   Put styles here 
 */
+
+
+/* Responsive Styling */
 html {
   font-size: 62.5%; }
 @media (min-width: 112.5em) {
@@ -80,3 +82,129 @@ html {
 @media (max-width: 37.5em) {
   html {
   font-size: 40%; } }
+
+/* NAVBAR STYLING */
+
+.nav-wrapper {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+}
+
+.nav {
+  height: 8.6rem;  
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(177, 198, 241, 0.4);
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo { 
+  margin-top: 1rem;
+  width: 30rem;
+  font-size: 2.5rem;
+  font-family: Times New Roman;
+  display: block;
+}
+
+.nav-sub-logo {
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #6C7EA2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  text-decoration: none;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-logo,.nav-links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.nav-links {
+  width: 95rem;
+  display: flex;  
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links > li a{
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  height: 9rem;
+  display:flex;
+  align-items: center;
+}
+
+.nav-links li a:hover {
+  color: #5C6E93;
+  background-color: white;
+}
+
+/* Donate & Contact us */
+.nav-links > li:last-child a, .nav-links > li:nth-last-child(2) a{
+  background-color: #5C6E93;
+  color: white;
+  width: 12.8rem;
+  height: 5rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+.nav-links > li:nth-last-child(2) a:hover, .nav-links > li:last-child a:hover {
+  opacity: 0.71;
+  background-color: #5C6E93;
+  color: white;
+}
+
+
+/* Drop-down menu in nav bar */
+.nav-links li:hover > .sub-menu {
+  display: block;
+}
+
+.nav-links > li:hover > a {
+  background-color: white;
+  color: #5C6E93;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 8.6rem;
+  z-index: 99999;
+}
+
+.sub-menu .menu-item li {
+  font-size: 1.6rem;
+  width: inherit;
+  background-color: white;
+}
+
+.sub-menu .menu-item a {
+  background-color: white;
+}
+
+
+.sub-menu .menu-item a:hover {
+  background-color: #5C6E93;
+  color: white;
+}
+
