@@ -58,6 +58,10 @@ textarea,
 select {
   font: inherit;
 }
+@font-face {
+  font-family: SeoulHangang;
+  src: url(https://www.wfonts.com/font/seoulhangang-m);
+}
 
 /* END Reset */
 
@@ -207,4 +211,3 @@ html {
   background-color: #5C6E93;
   color: white;
 }
-
