@@ -148,6 +148,7 @@ html {
   font-size: 2rem;
   height: 9rem;
   display:flex;
+  top: 50%;
   align-items: center;
 }
 
@@ -196,16 +197,15 @@ html {
   z-index: 99999;
 }
 
+
+
 .sub-menu .menu-item li {
   font-size: 1.6rem;
-  width: inherit;
-  background-color: white;
 }
 
 .sub-menu .menu-item a {
   background-color: white;
-}
-
+} 
 
 .sub-menu .menu-item a:hover {
   background-color: #5C6E93;

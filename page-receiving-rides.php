@@ -14,6 +14,19 @@
     <button class="apply-button" type="button">Apply Now</button>
   </div>
 </div>
+
+<div class="blue-box">
+  <div class="intro-text">We want to make your ride simple and pleasant.</div>
+  <div class="intro-vertline"></div>
+  <div class="intro-text">We are designed for seniors and vision impaired adults. We offer rides for any reason that include arm-through-arm, door-through-door assistance. 
+Any time of the day and for any reason we are here for you or your loved one. </div>
+</div>
+
+<p class="receiving-rides-paragraph">
+  Our service Is specifically designed for people age 60 & over, 
+  and vision impaired adults, age 18 & over.
+</p>
+
 <div class="steps-section">
   <div class="steps-content">
   <div class="steps-header">
@@ -49,17 +62,6 @@
   
 </div>
 
-<p class="receiving-rides-paragraph">
-  Our service Is specifically designed for people age 60 & over, 
-  and vision impaired adults, age 18 & over.
-</p>
-
-<div class="blue-box">
-  <div class="intro-text">We want to make your ride simple and pleasant.</div>
-  <div class="intro-vertline"></div>
-  <div class="intro-text">We are designed for seniors and vision impaired adults. We offer rides for any reason that include arm-through-arm, door-through-door assistance. 
-Any time of the day and for any reason we are here for you or your loved one. </div>
-</div>
 
 </body>
 

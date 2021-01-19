@@ -2,7 +2,7 @@
   get_header();
   require get_template_directory() . '/inc/section_vars.php';
 ?>
-<h1>The Front Page</h1>
+<!-- <h1>The Front Page</h1>
 
 <?php if (get_theme_mod($home_top_img)) { ?>
   <img 
@@ -17,17 +17,26 @@
   </h4>
 <?php } ?>
 
-<!-- Example with default video if $home_top_vid isn't set -->
+Example with default video if $home_top_vid isn't set
 <iframe 
   class="yt-vid" 
   src="<?php echo get_theme_mod($home_top_vid, 'https://www.youtube.com/embed/A0Wyx-OOX4A'); ?>" 
   frameborder="0" 
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+</iframe> -->
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Orienta&display=swap');
-</style>
+
+<section class="home-section-1">
+  <div class="section-1-heading">
+    <h1 class="section-1-title">Independence<br>Rides</h1>
+    <p class="title-text">Dignified transportation for seniors and vision impaired adults in the greater Detroit area</p>
+    <div class="get-started-button">
+      <p>Get Started</p>
+    </div>
+  </div>
+</section>
+<p class="section-1-bottom-text">Transportation freedom need not be a thing of the past.</p>
+<div class=section-1-horizontal-line></div>
 
 <div class="next-step-section">
   <h1 class="next-step-header">Next steps...</h1>
