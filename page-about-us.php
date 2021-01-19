@@ -4,6 +4,10 @@
 
 <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
 
+<section class="home-section-1 about-us-header">
+  <h1 class="section-1-title"> About Us </h1>
+</section>
+
 <div class="about-us-text-box">
   <h1 class="header-text">Why we are here</h1>
   <div class="header-line"></div>

@@ -2,25 +2,24 @@
   get_header(); 
 ?>
 
-<!doctype html>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-
-    <title>Giving Rides</title>
-    <meta name="Giving-Rides" content="Giving-Rides">
-    <link rel="stylesheet" href="giving-rides.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-</head>
-
-<body>
+    <div id="giving-rides-top" class="top-section">
+      <div class="top-info">
+        <h1 class="top-header">Can you lend a hand?</h1>
+        <button class="apply-button" type="button">Apply Now</button>
+      </div>
+    </div>
     <div class="blue-box">
       <div class="intro-text">Independence Rides is entirely volunteer-driven.</div>
       <div class="intro-vertline"></div>
       <div class="intro-text"> All drivers are courteous and trained volunteers who have passed criminal background and driving record checks. </div>
     </div>
+
+    <p class="page-paragraph">
+      Volunteer drivers earn mileage credits which can be kept for their own use, donated back to Independence Rides, 
+      donated to low income riders, or donated to family/ friends who are also members.
+    </p>
+
     <div class="important-info">Important Information</div>
     <ul class="info-list">
       <li class="info-list-item">We make sure that the vehicle and all occupants are fully insured according to Michigan state law. </li>
@@ -42,8 +41,7 @@
         <div class="info-icon-text">Paid drivers, with the same training and background checks, may be used during overnight hours to ensure that all ride requests can be met.</div>
       </div>
     </div>
-</body>
-</html>
+
 
 
 

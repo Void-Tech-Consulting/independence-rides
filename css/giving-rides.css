@@ -1,6 +1,9 @@
-ul{
-    list-style-type: none;
+#giving-rides-top {
+    background: url("../images/giving-rides-cover-pic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .important-info{
     width: auto;
     height: 8.5rem;

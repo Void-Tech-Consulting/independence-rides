@@ -2,7 +2,7 @@
   get_header();
   require get_template_directory() . '/inc/section_vars.php';
 ?>
-<h1>The Front Page</h1>
+<!-- <h1>The Front Page</h1>
 
 <?php if (get_theme_mod($home_top_img)) { ?>
   <img 
@@ -17,18 +17,56 @@
   </h4>
 <?php } ?>
 
-<!-- Example with default video if $home_top_vid isn't set -->
+Example with default video if $home_top_vid isn't set
 <iframe 
   class="yt-vid" 
   src="<?php echo get_theme_mod($home_top_vid, 'https://www.youtube.com/embed/A0Wyx-OOX4A'); ?>" 
   frameborder="0" 
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<<<<<<< HEAD
+</iframe> -->
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Orienta&display=swap');
-</style>
+
+<section class="home-section-1">
+  <div class="section-1-heading">
+    <h1 class="section-1-title">Independence<br>Rides</h1>
+    <p class="title-text">Dignified transportation for seniors and vision impaired adults in the greater Detroit area</p>
+    <div class="get-started-button">
+      <p>Get Started</p>
+    </div>
+  </div>
+</section>
+
+<p class="section-1-bottom-text">Transportation freedom need not be a thing of the past.</p>
+<div class=section-1-horizontal-line></div>
+
+
+<div class="info-icon-list info-icon-list-home">
+      <div class="box-top">
+        <div class="info-icon-box-gray light-arms-box">
+          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/light-arms.png">
+          <div class="info-icon-text-subtitle">Assistance Provided</div>
+          <div class="info-icon-text info-icon-text-home">Arm-through-arm and door-through-door assistance, help with canes, walkers, folding wheelchairs, grocery bags, and packages</div>
+        </div>
+        <div class="info-icon-box-white dollar-box">
+          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/dollar-icon.png">
+          <div class="info-icon-text-subtitle">Payment</div>
+          <div class="info-icon-text info-icon-text-home">Fares paid through our internal account system (no cash or cards needed), trading your unwanted car can help pay for rides, our nonprofit status keeps fares low</div>
+        </div>
+      </div>
+      <div class="box-bot">
+        <div class="info-icon-box-gray light-clock-box">
+          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/light-clock.png">
+          <div class="info-icon-text-subtitle">Availability</div>
+          <div class="info-icon-text info-icon-text-home">Rides available 24/7 for any reason. The current COVID-19 pandemic may drive some restrictions.</div>
+        </div>
+        <div class="info-icon-box-white wheel-box">
+          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png">
+          <div class="info-icon-text-subtitle">Drivers</div>
+          <div class="info-icon-text info-icon-text-home">Drivers are trained community volunteers who have passed criminal background and driving record checks.</div>
+        </div>
+      </div>
+  </div>
+  
 
 <div class="next-step-section">
   <h1 class="next-step-header">Next steps...</h1>
@@ -80,32 +118,4 @@
   </div>
 </div>
 
-=======
-<div class="info-icon-list info-icon-list-home">
-      <div class="box-top">
-        <div class="info-icon-box-gray light-arms-box">
-          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/light-arms.png">
-          <div class="info-icon-text-subtitle">Assistance Provided</div>
-          <div class="info-icon-text info-icon-text-home">Arm-through-arm and door-through-door assistance, help with canes, walkers, folding wheelchairs, grocery bags, and packages</div>
-        </div>
-        <div class="info-icon-box-white dollar-box">
-          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/dollar-icon.png">
-          <div class="info-icon-text-subtitle">Payment</div>
-          <div class="info-icon-text info-icon-text-home">Fares paid through our internal account system (no cash or cards needed), trading your unwanted car can help pay for rides, our nonprofit status keeps fares low</div>
-        </div>
-      </div>
-      <div class="box-bot">
-        <div class="info-icon-box-gray light-clock-box">
-          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/light-clock.png">
-          <div class="info-icon-text-subtitle">Availability</div>
-          <div class="info-icon-text info-icon-text-home">Rides available 24/7 for any reason. The current COVID-19 pandemic may drive some restrictions.</div>
-        </div>
-        <div class="info-icon-box-white wheel-box">
-          <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png">
-          <div class="info-icon-text-subtitle">Drivers</div>
-          <div class="info-icon-text info-icon-text-home">Drivers are trained community volunteers who have passed criminal background and driving record checks.</div>
-        </div>
-      </div>
-    </div>
->>>>>>> justin
 <?php get_footer(); ?>

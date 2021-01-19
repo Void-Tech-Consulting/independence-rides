@@ -69,13 +69,9 @@ select {
 /*
   Put styles here 
 */
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 /* Responsive Styling */
-=======
->>>>>>> justin
 html {
   font-size: 62.5%; }
 @media (min-width: 112.5em) {
@@ -89,7 +85,6 @@ html {
   font-size: 50%; } }
 @media (max-width: 37.5em) {
   html {
-<<<<<<< HEAD
   font-size: 40%; } }
 
 /* NAVBAR STYLING */
@@ -153,6 +148,7 @@ html {
   font-size: 2rem;
   height: 9rem;
   display:flex;
+  top: 50%;
   align-items: center;
 }
 
@@ -201,42 +197,17 @@ html {
   z-index: 99999;
 }
 
+
+
 .sub-menu .menu-item li {
   font-size: 1.6rem;
-  width: inherit;
-  background-color: white;
 }
 
 .sub-menu .menu-item a {
   background-color: white;
-}
-
+} 
 
 .sub-menu .menu-item a:hover {
   background-color: #5C6E93;
   color: white;
 }
-
-=======
-  font-size: 40%; } 
-}
->>>>>>> justin
-=======
-
-html {
-  font-size: 58%; }
-@media (min-width: 112.5em) {
-  html {
-  font-size: 68%; } }
-@media (max-width: 75em) {
-  html {
-  font-size: 50%; } }
-@media (max-width: 56.25em) {
-  html {
-  font-size: 40%; } }
-@media (max-width: 37.5em) {
-  html {
-  font-size: 30%; } }
-
-
->>>>>>> ashique
