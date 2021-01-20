@@ -16,10 +16,12 @@
 </head>
 
 <body>
-    <div class="blue-box">
-            <div class="intro-text">Prices vary based on location, time of day, and number of stops.</div>
-            <div class="intro-vertline"></div>
-            <div class="intro-text">If a driver is requested to wait longer than 15 minutes, a $20 per hour wait fee is charged.</div>
+    <div class="blue-content">
+      <div class="blue-box">
+              <div class="intro-text">Prices vary based on location, time of day, and number of stops.</div>
+              <div class="intro-vertline"></div>
+              <div class="intro-text">If a driver is requested to wait longer than 15 minutes, a $20 per hour wait fee is charged.</div>
+      </div>
     </div>
 </body>
 </html>

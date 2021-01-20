@@ -1,20 +1,20 @@
+/* Blue Box */
+.blue-content{
+    background-color: #EAFCFB;
+}
 .blue-box{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    padding-left:25rem;
-    padding-right:23rem;
-    width:auto;
-    
-    background-color: #EAFCFB;
+    width:70%;
+    margin: 0 auto;
+    min-width: 50rem;
     font-size: 2rem;
     text-align: center;
 }
-
 .intro-text{
     width:45%;
 }
-
 .intro-vertline{
     margin-top: 5rem;
     margin-bottom: 6rem;
@@ -22,18 +22,16 @@
     border-left: 1px solid black;
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
     .blue-box{
-        /* font-size:1.7rem; */
         padding-left: 20rem;
         padding-right: 18rem;
     }
-}
+} */
 @media only screen and (max-width: 800px) {
     .blue-box{
-        /* font-size: 1.3rem; */
-        padding-left: 9rem;
-        padding-right: 8rem;
+        /* padding-left: 9rem;
+        padding-right: 8rem; */
     }
     .intro-text{
         width:40%;
@@ -48,7 +46,6 @@
 }
 @media only screen and (max-width: 500px) {
     .blue-box{
-        /* font-size: 1.2rem; */
         padding-left: 3rem;
         padding-right: 4rem;
     }
@@ -64,9 +61,6 @@
     }
 }
 @media only screen and (max-width: 350px) {
-    .blue-box{
-        /* font-size: 1.1rem; */
-    }
     .intro-text{
         width:45%;
     }    
