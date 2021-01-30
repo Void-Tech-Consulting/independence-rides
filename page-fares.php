@@ -1,5 +1,6 @@
 <?php 
   get_header(); 
+  require get_template_directory() . '/inc/section_vars.php';
 ?>
 
 
@@ -11,15 +12,12 @@
   </div>
   
   <div class="blue-box">
-          <div class="intro-text">Prices vary based on location, time of day, and number of stops.</div>
+          <div class="intro-text"><?php echo get_theme_mod($fares_blue_left)?></div>
           <div class="intro-vertline"></div>
-          <div class="intro-text">If a driver is requested to wait longer than 15 minutes, a $20 per hour wait fee is charged.</div>
+          <div class="intro-text"><?php echo get_theme_mod($fares_blue_right)?></div>
   </div>
 
-  <p class="page-paragraph">
-  Drivers do not usually stay with the client during an appointment or activity. The same or a 
-  different driver will pick them up for their pre-scheduled return ride. 
-  </p>
+  <p class="page-paragraph"><?php echo get_theme_mod($fares_paragraph)?></p>
 
   <div class="header-banner">Charges are as follows</div>
     <div class="steps-section">
