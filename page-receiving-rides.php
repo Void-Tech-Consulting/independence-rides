@@ -17,9 +17,11 @@
 
 <div class="blue-box">
   <div class="intro-text">We want to make your ride simple and pleasant.</div>
+  <div class="intro-text"><?php echo get_theme_mod('blue_box_left_text') ?></div>
   <div class="intro-vertline"></div>
   <div class="intro-text">We are designed for seniors and vision impaired adults. We offer rides for any reason that include arm-through-arm, door-through-door assistance. 
 Any time of the day and for any reason we are here for you or your loved one. </div>
+  <div class="intro-text"><?php echo get_theme_mod('blue_box_right_text') ?></div>
 </div>
 
 <p class="page-paragraph">
@@ -29,6 +31,7 @@ Any time of the day and for any reason we are here for you or your loved one. </
 
 <div class="steps-section">
   <div class="steps-content">
+<<<<<<< Updated upstream
   <div class="steps-header">
     <h2 class="steps-name">Recieving Rides</h2>
     <div class="steps-underline"></div>
@@ -55,6 +58,35 @@ Any time of the day and for any reason we are here for you or your loved one. </
             your safety</h4>
         </li>
       </ul>
+=======
+    <div class="steps-header">
+      <h2 class="steps-name">Receiving Rides</h2>
+      <div class="steps-underline"></div>
+    </div>
+    <div class="steps-body">
+      <img class="steps-img"src="<?php echo get_template_directory_uri();?>/images/receiving-rides-steps.png"> 
+      <div class="steps-timeline">
+        <ul class="steps-timeline-list">
+          <li class="steps-bullet">
+            <h3 class="steps-subtitle">Step One</h3>
+            <h4 class="steps-sub-info">Complete an application to ensure we have complete contact information.</h4>
+            <button class="steps-button" type="button">Application</button>
+          </li>
+          <li class="steps-bullet">
+            <h3 class="steps-subtitle">Step Two</h3>
+            <h4 class="steps-sub-info">Set up a membership for payment options.</h4>
+              <button class="steps-button" type="button">Membership</button>
+          </li>
+          <li class="steps-bullet">
+            <h3 class="steps-subtitle">Step Three</h3>
+            <h4 class="steps-sub-info">Schedule a ride at least 24 hours in advance. 
+              Rides are normally available for any reason, but are limited to medical 
+              appointments and grocery shopping during the Coronavirus pandemic for 
+              your safety</h4>
+          </li>
+        </ul>
+      </div>
+>>>>>>> Stashed changes
     </div>
   </div>
 
