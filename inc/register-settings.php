@@ -80,10 +80,11 @@ function footer_customizer($wp_customize) {
   ));
 
   $wp_customize->add_setting($contact_us_text, array(
-    'default' => 'CARL W. WELLBORN SR. <br>
-    EXECUTIVE DIRECTOR <br>
-    TEL: 313-618-1578 <br>
-    TEL: 313-618-3361 <br>
+    'default' => 
+    'CARL W. WELLBORN SR. 
+    EXECUTIVE DIRECTOR 
+    TEL: 313-618-1578 
+    TEL: 313-618-3361 
     CARL@INDEPENDENCERIDES.COM',
   ));
   $wp_customize->add_control($contact_us_text, array(
@@ -93,8 +94,9 @@ function footer_customizer($wp_customize) {
   ));
 
   $wp_customize->add_setting($our_mission_text, array(
-    'default' => 'Dignified Transportation <br>
-    for Seniors and Vision <br>
+    'default' => 
+    'Dignified Transportation
+    for Seniors and Vision
     Impaired Adults',
   ));
   $wp_customize->add_control($our_mission_text, array(
@@ -104,8 +106,9 @@ function footer_customizer($wp_customize) {
   ));
 
   $wp_customize->add_setting($information_text, array(
-    'default' => 'About Us <br>
-    Receiving Rides <br>
+    'default' => 
+    'About Us
+    Receiving Rides
     Fares',
   ));
   $wp_customize->add_control($information_text, array(
@@ -115,7 +118,8 @@ function footer_customizer($wp_customize) {
   ));
 
   $wp_customize->add_setting($get_involved_text, array(
-    'default' => 'Giving Rides <br>
+    'default' => 
+    'Giving Rides
     Ride Coordinator',
   ));
   $wp_customize->add_control($get_involved_text, array(
