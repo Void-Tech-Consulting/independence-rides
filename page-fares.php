@@ -4,7 +4,8 @@
 ?>
 
 
-  <div id="fares-top" class="top-section">
+  <div id="fares-top" style="background: url(<?php echo get_theme_mod($fares_top_image)?>); background-repeat: no-repeat;
+    background-size: cover;" class="top-section">
     <div class="top-info">
       <h1 class="top-header">How much does a ride cost?</h1>
       <button class="apply-button" type="button">Apply Now</button>
@@ -12,6 +13,7 @@
   </div>
   
   <div class="blue-box">
+          <span id="copy-write"><?php  echo get_theme_mod($fares_blue_left); ?></span>
           <div class="intro-text"><?php echo get_theme_mod($fares_blue_left)?></div>
           <div class="intro-vertline"></div>
           <div class="intro-text"><?php echo get_theme_mod($fares_blue_right)?></div>
