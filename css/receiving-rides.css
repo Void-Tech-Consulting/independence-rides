@@ -7,11 +7,11 @@
     justify-content: center;
 }
 
-#receiving-rides-top {
+/* #receiving-rides-top {
     background: url("../images/receiving-rides-cover-pic.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .top-info {
     display: flex;

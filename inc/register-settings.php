@@ -9,7 +9,7 @@ function home_customizer($wp_customize) {
 
   $wp_customize->add_setting($home_top_vid, array(
     'default' => 'https://www.youtube.com/embed/A0Wyx-OOX4A',
-    'sanitize_callback' => 'sanitize_text_field',
+    'sanitize_callback' => 'sanitize_text_field'
   ));
 
   $wp_customize->add_control($home_top_vid, array(
@@ -17,17 +17,21 @@ function home_customizer($wp_customize) {
     'section' => $home_section,
   ));
 
-  $wp_customize->add_setting($home_top_img);
+  $wp_customize->add_setting($home_top_img, array(
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
   $wp_customize->add_control( new WP_Customize_Image_Control( 
       $wp_customize, 
       $home_top_img, 
       array(
           'label' => 'Top Image',
-          'section' => $home_section
+          'section' => $home_section,
       )
   ));
   // Top Desc
-  $wp_customize->add_setting($home_top_desc);
+  $wp_customize->add_setting($home_top_desc, array(
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
   $wp_customize->add_control($home_top_desc, array(
       'label' => 'Top Description',
       'section' => $home_section,
@@ -37,30 +41,30 @@ function home_customizer($wp_customize) {
 add_action( 'customize_register', 'home_customizer' );
 
 
-function receiving_rides_customizer($wp_customize) {
+function homepage_customizer($wp_customize) {
   require 'section_vars.php';
-  $wp_customize->add_section($receiving_rides_section, array(
-    'title' => 'Receiving Rides'
+  $wp_customize->add_section($homepage_section, array(
+    'title' => 'Homepage Header',
   ));
 
-  $wp_customize->add_setting($blue_box_left_text, array(
-    'default' => 'We want to make your ride simple and pleasant.'
+  $wp_customize->add_setting($homepage_header, array(
+    'sanitize_callback' => 'sanitize_text_field',
+    'default' => 'Independence Rides'
+  ));
+  $wp_customize->add_control($homepage_header, array(
+    'label' => 'Header Text',
+    'section' => $homepage_section
   ));
 
-  $wp_customize->add_control($blue_box_left_text, array(
-    'label' => 'Text',
-    'section' => $receiving_rides_section,
-    'settings' => $blue_box_left_text
+  $wp_customize->add_setting($homepage_header_p, array(
+    'sanitize_callback' => 'sanitize_text_field',
+    'default' => 'Dignified transportation for seniors and vision impaired adults in the greater Detroit area'
+  ));
+  $wp_customize->add_control($homepage_header_p, array(
+    'label' => 'Header Sub-Text',
+    'section' => $homepage_section,
+    'type' => 'textarea'
   ));
 
-  $wp_customize->add_setting($blue_box_right_text, array(
-    'default' => 'We are designed for seniors and vision impaired adults. We offer rides for any reason that include arm-through-arm, door-through-door assistance. 
-    Any time of the day and for any reason we are here for you or your loved one.'
-  ));
-  $wp_customize->add_control($blue_box_right_text, array(
-    'label' => 'Text',
-    'section' => $receiving_rides_section,
-    'settings' => $blue_box_right_text
-  ));
 }
-add_action( 'customize_register', 'receiving_rides_customizer' );
+add_action( 'customize_register', 'homepage_customizer' );
