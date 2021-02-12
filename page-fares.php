@@ -3,25 +3,22 @@
   require get_template_directory() . '/inc/section_vars.php';
 ?>
 
-  <span id="copy-write"><?php  echo get_theme_mod($fares_top_image); ?></span>
-  <div id="fares-top" style="background: url(<?php echo get_theme_mod($fares_top_image)?>); background-repeat: no-repeat;
-    background-size: cover;" class="top-section">
+  <span id="copy-write"><div id="fares-top" style="background: url(<?php echo get_theme_mod($fares_top_image)?>); background-repeat: no-repeat;
+    background-size: cover;" class="top-section"></span>
     <div class="top-info">
       <h1 class="top-header">How much does a ride cost?</h1>
-      <button class="apply-button" type="button">Apply Now</button>
+      <button class="apply-button" type="button" onclick="window.open('<?php echo (get_theme_mod($fares_top_button))?>','_blank')">Apply Now</button>
     </div>
   </div>
   
   <div class="blue-box">
           <span class="intro-text" id="copy-write"><?php  echo get_theme_mod($fares_blue_left); ?></span>
-          <div ><?php echo get_theme_mod($fares_blue_left)?></div>
           <div class="intro-vertline"></div>
           <span class="intro-text" id="copy-write"><?php  echo get_theme_mod($fares_blue_right); ?></span>
-          <div class="intro-text"><?php echo get_theme_mod($fares_blue_right)?></div>
   </div>
 
-  <span class="page-paragraph" id="copy-write"><?php  echo get_theme_mod($fares_paragraph); ?></span>
-  <p class="page-paragraph"><?php echo get_theme_mod($fares_paragraph)?></p>
+  <span id="copy-write"><p class="page-paragraph"><?php  echo get_theme_mod($fares_paragraph); ?></p></span>
+  <!-- <p class="page-paragraph"><?php echo get_theme_mod($fares_paragraph)?></p> -->
 
   <div class="header-banner">Charges are as follows</div>
     <div class="steps-section">
@@ -30,11 +27,13 @@
           <div class="fares-steps-timeline">
             <ul class="steps-timeline-list">
               <li class="steps-bullet">
-                <h3 class="steps-subtitle">Rides starting and ending within the initial service area (see map below)</h3>
+                <span id="copy-write"><h3 class="steps-subtitle"><?php  echo get_theme_mod($fares_charges_bullet1); ?></h3></span>
+                <!-- <h3 class="steps-subtitle">Rides starting and ending within the initial service area (see map below)</h3> -->
                 <ul class="sub-list">
-                  <li class="sub-list-item">Flat $10 fare (one way)</li>
+                  <span id="copy-write"><li class="sub-list-item"><?php  echo get_theme_mod($fares_charges_minibullet1); ?></li></span>
+                  <!-- <li class="sub-list-item">Flat $10 fare (one way)</li> -->
                 </ul>
-                <img id="fares-map" src="<?php echo get_template_directory_uri();?>/images/service-area.png"> 
+                <span id="copy-write"><img id="fares-map" style="background: url(<?php echo get_theme_mod($fares_charges_map)?>); background-repeat: no-repeat; background-size: contain;"></span>
               </li>
               <li class="steps-bullet">
                 <h3 class="steps-subtitle">All other rides</h3>
