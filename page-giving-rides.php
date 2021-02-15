@@ -1,5 +1,5 @@
 <?php 
-  get_header(); 
+  get_header();
 ?>
 
 
@@ -9,10 +9,13 @@
         <button class="apply-button" type="button">Apply Now</button>
       </div>
     </div>
+    
     <div class="blue-box">
+      <span id="copy-write"><?php echo get_theme_mod($giving_rides_blue_box_left); ?></span>
       <div class="intro-text"><?php echo get_theme_mod('giving_rides_blue_box_left') ?></div>
       <div class="intro-vertline"></div>
       <div class="intro-text"><?php echo get_theme_mod('giving_rides_blue_box_right') ?></div>
+      <span id="copy-write"><?php echo get_theme_mod($giving_rides_blue_box_right); ?></span>
     </div>
 
     <p class="page-paragraph">
