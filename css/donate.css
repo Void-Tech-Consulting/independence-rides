@@ -3,7 +3,33 @@
 .donate-header {
     color: blue;
     font-family: 'Roboto', sans-serif;
-    
+}
+
+.donate-blue-box-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 226.5rem;
+}
+
+.donate-blue-box-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 110%;
+    height: 57.2rem;
+}
+
+.donate-box-text {
+    font-size: 4rem;
+    line-height: 5.45rem;
+    width: 75%;
+}
+
+.donate-box-line {
+    height: 0;
+    width: 10%;
 }
 
 

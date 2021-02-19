@@ -39,7 +39,8 @@ function giving_rides_customizer($wp_customize) {
   
     $wp_customize->add_setting($giving_rides_blue_box_left, array(
       'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'Independence Rides is entirely volunteer-driven.'
+      'default' => 'Independence Rides is entirely volunteer-driven.',
+      'transport' => 'postMessage'
     ));
   
     $wp_customize->add_control($giving_rides_blue_box_left, array(

@@ -10,6 +10,7 @@
       </div>
     </div>
     
+    
     <div class="blue-box">
       <span id="copy-write"><?php echo get_theme_mod($giving_rides_blue_box_left); ?></span>
       <div class="intro-text"><?php echo get_theme_mod('giving_rides_blue_box_left') ?></div>
