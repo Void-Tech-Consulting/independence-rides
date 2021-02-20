@@ -1,35 +1,60 @@
 /* donate css styles */
 
-.donate-header {
-    color: blue;
-    font-family: 'Roboto', sans-serif;
-}
-
 .donate-blue-box-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 40%;
     height: 226.5rem;
+    background-color: #EAFCFB;
+    ;
 }
 
 .donate-blue-box-middle {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 110%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 115%;
     height: 57.2rem;
+    background-color: #5C6E93;
 }
 
 .donate-box-text {
+    margin-top: 20%;
     font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
     line-height: 5.45rem;
-    width: 75%;
+    width: 85%;
+    color: #FFFDFD;
+    text-align: center;
 }
 
 .donate-box-line {
+    margin-bottom: 20%;
     height: 0;
     width: 10%;
+    border: 1px solid #FFFDFD;
+}
+
+@media only screen and (max-width: 1000px) {
+    .donate-blue-box-section {
+        height: 200rem;
+    }
+    .donate-blue-box-middle {
+        height: 45rem;
+    }
+    .donate-box-text {
+        font-size: 3rem;
+        line-height: 4.2rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .donate-blue-box-section {
+        display: none;
+    }
 }
 
 

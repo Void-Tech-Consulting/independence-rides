@@ -24,4 +24,7 @@
   $giving_rides_header_image = 'giving_rides_header_image';
   $receiving_rides_panel = 'receiving_rides_panel';
   $giving_rides_panel = 'giving_rides_panel';
+  $donate_section = 'donate_section';
+  $donate_panel = 'donate_panel';
+  $donate_header_image = 'donate_header_image';
 ?>

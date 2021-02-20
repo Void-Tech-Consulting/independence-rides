@@ -4,5 +4,6 @@
   require get_template_directory() . '/inc/register-settings.php';
   require get_template_directory() . '/inc/register-settings-receiving-rides.php';
   require get_template_directory() . '/inc/register-settings-giving-rides.php';
+  require get_template_directory() . '/inc/register-settings-donate.php';
 ?>
 
