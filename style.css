@@ -70,6 +70,10 @@ select {
   Put styles here 
 */
 
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 
 /* Responsive Styling */
 html {
