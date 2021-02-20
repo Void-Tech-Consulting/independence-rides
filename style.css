@@ -91,6 +91,87 @@ html {
   html {
   font-size: 40%; } }
 
+
+
+/* FOOTER STYLING */
+
+
+.footer
+{
+    margin-top: 10rem;
+    width: 100%;
+    height: 40rem;
+    max-height: 386px;
+    background-color: #DFF4F3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rides-contact
+{
+    display: inline-block;
+}
+
+.footer-heading
+{
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+.ITN-footer
+{
+    color: #6C7EA2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.contact-footer-title
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #5C6E93;
+    margin-top: 3rem;
+}
+.footer-title
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #5C6E93;
+    margin-top: 8rem;
+}
+
+.footer-contact
+{
+    font-size: 2rem;
+    color: #5C6E93;
+}
+
+.info-footer
+{
+    color: #807C7C;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+}
+
+.footer-section
+{
+    max-width: 215px;
+    display: inline-block;
+}
+
+.transparency-seal
+{
+    max-height: 215px;
+    max-width: 218px;
+}
+.footer-image
+{
+    margin-top: 5rem;
+}
+
+/* END OF FOOTER STYLING */
+
 /* NAVBAR STYLING */
 
 .nav-wrapper {
@@ -202,7 +283,6 @@ html {
 }
 
 
-
 .sub-menu .menu-item li {
   font-size: 1.6rem;
 }
@@ -215,3 +295,77 @@ html {
   background-color: #5C6E93;
   color: white;
 }
+
+.dashicons-menu-alt3{
+  display: none;
+  background-color: #555;
+  padding: 20px;
+}
+/* mobile breakpoint start */
+@media screen and (max-width: 750px) {
+  /* navbar css for mobile start */
+  .dashicons-menu-alt3 {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav-links {
+    background-color: DFF4F3;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 55px;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+    z-index: 1000;
+  }
+
+  .menu-item {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  .menu-item a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links > li a{ 
+    height: 6rem;
+  }
+
+  /* Drop-down menu in nav bar */
+  
+  .nav-links li:hover > .sub-menu {
+    display: block;
+    top: 110px;
+    width: 100%;
+  }
+
+  /* Donate/Contact Us Buttons */
+  .nav-links > li:last-child a, .nav-links > li:nth-last-child(2) a {
+    width: 100%;
+    background-color: DFF4F3;
+    margin: 0 0 0 0;
+    height: 7rem;
+    font-size: 2rem;
+    color: #5C6E93;
+  }
+
+  .nav-links.open {
+    max-height: 100vh;
+  }
+
+  .footer {
+    display: none;
+  }
+  /* navbar css for mobile end */
+}
+/* mobile breakpoint end */
+

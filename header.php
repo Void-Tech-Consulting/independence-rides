@@ -34,5 +34,6 @@
       );
       wp_nav_menu($args);
       ?>
+     <span class="dashicons dashicons-menu-alt3"></span>
     </div>
   </div>
