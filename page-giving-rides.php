@@ -49,7 +49,6 @@
     </div>
   </div>
 </div>
-
     <div class="important-info">Important Information</div>
     <ul class="info-list">
       <li class="info-list-item">We make sure that the vehicle and all occupants are fully insured according to Michigan state law. </li>

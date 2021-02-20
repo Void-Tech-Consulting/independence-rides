@@ -11,44 +11,34 @@
 <div class="about-us-text-box">
   <h1 class="header-text">Why we are here</h1>
   <div class="header-line"></div>
-  <p class="about-us-paragraph">
-    We all tend to take the independence that comes from driving
-    for granted, until it’s gone. When that happens, our world 
-    suddenly seems small. This is exactly the plight of thousands 
-    of seniors and vision impaired adults in our communities across 
-    metropolitan Detroit.  Independence Rides is all about dignified 
-    transportation for seniors and vision impaired adults in the 
-    greater Detroit area. 
-  </p>
+  <p class="about-us-paragraph"><span id="copy-write"><?php  echo get_theme_mod('about_us_top_desc'); ?></span><?php echo get_theme_mod('about_us_top_desc')?></p>
 </div>
 
 <div class="about-us-middle-section">
   <div class="quote-container">
     <img class="quotation-mark-left" src="<?php echo get_template_directory_uri();?>/images/quotation marks left.png">
     <p class="quotation-text">
-      Just getting around from day to day need not be so difficult.
+    <span id="copy-write"><?php  echo get_theme_mod('about_us_quote'); ?></span>
+    <?php echo get_theme_mod('about_us_quote')?>
     </p>
     <img class="quotation-mark-right" src="<?php echo get_template_directory_uri();?>/images/quotation marks right.png">
   </div>
   <div class="video-container">
-    <img id="video-screenshot" src="<?php echo get_template_directory_uri();?>/images/video pic.png">
+  <span id="copy-write"><?php  echo get_theme_mod('about_us_video'); ?></span>
+    <iframe id="video-screenshot" src="<?php echo get_theme_mod('about_us_video')?>"></iframe>
   </div>
 </div>
 
 <p class="text-why-we-here">
-That's why we're here. Dignified transportation freedom 
-for seniors and vision impaired adults.
+<span id="copy-write"><?php  echo get_theme_mod('about_us_mid_paragraph'); ?></span>
+<?php echo get_theme_mod('about_us_mid_paragraph')?>
 </p>
 
-<div class="about-us-bottom-section">
+<div class="about-us-bottom-section" style="background-image: url(<?php echo wp_get_attachment_url( get_theme_mod( 'about_us_image' ) )?>)">
   <div class="image-text-container">
     <p class="image-text">
-    The rides are available 24 hours a day, 7 days a week, and can be 
-    scheduled for any reason. 
-    <br><br>
-    A key feature is ‘door-through-door’ and ‘arm-through-arm’ assistance. 
-    This means we provide personal walking assistance as needed from the 
-    departure door to the car, and from the car through the destination door.
+    <span id="copy-write"><?php  echo get_theme_mod('about_us_image_text'); ?></span>
+    <?php echo nl2br(get_theme_mod('about_us_image_text'))?>
     </p>
   </div>
 </div>

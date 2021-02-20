@@ -106,13 +106,13 @@
 /* bottom section in about-us page */
 
 .about-us-bottom-section {
-    background-image: url(../images/about\ us\ info.png);
+    /* background-image: url(../images/about\ us\ info.png); */
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     margin: 0 auto;
     width: 60%;
-    height: 50rem;
+    /* height: 50rem; */
 }
 .image-text-container {
     width: 45%;
