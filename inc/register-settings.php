@@ -31,7 +31,8 @@ function home_customizer($wp_customize) {
   $wp_customize->add_control($home_top_desc, array(
       'label' => 'Top Description',
       'section' => $home_section,
-      'type' => 'textarea'
+      'type' => 'textarea',
   ));
 }
 add_action( 'customize_register', 'home_customizer' );
+
