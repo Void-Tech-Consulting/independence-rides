@@ -4,5 +4,6 @@
   require get_template_directory() . '/inc/register-settings.php';
   require get_template_directory() . '/inc/register-settings-fares.php';
   require get_template_directory() . '/inc/register-settings-footer.php';
+  require get_template_directory() . '/inc/register-settings-home.php';
 ?>
 

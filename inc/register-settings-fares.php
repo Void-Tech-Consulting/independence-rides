@@ -121,6 +121,7 @@ function fares_customizer($wp_customize) {
   $wp_customize->add_setting($fares_charges_bullet1, array(
     'default' => 'Rides starting and ending within the initial service area (see map below)',
     'sanitize_callback' => 'sanitize_text_field',
+    'transport' => 'postMessage'
   ));
   $wp_customize->add_control($fares_charges_bullet1, array(
     'label' => 'First bullet title',

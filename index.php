@@ -74,46 +74,34 @@ Example with default video if $home_top_vid isn't set
   <div class="page-box-container">
       <div class="next-step-box" id="giving-rides-box">
         <div class="box-header box-header-black">Giving Rides</div>
-        <p class="box-description box-description-black">
-        Join our team of volunteers and give back to your community.
-        </p>
-        <button type="button" class="learn-more-button learn-more-button-black">Learn more</button>
+        <span id="copy-write"><p class="box-description box-description-black"><?php  echo get_theme_mod($giving_box); ?></p></span>
+        <button type="button" class="learn-more-button learn-more-button-black"><a href="<?php echo get_permalink(get_theme_mod($home_giving_link)); ?>">Learn more</a></button>
       </div>
       <div class="next-step-box" id="receiving-rides-box">
         <div class="box-header box-header-white">Receiving Rides</div>
-        <p class="box-description box-description-white">
-        Become an Independence Rides member.
-        </p>
-        <button type="button" class="learn-more-button learn-more-button-white">Learn more</button>
+        <span id="copy-write"><p class="box-description box-description-white"><?php  echo get_theme_mod($receiving_box); ?></p></span>
+        <button type="button" class="learn-more-button learn-more-button-white"><a href="<?php echo get_permalink(get_theme_mod($home_receiving_link)); ?>">Learn more</a></button>
       </div>
       <div class="next-step-box" id="contact-us-box">
         <div class="box-header box-header-black">Contact Us</div>
-        <p class="box-description box-description-black">
-        We’re here to answer any questions you have.
-        </p>
-        <button type="button" class="learn-more-button learn-more-button-black">Learn more</button>
+        <span id="copy-write"><p class="box-description box-description-black"><?php  echo get_theme_mod($contact_box); ?></p></span>
+        <button type="button" class="learn-more-button learn-more-button-black"><a href="<?php echo get_permalink(get_theme_mod($home_contact_link)); ?>">Learn more</a></button>
       </div>
     
       <div class="next-step-box" id="donate-page-box">
         <div class="box-header box-header-white">Donate</div>
-        <p class="box-description box-description-white">
-        Help us grow to serve more of our community.
-        </p>
-        <button type="button" class="learn-more-button learn-more-button-white">Learn more</button>
+        <span id="copy-write"><p class="box-description box-description-white"><?php  echo get_theme_mod($donate_box); ?></p></span>
+        <button type="button" class="learn-more-button learn-more-button-white"><a href="<?php echo get_permalink(get_theme_mod($home_donate_link)); ?>">Learn more</a></button>
       </div>
       <div class="next-step-box" id="fares-page-box">
         <div class="box-header box-header-black">Fares</div>
-        <p class="box-description box-description-black">
-        Membership fee and ride fares.
-        </p>
-        <button type="button" class="learn-more-button learn-more-button-black">Learn more</button>
+        <span id="copy-write"><p class="box-description box-description-black"><?php  echo get_theme_mod($fares_box); ?></p></span>
+        <button type="button" class="learn-more-button learn-more-button-black"><a href="<?php echo get_permalink(get_theme_mod($home_fares_link)); ?>">Learn more</a></button>
       </div>
       <div class="next-step-box" id="volunteer-with-us-box">
         <div class="box-header box-header-white">Volunteer with Us</div>
-        <p class="box-description box-description-white">
-        Assist us in ensuring our rides run smoothly.
-        </p>
-        <button type="button" class="learn-more-button learn-more-button-white">Learn more</button>
+        <span id="copy-write"><p class="box-description box-description-white"><?php  echo get_theme_mod($volunteer_box); ?></p></span>
+        <button type="button" class="learn-more-button learn-more-button-white"><a href="<?php echo get_permalink(get_theme_mod($home_volunteer_link)); ?>">Learn more</a></button>
       </div>
   </div>
 </div>

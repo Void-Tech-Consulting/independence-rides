@@ -20,5 +20,25 @@
   $contact_us_text = 'contact_us_text';
   $our_mission_text = 'our_mission_text';
   $information_text = 'information_text';
+  $foot_about_us_link = 'foot_about_us_link';
+  $foot_receiving_link = 'foot_receiving_link';
+  $foot_fares_link = 'foot_fares_link';
+  $foot_giving_link = 'foot_giving_link';
+  $greystar_link = 'greystar_link';
+
+  $home_giving_link = 'home_giving_link';
+  $home_receiving_link = 'home_receiving_link';
+  $home_contact_link = 'home_contact_link';
+  $home_donate_link = 'home_donate_link';
+  $home_fares_link = 'home_fares_link';
+  $home_volunteer_link = 'home_volunteer_link';
   $get_involved_text = 'get_involved_text';
+  $home_panel = 'home_panel';
+  $link_boxes = 'link_boxes';
+  $giving_box = 'giving_box';
+  $receiving_box = 'receiving_box';
+  $contact_box = 'contact_box';
+  $donate_box = 'donate_box';
+  $fares_box = 'fares_box';
+  $volunteer_box = 'volunteer_box';
 ?>
