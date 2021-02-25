@@ -24,6 +24,35 @@
       donated to low income riders, or donated to family/ friends who are also members.
     </p>
 
+    <div class="steps-section">
+  <div class="steps-content">
+    <div class="steps-header">
+      <h2 class="steps-name">Giving Rides</h2>
+      <div class="steps-underline"></div>
+    </div>
+    <div class="steps-body">
+      <img class="steps-img"src="<?php echo get_template_directory_uri();?>/images/giving-rides-steps.png"> 
+      <div class="steps-timeline">
+        <ul class="steps-timeline-list">
+          <li class="steps-bullet">
+            <h3 class="steps-subtitle">Step One</h3>
+            <h4 class="steps-sub-info">Complete an application to ensure we have complete contact information.</h4>
+            <button class="steps-button" type="button">Application</button>
+          </li>
+          <li class="steps-bullet">
+            <h3 class="steps-subtitle">Step Two</h3>
+            <h4 class="steps-sub-info">Pass criminal background and driving record checks and complete training.</h4>
+            <br>
+          </li>
+          <li class="steps-bullet">
+            <h3 class="steps-subtitle">Step Three</h3>
+            <h4 class="steps-sub-info">Provide rides when requested and earn mileage credits. </h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="important-info">Important Information</div>
     <ul class="info-list">
       <li class="info-list-item">We make sure that the vehicle and all occupants are fully insured according to Michigan state law. </li>
