@@ -1,8 +1,8 @@
 
 #fares-top {
-    background: url("../images/fares-cover-photo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background: url("../images/fares-cover-photo.png"); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 }
 .header-banner {
     background-color: #5C6E93;
@@ -46,6 +46,8 @@
 
 #fares-map {
     margin-bottom: 3rem;
+    height: 55%;
+    width:100%;
 }
 
 .blue-box{

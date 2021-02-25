@@ -68,6 +68,7 @@ function homepage_customizer($wp_customize) {
 
 }
 add_action( 'customize_register', 'homepage_customizer' );
+
 // Example of how to use a repeatable box
 
 function example_repeatable_customizer($wp_customize) {
