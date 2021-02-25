@@ -17,5 +17,14 @@
   $about_us_image_text = 'about_us_image_text';
   $about_us_image = 'about_us_image';
   $about_us_panel = 'about_us_panel';
-
+  $main_page_panel = 'main_page_panel';
+  $main_page_middle_section = 'main_page_middle_section';
+  $info_card_1_title = 'info_card_1_title';
+  $info_card_2_title = 'info_card_2_title';
+  $info_card_3_title = 'info_card_3_title';
+  $info_card_4_title = 'info_card_4_title';
+  $info_card_1_desc = 'info_card_1_desc';
+  $info_card_2_desc = 'info_card_2_desc';
+  $info_card_3_desc = 'info_card_3_desc';
+  $info_card_4_desc = 'info_card_4_desc';
 ?>
