@@ -1,18 +1,22 @@
 <?php 
-  get_header(); 
+  get_header();
 ?>
 
 
-    <div id="giving-rides-top" class="top-section">
+    <div id="giving-rides-top" class="top-section" style="background: url(<?php echo get_theme_mod('giving_rides_header_image') ?>); background-repeat: no-repeat; background-size: cover;">
       <div class="top-info">
         <h1 class="top-header">Can you lend a hand?</h1>
         <button class="apply-button" type="button">Apply Now</button>
       </div>
     </div>
+    
+    
     <div class="blue-box">
-      <div class="intro-text">Independence Rides is entirely volunteer-driven.</div>
+      <span id="copy-write"><?php echo get_theme_mod($giving_rides_blue_box_left); ?></span>
+      <div class="intro-text"><?php echo get_theme_mod('giving_rides_blue_box_left') ?></div>
       <div class="intro-vertline"></div>
-      <div class="intro-text"> All drivers are courteous and trained volunteers who have passed criminal background and driving record checks. </div>
+      <div class="intro-text"><?php echo get_theme_mod('giving_rides_blue_box_right') ?></div>
+      <span id="copy-write"><?php echo get_theme_mod($giving_rides_blue_box_right); ?></span>
     </div>
 
     <p class="page-paragraph">
