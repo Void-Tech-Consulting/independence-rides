@@ -4,6 +4,45 @@
   $home_top_img = 'home_top_img';
   $home_top_desc = 'home_top_desc';
 
+  $fares_panel = 'fares_panel';
+  $fares_top_image = 'fares_top_image';
+  $fares_top = 'fares_top';
+  $fares_top_button = 'fares_top_button';
+  $fares_blue_box = 'fares_blue_box';
+  $fares_middle = 'fares_middle';
+  $fares_charges = 'fares_charges';
+  $fares_paragraph = 'fares_paragraph';
+  $fares_blue_left = 'fares_blue_left';
+  $fares_blue_right = 'fares_blue_right';
+  $fares_charges_bullet1 = 'fares_charges_bullet1';
+  $fares_charges_minibullet1 = 'fares_charges_minibullet1';
+  $fares_charges_map = 'fares_charges_map';
+  $footer_section = 'footer_section';
+  $contact_us_text = 'contact_us_text';
+  $our_mission_text = 'our_mission_text';
+  $information_text = 'information_text';
+  $foot_about_us_link = 'foot_about_us_link';
+  $foot_receiving_link = 'foot_receiving_link';
+  $foot_fares_link = 'foot_fares_link';
+  $foot_giving_link = 'foot_giving_link';
+  $greystar_link = 'greystar_link';
+
+  $home_giving_link = 'home_giving_link';
+  $home_receiving_link = 'home_receiving_link';
+  $home_contact_link = 'home_contact_link';
+  $home_donate_link = 'home_donate_link';
+  $home_fares_link = 'home_fares_link';
+  $home_volunteer_link = 'home_volunteer_link';
+  $get_involved_text = 'get_involved_text';
+  $home_panel = 'home_panel';
+  $link_boxes = 'link_boxes';
+  $giving_box = 'giving_box';
+  $receiving_box = 'receiving_box';
+  $contact_box = 'contact_box';
+  $donate_box = 'donate_box';
+  $fares_box = 'fares_box';
+  $volunteer_box = 'volunteer_box';
+
   $example_section = 'example_section';
   $example_repeater = 'example_repeater';
 

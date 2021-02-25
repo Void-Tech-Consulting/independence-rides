@@ -2,6 +2,9 @@
   require get_template_directory() . '/inc/example-post-type.php';
   require get_template_directory() . '/inc/enqueue-scripts.php';
   require get_template_directory() . '/inc/register-settings.php';
+  require get_template_directory() . '/inc/register-settings-fares.php';
+  require get_template_directory() . '/inc/register-settings-footer.php';
+  require get_template_directory() . '/inc/register-settings-home.php';
   require get_template_directory() . '/inc/register-settings-about-us.php';
   require get_template_directory() . '/inc/register-settings-index.php';
   require get_template_directory() . '/inc/customizer.php';
