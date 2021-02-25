@@ -5,5 +5,10 @@
   require get_template_directory() . '/inc/register-settings-fares.php';
   require get_template_directory() . '/inc/register-settings-footer.php';
   require get_template_directory() . '/inc/register-settings-home.php';
+  require get_template_directory() . '/inc/register-settings-about-us.php';
+  require get_template_directory() . '/inc/register-settings-index.php';
+  require get_template_directory() . '/inc/customizer.php';
+  require get_template_directory() . '/inc/template_functions.php';
+  wp_enqueue_script( 'nav', get_template_directory_uri() . '/js/nav.js',   array( 'jquery' ) );
 ?>
 
