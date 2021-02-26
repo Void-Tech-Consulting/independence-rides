@@ -14,10 +14,7 @@
   $step_two_description = 'step_two_description';
   $step_three_description = 'step_three_description';
   $steps_img = 'steps_img';
-  $homepage_section = 'homepage_section';
-  $homepage_header_img = 'homepage_header_img';
-  $homepage_header = 'homepage_header';
-  $homepage_header_p = 'homepage_header_p';
+ 
   $receiving_rides_section = 'receiving_rides_section';
   $giving_rides_section = 'giving_rides_section';
   $receiving_rides_header_image = 'receiving_rides_header_image';
@@ -58,14 +55,6 @@
   $home_fares_link = 'home_fares_link';
   $home_volunteer_link = 'home_volunteer_link';
   $get_involved_text = 'get_involved_text';
-  $home_panel = 'home_panel';
-  $link_boxes = 'link_boxes';
-  $giving_box = 'giving_box';
-  $receiving_box = 'receiving_box';
-  $contact_box = 'contact_box';
-  $donate_box = 'donate_box';
-  $fares_box = 'fares_box';
-  $volunteer_box = 'volunteer_box';
 
   $example_section = 'example_section';
   $example_repeater = 'example_repeater';
@@ -80,14 +69,27 @@
   $about_us_image_text = 'about_us_image_text';
   $about_us_image = 'about_us_image';
   $about_us_panel = 'about_us_panel';
-  $main_page_panel = 'main_page_panel';
-  $main_page_middle_section = 'main_page_middle_section';
-  $info_card_1_title = 'info_card_1_title';
-  $info_card_2_title = 'info_card_2_title';
-  $info_card_3_title = 'info_card_3_title';
-  $info_card_4_title = 'info_card_4_title';
-  $info_card_1_desc = 'info_card_1_desc';
-  $info_card_2_desc = 'info_card_2_desc';
-  $info_card_3_desc = 'info_card_3_desc';
-  $info_card_4_desc = 'info_card_4_desc';
+
+
+  $home_panel = 'home_panel';
+  $home_header = 'home_header';
+  $home_header_img = 'home_header_img';
+  $home_header_title = 'home_header_title';
+  $home_header_p = 'home_header_p';
+  $home_link_boxes = 'home_link_boxes';
+  $home_giving_box = 'home_giving_box';
+  $home_receiving_box = 'home_receiving_box';
+  $home_contact_box = 'home_contact_box';
+  $home_donate_box = 'home_donate_box';
+  $home_fares_box = 'home_fares_box';
+  $home_volunteer_box = 'home_volunteer_box';
+  $home_cards = 'home_cards';
+  $home_info_card_1_title = 'home_info_card_1_title';
+  $home_info_card_2_title = 'home_info_card_2_title';
+  $home_info_card_3_title = 'home_info_card_3_title';
+  $home_info_card_4_title = 'home_info_card_4_title';
+  $home_info_card_1_desc = 'home_info_card_1_desc';
+  $home_info_card_2_desc = 'home_info_card_2_desc';
+  $home_info_card_3_desc = 'home_info_card_3_desc';
+  $home_info_card_4_desc = 'home_info_card_4_desc';
 ?>

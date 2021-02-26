@@ -1,5 +1,6 @@
 <?php 
   get_header();
+  require get_template_directory() . '/inc/section_vars.php';
 ?>
 
 
@@ -12,11 +13,14 @@
     
     
     <div class="blue-box">
-      <span id="copy-write"><?php echo get_theme_mod($giving_rides_blue_box_left); ?></span>
-      <div class="intro-text"><?php echo get_theme_mod('giving_rides_blue_box_left') ?></div>
+      <div class="intro-text">
+        <span id="copy-write"> <?php echo get_theme_mod($giving_rides_blue_box_left)?> </span>
+      </div>
       <div class="intro-vertline"></div>
-      <div class="intro-text"><?php echo get_theme_mod('giving_rides_blue_box_right') ?></div>
-      <span id="copy-write"><?php echo get_theme_mod($giving_rides_blue_box_right); ?></span>
+      <div class="intro-text">
+        <span id="copy-write"> <?php echo get_theme_mod($giving_rides_blue_box_right)?> </span>
+      </div>
+      
     </div>
 
     <p class="page-paragraph">
