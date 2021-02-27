@@ -8,8 +8,16 @@ function receiving_rides_customizer($wp_customize) {
       'title' => 'Receiving Rides'
     ));
 
-  $wp_customize->add_section($receiving_rides_section, array(
-    'title' => 'Receiving Rides',
+  $wp_customize->add_section($receiving_rides_cover_section, array(
+    'title' => 'Cover',
+    'panel' => 'receiving_rides_panel'
+  ));
+  $wp_customize->add_section($receiving_rides_middle_section, array(
+    'title' => 'Middle',
+    'panel' => 'receiving_rides_panel'
+  ));
+  $wp_customize->add_section($receiving_rides_steps_section, array(
+    'title' => 'Steps',
     'panel' => 'receiving_rides_panel'
   ));
 
@@ -20,7 +28,7 @@ function receiving_rides_customizer($wp_customize) {
 
   $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $receiving_rides_header_image, array(
     'label' => 'Image',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_cover_section,
     'settings' => $receiving_rides_header_image,
     'button_labels' => array(
       'select' => 'Select Image',
@@ -34,7 +42,7 @@ function receiving_rides_customizer($wp_customize) {
   )));
 
   $wp_customize->selective_refresh->add_partial($receiving_rides_header_image, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#cover-img',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -45,14 +53,14 @@ function receiving_rides_customizer($wp_customize) {
   ));
 
   $wp_customize->add_control($blue_box_left_text, array(
-    'label' => 'Text',
+    'label' => 'Blue Box Left Text',
     'type' => 'textarea',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_middle_section,
     'settings' => $blue_box_left_text
   ));
 
   $wp_customize->selective_refresh->add_partial($blue_box_left_text, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#blue-box-left',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -62,14 +70,31 @@ function receiving_rides_customizer($wp_customize) {
     Any time of the day and for any reason we are here for you or your loved one.'
   ));
   $wp_customize->add_control($blue_box_right_text, array(
-    'label' => 'Text',
+    'label' => 'Blue Box Right Text',
     'type' => 'textarea',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_middle_section,
     'settings' => $blue_box_right_text
   ));
 
   $wp_customize->selective_refresh->add_partial($blue_box_right_text, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#blue-box-right',
+    'render_callback' => 'check_copy_right_text'
+  ));
+
+  $wp_customize->add_setting($receiving_rides_middle_paragraph, array(
+    'sanitize_callback' => 'sanitize_text_field',
+    'default' => 'Our service Is specifically designed for people age 60 & over, 
+    and vision impaired adults, age 18 & over.'
+  ));
+  $wp_customize->add_control($receiving_rides_middle_paragraph, array(
+    'label' => 'Paragraph',
+    'type' => 'textarea',
+    'section' => $receiving_rides_middle_section,
+    'settings' => $receiving_rides_middle_paragraph
+  ));
+
+  $wp_customize->selective_refresh->add_partial($receiving_rides_middle_paragraph, array(
+    'selector' => 'span#middle-paragraph',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -79,7 +104,7 @@ function receiving_rides_customizer($wp_customize) {
   ));
   $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $steps_img, array(
     'label' => 'Image',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_steps_section,
     'settings' => $steps_img,
     'button_labels' => array(
       'select' => 'Select Image',
@@ -93,7 +118,7 @@ function receiving_rides_customizer($wp_customize) {
   )));
 
   $wp_customize->selective_refresh->add_partial($steps_img, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#steps-img',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -103,12 +128,12 @@ function receiving_rides_customizer($wp_customize) {
   ));
   $wp_customize->add_control($timeline_step_one, array(
     'label' => 'Header',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_steps_section,
     'settings' => $timeline_step_one
   ));
 
   $wp_customize->selective_refresh->add_partial($timeline_step_one, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#step-one-header',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -119,12 +144,12 @@ function receiving_rides_customizer($wp_customize) {
   $wp_customize->add_control($step_one_description, array(
     'label' => 'Description',
     'type' => 'textarea',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_steps_section,
     'settings' => $step_one_description
   ));
 
-  $wp_customize->selective_refresh->add_partial($tstep_one_description, array(
-    'selector' => 'span#copy-write',
+  $wp_customize->selective_refresh->add_partial($step_one_description, array(
+    'selector' => 'span#step-one-text',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -134,12 +159,12 @@ function receiving_rides_customizer($wp_customize) {
   ));
   $wp_customize->add_control($timeline_step_two, array(
     'label' => 'Header',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_steps_section,
     'settings' => $timeline_step_two
   ));
 
   $wp_customize->selective_refresh->add_partial($timeline_step_two, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#step-two-header',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -150,12 +175,12 @@ function receiving_rides_customizer($wp_customize) {
   $wp_customize->add_control($step_two_description, array(
     'label' => 'Description',
     'type' => 'textarea',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_steps_section,
     'settings' => $step_two_description
   ));
 
   $wp_customize->selective_refresh->add_partial($step_two_description, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#step-two-text',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -165,12 +190,12 @@ function receiving_rides_customizer($wp_customize) {
   ));
   $wp_customize->add_control($timeline_step_three, array(
     'label' => 'Header',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_steps_section,
     'settings' => $timeline_step_three
   ));
 
   $wp_customize->selective_refresh->add_partial($timeline_step_three, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#step-three-header',
     'render_callback' => 'check_copy_right_text'
   ));
 
@@ -184,12 +209,12 @@ function receiving_rides_customizer($wp_customize) {
   $wp_customize->add_control($step_three_description, array(
     'label' => 'Description',
     'type' => 'textarea',
-    'section' => $receiving_rides_section,
+    'section' => $receiving_rides_steps_section,
     'settings' => $step_three_description
   ));
 
   $wp_customize->selective_refresh->add_partial($step_three_description, array(
-    'selector' => 'span#copy-write',
+    'selector' => 'span#step-three-text',
     'render_callback' => 'check_copy_right_text'
   ));
 }

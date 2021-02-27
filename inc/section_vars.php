@@ -15,7 +15,10 @@
   $step_three_description = 'step_three_description';
   $steps_img = 'steps_img';
  
-  $receiving_rides_section = 'receiving_rides_section';
+  $receiving_rides_cover_section = 'receiving_rides_cover_section';
+  $receiving_rides_middle_section = 'receiving_rides_middle_section';
+  $receiving_rides_steps_section = 'receiving_rides_steps_section';
+  $receiving_rides_middle_paragraph = 'receiving_rides_middle_paragraph';
   $giving_rides_section = 'giving_rides_section';
   $receiving_rides_header_image = 'receiving_rides_header_image';
   $giving_rides_header_image = 'giving_rides_header_image';
