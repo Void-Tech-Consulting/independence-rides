@@ -3,7 +3,7 @@
   require get_template_directory() . '/inc/section_vars.php';
 ?>
 
-  <span id="copy-write"><div id="fares-top" style="background: url(<?php echo get_theme_mod($fares_top_image)?>); background-repeat: no-repeat;
+  <span id="fares_top_image"><div id="fares-top" style="background: url(<?php echo get_theme_mod($fares_top_image)?>); background-repeat: no-repeat;
     background-size: cover;" class="top-section"></span>
     <div class="top-info">
       <h1 class="top-header">How much does a ride cost?</h1>
@@ -12,13 +12,12 @@
   </div>
   
   <div class="blue-box">
-          <span class="intro-text" id="copy-write"><?php  echo get_theme_mod($fares_blue_left); ?></span>
+          <span class="intro-text" id="fares_blue_left"><?php  echo get_theme_mod($fares_blue_left); ?></span>
           <div class="intro-vertline"></div>
-          <span class="intro-text" id="copy-write"><?php  echo get_theme_mod($fares_blue_right); ?></span>
+          <span class="intro-text" id="fares_blue_right"><?php  echo get_theme_mod($fares_blue_right); ?></span>
   </div>
 
-  <span id="copy-write"><p class="page-paragraph"><?php  echo get_theme_mod($fares_paragraph); ?></p></span>
-  <!-- <p class="page-paragraph"><?php echo get_theme_mod($fares_paragraph)?></p> -->
+  <span id="fares_paragraph"><p class="page-paragraph"><?php  echo get_theme_mod($fares_paragraph); ?></p></span>
 
   <div class="header-banner">Charges are as follows</div>
     <div class="steps-section">
@@ -27,13 +26,13 @@
           <div class="fares-steps-timeline">
             <ul class="steps-timeline-list">
               <li class="steps-bullet">
-                <span id="copy-write"><h3 class="steps-subtitle"><?php  echo get_theme_mod($fares_charges_bullet1); ?></h3></span>
+                <span id="fares_charges_bullet1"><h3 class="steps-subtitle"><?php  echo get_theme_mod($fares_charges_bullet1); ?></h3></span>
                 <!-- <h3 class="steps-subtitle">Rides starting and ending within the initial service area (see map below)</h3> -->
                 <ul class="sub-list">
-                  <span id="copy-write"><li class="sub-list-item"><?php  echo get_theme_mod($fares_charges_minibullet1); ?></li></span>
+                  <span id="fares_charges_minibullet1"><li class="sub-list-item"><?php  echo get_theme_mod($fares_charges_minibullet1); ?></li></span>
                   <!-- <li class="sub-list-item">Flat $10 fare (one way)</li> -->
                 </ul>
-                <span id="copy-write"><img id="fares-map" style="background: url(<?php echo get_theme_mod($fares_charges_map)?>); background-repeat: no-repeat; background-size: contain;"></span>
+                <span id="fares_charges_map"><img id="fares-map" style="background: url(<?php echo get_theme_mod($fares_charges_map)?>); background-repeat: no-repeat; background-size: contain;"></span>
               </li>
               <li class="steps-bullet">
                 <h3 class="steps-subtitle">All other rides</h3>

@@ -17,6 +17,35 @@ function index_customizer($wp_customize) {
     'panel' => $home_panel,
   ));
 
+  $wp_customize->selective_refresh->add_partial($home_header_img, array(
+    'selector' => 'span#home_header_img', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+  $wp_customize->add_setting($home_header_img, array(
+    'default' => 'http://independencerides.local/wp-content/uploads/2021/02/homepage-cover-photo.png',
+    'transport' => 'refresh',
+    'sanitize_callback' => 'esc_url_raw'
+  ));
+  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $home_header_img,
+    array(
+    'label' => __( 'Top Image' ),
+    'description' => esc_html__( 'Main image of the home page' ),
+    'section' => $home_header,
+    'button_labels' => array( // Optional.
+        'select' => __( 'Select Image' ),
+        'change' => __( 'Change Image' ),
+        'remove' => __( 'Remove' ),
+        'default' => __( 'Default' ),
+        'placeholder' => __( 'No image selected' ),
+        'frame_title' => __( 'Select Image' ),
+        'frame_button' => __( 'Choose Image' ),
+    )
+  )));
+
+  $wp_customize->selective_refresh->add_partial($home_header_title, array(
+    'selector' => 'span#home_header_title', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
   $wp_customize->add_setting($home_header_title, array(
     'sanitize_callback' => 'sanitize_text_field',
     'default' => 'Independence Rides'
@@ -26,6 +55,10 @@ function index_customizer($wp_customize) {
     'section' => $home_header
   ));
 
+  $wp_customize->selective_refresh->add_partial($home_header_p, array(
+    'selector' => 'span#home_header_p', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
   $wp_customize->add_setting($home_header_p, array(
     'sanitize_callback' => 'sanitize_text_field',
     'default' => 'Dignified transportation for seniors and vision impaired adults in the greater Detroit area'
@@ -36,15 +69,29 @@ function index_customizer($wp_customize) {
     'type' => 'textarea'
   ));
 
-
   $wp_customize->add_section($home_cards, array(
     'title' => 'Cards with Icons',
     'panel' => $home_panel,
   ));
 
+  // Paragraph above cards
+  $wp_customize->add_setting($home_p, array(
+      'default' => 'Transportation freedom need not be a thing of the past.',
+      'sanitize_callback' => 'sanitize_text_field'
+  ));
+  $wp_customize->add_control($home_p, array(
+      'label' => 'Paragraph above cards',
+      'section' => $home_cards,
+      'type' => 'text'
+  ));
+  $wp_customize->selective_refresh->add_partial($home_p, array(
+    'selector' => 'span#home_p', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+
   // Info Card 1 Title
   $wp_customize->selective_refresh->add_partial($home_info_card_1_title, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#home_info_card_1_title', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
 ));
   $wp_customize->add_setting($home_info_card_1_title, array(
@@ -59,9 +106,9 @@ function index_customizer($wp_customize) {
 
   // Info Card 1 Description
   $wp_customize->selective_refresh->add_partial($home_info_card_1_desc, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#home_info_card_1_desc', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
-));
+  ));
   $wp_customize->add_setting($home_info_card_1_desc, array(
       'default' => 'Arm-through-arm and door-through-door assistance, help with canes, 
       walkers, folding wheelchairs, grocery bags, and packages',
@@ -75,13 +122,13 @@ function index_customizer($wp_customize) {
 
   // Info Card 2 Title
   $wp_customize->selective_refresh->add_partial($home_info_card_2_title, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#home_info_card_2_title', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
-));
+  ));
   $wp_customize->add_setting($home_info_card_2_title, array(
     'default' => 'Payment',
     'sanitize_callback' => 'sanitize_text_field'
-));
+  ));
   $wp_customize->add_control($home_info_card_2_title, array(
       'label' => 'Info Card 2 Title',
       'section' => $home_cards,
@@ -91,7 +138,7 @@ function index_customizer($wp_customize) {
 
    // Info Card 2 Description
    $wp_customize->selective_refresh->add_partial($home_info_card_2_desc, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#home_info_card_2_desc', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
 ));
    $wp_customize->add_setting($home_info_card_2_desc, array(
@@ -108,7 +155,7 @@ function index_customizer($wp_customize) {
 
   // Info Card 3 Title
   $wp_customize->selective_refresh->add_partial($home_info_card_3_title, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#home_info_card_3_title', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
 ));
   $wp_customize->add_setting($home_info_card_3_title, array(
@@ -124,7 +171,7 @@ function index_customizer($wp_customize) {
 
    // Info Card 3 Description
    $wp_customize->selective_refresh->add_partial($home_info_card_3_desc, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#home_info_card_3_desc', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
 ));
    $wp_customize->add_setting($home_info_card_3_desc, array(
@@ -139,7 +186,7 @@ function index_customizer($wp_customize) {
 
  // Info Card 4 Title
  $wp_customize->selective_refresh->add_partial($home_info_card_4_title, array(
-  'selector' => 'span#copy-write', // You can also select a css class
+  'selector' => 'span#home_info_card_4_title', // You can also select a css class
   'render_callback' => 'check_copy_right_text',
 ));
   $wp_customize->add_setting($home_info_card_4_title, array(
@@ -155,13 +202,13 @@ function index_customizer($wp_customize) {
 
  // Info Card 4 Description
  $wp_customize->selective_refresh->add_partial($home_info_card_4_desc, array(
-  'selector' => 'span#copy-write', // You can also select a css class
+  'selector' => 'span#home_info_card_4_desc', // You can also select a css class
   'render_callback' => 'check_copy_right_text',
-));
+  ));
  $wp_customize->add_setting($home_info_card_4_desc, array(
   'default' => 'Drivers are trained community volunteers who have passed criminal background and driving record checks.',
   'sanitize_callback' => 'sanitize_text_field'
-));
+  ));
   $wp_customize->add_control($home_info_card_4_desc, array(
     'label' => 'Info Card 4 Description',
     'section' => $home_cards,
@@ -178,55 +225,78 @@ function index_customizer($wp_customize) {
     'default' => 'Join our team of volunteers and give back to your community.',
     'sanitize_callback' => 'sanitize_text_field',
   ));
-
   $wp_customize->add_control($home_giving_box, array(
     'label' => 'Giving Rides Box Content',
     'section' => $home_link_boxes,
   ));
+  $wp_customize->selective_refresh->add_partial($home_giving_box, array(
+    'selector' => 'span#home_giving_box', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+
   $wp_customize->add_setting($home_receiving_box, array(
     'default' => 'Become an Independence Rides member.',
     'sanitize_callback' => 'sanitize_text_field',
   ));
-
   $wp_customize->add_control($home_receiving_box, array(
     'label' => 'Receiving Rides Box Content',
     'section' => $home_link_boxes,
   ));
+  $wp_customize->selective_refresh->add_partial($home_receiving_box, array(
+    'selector' => 'span#home_receiving_box', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+
   $wp_customize->add_setting($home_contact_box, array(
     'default' => 'We’re here to answer any questions you have.',
     'sanitize_callback' => 'sanitize_text_field',
   ));
-
   $wp_customize->add_control($home_contact_box, array(
     'label' => 'Contact Us Box Content',
     'section' => $home_link_boxes,
   ));
+  $wp_customize->selective_refresh->add_partial($home_contact_box, array(
+    'selector' => 'span#home_contact_box', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+
   $wp_customize->add_setting($home_donate_box, array(
     'default' => 'Help us grow to serve more of our community.',
     'sanitize_callback' => 'sanitize_text_field',
   ));
-
   $wp_customize->add_control($home_donate_box, array(
     'label' => 'Donate Box Content',
     'section' => $home_link_boxes,
   ));
+  $wp_customize->selective_refresh->add_partial($home_donate_box, array(
+    'selector' => 'span#home_donate_box', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+
   $wp_customize->add_setting($home_fares_box, array(
     'default' => 'Membership fee and ride fares.',
     'sanitize_callback' => 'sanitize_text_field',
   ));
-
   $wp_customize->add_control($home_fares_box, array(
     'label' => 'Fares Box Content',
     'section' => $home_link_boxes,
   ));
+  $wp_customize->selective_refresh->add_partial($home_fares_box, array(
+    'selector' => 'span#home_fares_box', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+
   $wp_customize->add_setting($home_volunteer_box, array(
     'default' => 'Assist us in ensuring our rides run smoothly.',
     'sanitize_callback' => 'sanitize_text_field',
   ));
-
   $wp_customize->add_control($home_volunteer_box, array(
     'label' => 'Volunteer Box Content',
     'section' => $home_link_boxes,
+  ));
+  $wp_customize->selective_refresh->add_partial($home_volunteer_box, array(
+    'selector' => 'span#home_volunteer_box', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
   ));
 
   // #### ALL OF THE LEARN MORE LINKS
@@ -240,11 +310,6 @@ function index_customizer($wp_customize) {
       'section' => $home_link_boxes,
       'type' => 'dropdown-pages'
   )));
-  $wp_customize->selective_refresh->add_partial($home_giving_link, array(
-      'selector' => 'span#copy-write', // You can also select a css class
-      'render_callback' => 'check_copy_right_text',
-  ));
-
   $wp_customize->add_setting($home_receiving_link, array(
     'default' => '',
     'sanitize_callback' => 'sanitize_text_field',
@@ -255,11 +320,6 @@ function index_customizer($wp_customize) {
       'section' => $home_link_boxes,
       'type' => 'dropdown-pages'
   )));
-  $wp_customize->selective_refresh->add_partial($home_receiving_link, array(
-      'selector' => 'span#copy-write', // You can also select a css class
-      'render_callback' => 'check_copy_right_text',
-  ));
-
   $wp_customize->add_setting($home_contact_link, array(
     'default' => '',
     'sanitize_callback' => 'sanitize_text_field',
@@ -270,11 +330,6 @@ function index_customizer($wp_customize) {
       'section' => $home_link_boxes,
       'type' => 'dropdown-pages'
   )));
-  $wp_customize->selective_refresh->add_partial($home_contact_link, array(
-      'selector' => 'span#copy-write', // You can also select a css class
-      'render_callback' => 'check_copy_right_text',
-  ));
-
   $wp_customize->add_setting($home_donate_link, array(
     'default' => '',
     'sanitize_callback' => 'sanitize_text_field',
@@ -285,11 +340,6 @@ function index_customizer($wp_customize) {
       'section' => $home_link_boxes,
       'type' => 'dropdown-pages'
   )));
-  $wp_customize->selective_refresh->add_partial($home_donate_link, array(
-      'selector' => 'span#copy-write', // You can also select a css class
-      'render_callback' => 'check_copy_right_text',
-  ));
-
   $wp_customize->add_setting($home_fares_link, array(
     'default' => '',
     'sanitize_callback' => 'sanitize_text_field',
@@ -300,11 +350,6 @@ function index_customizer($wp_customize) {
       'section' => $home_link_boxes,
       'type' => 'dropdown-pages'
   )));
-  $wp_customize->selective_refresh->add_partial($home_fares_link, array(
-      'selector' => 'span#copy-write', // You can also select a css class
-      'render_callback' => 'check_copy_right_text',
-  ));
-
   $wp_customize->add_setting($home_volunteer_link, array(
     'default' => '',
     'sanitize_callback' => 'sanitize_text_field',
@@ -315,10 +360,6 @@ function index_customizer($wp_customize) {
       'section' => $home_link_boxes,
       'type' => 'dropdown-pages'
   )));
-  $wp_customize->selective_refresh->add_partial($home_volunteer_link, array(
-      'selector' => 'span#copy-write', // You can also select a css class
-      'render_callback' => 'check_copy_right_text',
-  ));
   // #### End of learn more links
 
 }
