@@ -3,27 +3,44 @@
   $home_top_vid = 'top_vid';
   $home_top_img = 'home_top_img';
   $home_top_desc = 'home_top_desc';
-  $blue_box_left_text = 'blue_box_left_text';
-  $blue_box_right_text = 'blue_box_right_text';
-  $giving_rides_blue_box_left = 'giving_rides_blue_box_left';
-  $giving_rides_blue_box_right = 'giving_rides_blue_box_right';
-  $timeline_step_one = 'timeline_step_one';
-  $timeline_step_two = 'timeline_step_two';
-  $timeline_step_three = 'timeline_step_three';
-  $step_one_description = 'step_one_description';
-  $step_two_description = 'step_two_description';
-  $step_three_description = 'step_three_description';
-  $steps_img = 'steps_img';
- 
+
+  $receiving_rides_panel = 'receiving_rides_panel';
   $receiving_rides_cover_section = 'receiving_rides_cover_section';
   $receiving_rides_middle_section = 'receiving_rides_middle_section';
   $receiving_rides_steps_section = 'receiving_rides_steps_section';
-  $receiving_rides_middle_paragraph = 'receiving_rides_middle_paragraph';
-  $giving_rides_section = 'giving_rides_section';
   $receiving_rides_header_image = 'receiving_rides_header_image';
-  $giving_rides_header_image = 'giving_rides_header_image';
-  $receiving_rides_panel = 'receiving_rides_panel';
+  $receiving_rides_blue_box_left_text = 'receiving_rides_blue_box_left_text';
+  $receiving_rides_blue_box_right_text = 'receiving_rides_blue_box_right_text';
+  $receiving_rides_middle_paragraph = 'receiving_rides_middle_paragraph';
+  $receiving_rides_timeline_step_one = 'receiving_rides_timeline_step_one';
+  $receiving_rides_timeline_step_two = 'receiving_rides_timeline_step_two';
+  $receiving_rides_timeline_step_three = 'receiving_rides_timeline_step_three';
+  $receiving_rides_step_one_description = 'receiving_rides_step_one_description';
+  $receiving_rides_step_two_description = 'receiving_rides_step_two_description';
+  $receiving_rides_step_three_description = 'receiving_rides_step_three_description';
+  $receiving_rides_steps_img = 'receiving_rides_steps_img';
+ 
+
   $giving_rides_panel = 'giving_rides_panel';
+  $giving_rides_cover_section = 'giving_rides_cover_section';
+  $giving_rides_middle_section = 'giving_rides_middle_section';
+  $giving_rides_steps_section = 'giving_rides_steps_section';
+  $giving_rides_important_info_section = 'giving_rides_important_info_section';
+  $giving_rides_header_image = 'giving_rides_header_image';
+  $giving_rides_blue_box_left = 'giving_rides_blue_box_left';
+  $giving_rides_blue_box_right = 'giving_rides_blue_box_right';
+  $giving_rides_middle_paragraph = 'giving_rides_middle_paragraph';
+  $giving_rides_timeline_step_one = 'giving_rides_timeline_step_one';
+  $giving_rides_timeline_step_two = 'giving_rides_timeline_step_two';
+  $giving_rides_timeline_step_three = 'giving_rides_timeline_step_three';
+  $giving_rides_step_one_description = 'giving_rides_step_one_description';
+  $giving_rides_step_two_description = 'giving_rides_step_two_description';
+  $giving_rides_step_three_description = 'giving_rides_step_three_description';
+  $giving_rides_steps_img = 'giving_rides_steps_img';
+  $giving_rides_info_icon_text_one = 'giving_rides_info_icon_text_one';
+  $giving_rides_info_icon_text_two = 'giving_rides_info_icon_text_two';
+  $giving_rides_info_icon_text_three = 'giving_rides_info_icon_text_three';
+
   $donate_section = 'donate_section';
   $donate_panel = 'donate_panel';
   $donate_header_image = 'donate_header_image';

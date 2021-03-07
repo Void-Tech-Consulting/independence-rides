@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<span id="cover-img">
+<span id="receiving-rides-cover-img">
 <div id="receiving-rides-top" class="top-section" style="background: url(<?php echo get_theme_mod($receiving_rides_header_image) ?>); background-repeat: no-repeat; background-size: cover;">
   <div class="top-info">
     <h1 class="top-header">Let's go for a ride!</h1>
@@ -18,9 +18,9 @@
 </span>
 
 <div class="blue-box">
-  <span id="blue-box-left" class="intro-text" ><?php echo get_theme_mod($blue_box_left_text); ?></span>
+  <span id="receiving-rides-blue-box-left" class="intro-text" ><?php echo get_theme_mod($receiving_rides_blue_box_left_text); ?></span>
   <div class="intro-vertline"></div>
-  <span id="blue-box-right" class="intro-text"><?php echo get_theme_mod($blue_box_right_text); ?></span>
+  <span id="receiving-rides-blue-box-right" class="intro-text"><?php echo get_theme_mod($receiving_rides_blue_box_right_text); ?></span>
 </div>
 
 <p class="page-paragraph">
@@ -34,36 +34,35 @@
       <div class="steps-underline"></div>
     </div>
     <div class="steps-body">
-      <!-- <img class="steps-img"src="<?php echo get_theme_mod('steps_img') ?>">  -->
-      <span id="steps-img">
-        <img class="steps-img"src="<?php echo get_theme_mod($steps_img); ?>"> 
+      <span id="receiving-rides-steps-img">
+        <img class="steps-img"src="<?php echo get_theme_mod($receiving_rides_steps_img); ?>"> 
       </span>
       <div class="steps-timeline">
         <ul class="steps-timeline-list">
           <li class="steps-bullet">
-            <span id="step-one-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($timeline_step_one); ?> </h3>
+            <span id="receiving-rides-step-one-header">
+              <h3 class="steps-subtitle"><?php echo get_theme_mod($receiving_rides_timeline_step_one); ?> </h3>
             </span>
-            <span id="step-one-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($step_one_description) ?></h4>
+            <span id="receiving-rides-step-one-text">
+            <h4 class="steps-sub-info"><?php echo get_theme_mod($receiving_rides_step_one_description) ?></h4>
             </span>
             <button class="steps-button" type="button">Application</button>
           </li>
           <li class="steps-bullet">
-            <span id="step-two-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($timeline_step_two); ?></h3>
+            <span id="receiving-rides-step-two-header">
+              <h3 class="steps-subtitle"><?php echo get_theme_mod($receiving_rides_timeline_step_two); ?></h3>
             </span>
-            <span id="step-two-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($step_two_description) ?></h4>
+            <span id="receiving-rides-step-two-text">
+            <h4 class="steps-sub-info"><?php echo get_theme_mod($receiving_rides_step_two_description) ?></h4>
             </span>
               <button class="steps-button" type="button">Membership</button>
           </li>
           <li class="steps-bullet">
-            <span id="step-three-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($timeline_step_three); ?></h3>
+            <span id="receiving-rides-step-three-header">
+              <h3 class="steps-subtitle"><?php echo get_theme_mod($receiving_rides_timeline_step_three); ?></h3>
             </span>
-            <span id="step-three-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($step_three_description) ?></h4>
+            <span id="receiving-rides-step-three-text">
+            <h4 class="steps-sub-info"><?php echo get_theme_mod($receiving_rides_step_three_description) ?></h4>
             </span>
           </li>
         </ul>
