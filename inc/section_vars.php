@@ -84,6 +84,7 @@
   $home_fares_box = 'home_fares_box';
   $home_volunteer_box = 'home_volunteer_box';
   $home_cards = 'home_cards';
+  $home_p = 'home_p';
   $home_info_card_1_title = 'home_info_card_1_title';
   $home_info_card_2_title = 'home_info_card_2_title';
   $home_info_card_3_title = 'home_info_card_3_title';

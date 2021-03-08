@@ -29,6 +29,7 @@ function fares_customizer($wp_customize) {
     'title' => 'Charges',
     'panel' => $fares_panel,
   ));
+
   // Top section
   $wp_customize->add_setting($fares_top_image, array(
     'default' => 'http://independencerides.local/wp-content/uploads/2021/02/fares-cover-photo.png',
@@ -51,9 +52,10 @@ function fares_customizer($wp_customize) {
     )
   )));
   $wp_customize->selective_refresh->add_partial($fares_top_image, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_top_image', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
+
   $wp_customize->add_setting( $fares_top_button, array(
         'default' => 'http://independencerides.local/wp-content/uploads/2021/02/MemberApp06Dec19b-3.pdf',
         'transport' => 'refresh',
@@ -76,9 +78,10 @@ function fares_customizer($wp_customize) {
         )
   )));
   $wp_customize->selective_refresh->add_partial($fares_top_button, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_top_button', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
+
   // Blue box section
   $wp_customize->add_setting($fares_blue_left, array(
     'default' => 'Prices vary based on location, time of day, and number of stops.',
@@ -89,9 +92,10 @@ function fares_customizer($wp_customize) {
     'section' => $fares_blue_box,
   ));
   $wp_customize->selective_refresh->add_partial($fares_blue_left, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_blue_left', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
+
   $wp_customize->add_setting($fares_blue_right, array(
     'default' => 'If a driver is requested to wait longer than 15 minutes, a $20 per hour wait fee is charged.',
     'sanitize_callback' => 'sanitize_text_field',
@@ -101,9 +105,10 @@ function fares_customizer($wp_customize) {
     'section' => $fares_blue_box,
   ));
   $wp_customize->selective_refresh->add_partial($fares_blue_right, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_blue_right', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
+
   // Middle section
   $wp_customize->add_setting($fares_paragraph, array(
     'default' => 'Drivers do not usually stay with the client during an appointment or activity. The same or a different driver will pick them up for their pre-scheduled return ride.',
@@ -114,9 +119,10 @@ function fares_customizer($wp_customize) {
     'section' => $fares_middle,
   ));
   $wp_customize->selective_refresh->add_partial($fares_paragraph, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_paragraph', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
+
   // Charges section
   $wp_customize->add_setting($fares_charges_bullet1, array(
     'default' => 'Rides starting and ending within the initial service area (see map below)',
@@ -128,9 +134,10 @@ function fares_customizer($wp_customize) {
     'section' => $fares_charges,
   ));
   $wp_customize->selective_refresh->add_partial($fares_charges_bullet1, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_charges_bullet1', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
+
   $wp_customize->add_setting($fares_charges_minibullet1, array(
     'default' => 'Flat $10 fare (one way)',
     'sanitize_callback' => 'sanitize_text_field',
@@ -140,9 +147,10 @@ function fares_customizer($wp_customize) {
     'section' => $fares_charges,
   ));
   $wp_customize->selective_refresh->add_partial($fares_charges_minibullet1, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_charges_minibullet1', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
+
   $wp_customize->add_setting($fares_charges_map, array(
     'default' => 'http://independencerides.local/wp-content/uploads/2021/02/service-area.png',
     'transport' => 'refresh',
@@ -164,7 +172,7 @@ function fares_customizer($wp_customize) {
     )
   )));
   $wp_customize->selective_refresh->add_partial($fares_charges_map, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#fares_charges_map', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
   ));
 }

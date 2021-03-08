@@ -22,9 +22,10 @@ function footer_customizer($wp_customize) {
       'type' => 'textarea'
     ));
     $wp_customize->selective_refresh->add_partial($contact_us_text, array(
-        'selector' => 'span#copy-write', // You can also select a css class
+        'selector' => 'span#contact_us_text', // You can also select a css class
         'render_callback' => 'check_copy_right_text',
     ));
+
     $wp_customize->add_setting($our_mission_text, array(
       'default' => 
       'Dignified Transportation
@@ -38,40 +39,10 @@ function footer_customizer($wp_customize) {
       'type' => 'textarea'
     ));
     $wp_customize->selective_refresh->add_partial($our_mission_text, array(
-        'selector' => 'span#copy-write', // You can also select a css class
+        'selector' => 'span#our_mission_text', // You can also select a css class
         'render_callback' => 'check_copy_right_text',
     ));
-    // $wp_customize->add_setting($information_text, array(
-    //   'default' => 
-    //   'About Us
-    //   Receiving Rides
-    //   Fares',
-    //   'sanitize_callback' => 'sanitize_text_field',
-    // ));
-    // $wp_customize->add_control($information_text, array(
-    //   'label' => 'Information Text',
-    //   'section' => $footer_section,
-    //   'type' => 'textarea'
-    // ));
-    // $wp_customize->selective_refresh->add_partial($information_text, array(
-    //     'selector' => 'span#copy-write', // You can also select a css class
-    //     'render_callback' => 'check_copy_right_text',
-    // ));
-    // $wp_customize->add_setting($get_involved_text, array(
-    //   'default' => 
-    //   'Giving Rides
-    //   Ride Coordinator',
-    //   'sanitize_callback' => 'sanitize_text_field',
-    // ));
-    // $wp_customize->add_control($get_involved_text, array(
-    //   'label' => 'Get Involved Text',
-    //   'section' => $footer_section,
-    //   'type' => 'textarea'
-    // ));
-    // $wp_customize->selective_refresh->add_partial($get_involved_text, array(
-    //     'selector' => 'span#copy-write', // You can also select a css class
-    //     'render_callback' => 'check_copy_right_text',
-    // ));
+
     // Links
     $wp_customize->add_setting($foot_about_us_link, array(
       'default' => '',
@@ -84,9 +55,10 @@ function footer_customizer($wp_customize) {
         'type' => 'dropdown-pages'
     )));
     $wp_customize->selective_refresh->add_partial($foot_about_us_link, array(
-        'selector' => 'span#copy-write', // You can also select a css class
+        'selector' => 'span#foot_about_us_link', // You can also select a css class
         'render_callback' => 'check_copy_right_text',
     ));
+
     $wp_customize->add_setting($foot_receiving_link, array(
       'default' => '',
       'sanitize_callback' => 'sanitize_text_field',
@@ -98,9 +70,10 @@ function footer_customizer($wp_customize) {
         'type' => 'dropdown-pages'
     )));
     $wp_customize->selective_refresh->add_partial($foot_receiving_link, array(
-          'selector' => 'span#copy-write', // You can also select a css class
+          'selector' => 'span#foot_receiving_link', // You can also select a css class
           'render_callback' => 'check_copy_right_text',
     ));
+
     $wp_customize->add_setting($foot_fares_link, array(
       'default' => '',
       'sanitize_callback' => 'sanitize_text_field',
@@ -112,9 +85,10 @@ function footer_customizer($wp_customize) {
         'type' => 'dropdown-pages'
     )));
     $wp_customize->selective_refresh->add_partial($foot_fares_link, array(
-          'selector' => 'span#copy-write', // You can also select a css class
+          'selector' => 'span#foot_fares_link', // You can also select a css class
           'render_callback' => 'check_copy_right_text',
     ));
+
     $wp_customize->add_setting($foot_giving_link, array(
       'default' => '',
       'sanitize_callback' => 'sanitize_text_field',
@@ -126,9 +100,10 @@ function footer_customizer($wp_customize) {
         'type' => 'dropdown-pages'
     )));
     $wp_customize->selective_refresh->add_partial($foot_giving_link, array(
-          'selector' => 'span#copy-write', // You can also select a css class
+          'selector' => 'span#foot_giving_link', // You can also select a css class
           'render_callback' => 'check_copy_right_text',
     ));
+
     $wp_customize->add_setting($greystar_link, array(
       'default' => 'https://www.guidestar.org/profile/83-1866770',
       'sanitize_callback' => 'sanitize_text_field',
@@ -139,7 +114,7 @@ function footer_customizer($wp_customize) {
       'type' => 'url'
     ));
     $wp_customize->selective_refresh->add_partial($greystar_link, array(
-        'selector' => 'span#copy-write', // You can also select a css class
+        'selector' => 'span#greystar_link', // You can also select a css class
         'render_callback' => 'check_copy_right_text',
     ));
   }
