@@ -94,7 +94,7 @@ function receiving_rides_customizer($wp_customize) {
   ));
 
   $wp_customize->selective_refresh->add_partial($receiving_rides_middle_paragraph, array(
-    'selector' => 'span#receiving-rides-middle-paragraph',
+    'selector' => 'span#middle-paragraph',
     'render_callback' => 'check_copy_right_text'
   ));
 
