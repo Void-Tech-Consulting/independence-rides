@@ -14,7 +14,7 @@ function footer_customizer($wp_customize) {
       TEL: 313-618-1578 
       TEL: 313-618-3361 
       CARL@INDEPENDENCERIDES.COM',
-      'sanitize_callback' => 'sanitize_text_field',
+      // 'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control($contact_us_text, array(
       'label' => 'Contact Us Text',
@@ -31,7 +31,7 @@ function footer_customizer($wp_customize) {
       'Dignified Transportation
       for Seniors and Vision
       Impaired Adults',
-      'sanitize_callback' => 'sanitize_text_field',
+      // 'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control($our_mission_text, array(
       'label' => 'Our Mission Text',

@@ -47,12 +47,13 @@ function index_customizer($wp_customize) {
     'render_callback' => 'check_copy_right_text',
   ));
   $wp_customize->add_setting($home_header_title, array(
-    'sanitize_callback' => 'sanitize_text_field',
+    // 'sanitize_callback' => 'sanitize_text_field',
     'default' => 'Independence Rides'
   ));
   $wp_customize->add_control($home_header_title, array(
     'label' => 'Header Text',
-    'section' => $home_header
+    'section' => $home_header,
+    'type' => 'textarea'
   ));
 
   $wp_customize->selective_refresh->add_partial($home_header_p, array(

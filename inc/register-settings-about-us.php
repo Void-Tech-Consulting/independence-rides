@@ -117,7 +117,7 @@ $wp_customize->add_setting($about_us_image_text, array(
   A key feature is ‘door-through-door’ and ‘arm-through-arm’ assistance. 
     This means we provide personal walking assistance as needed from the 
     departure door to the car, and from the car through the destination door.',
-    'sanitize_callback' => 'sanitize_text_field'
+    // 'sanitize_callback' => 'sanitize_text_field'
 ));
 $wp_customize->add_control($about_us_image_text, array(
   'label' => 'Image Text',
