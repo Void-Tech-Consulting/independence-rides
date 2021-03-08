@@ -21,9 +21,11 @@
   $giving_rides_header_image = 'giving_rides_header_image';
   $receiving_rides_panel = 'receiving_rides_panel';
   $giving_rides_panel = 'giving_rides_panel';
-  $donate_section = 'donate_section';
   $donate_panel = 'donate_panel';
+  $donate_header = 'donate_header';
+  $donate_middle_section = 'donate_middle_section';
   $donate_header_image = 'donate_header_image';
+  $donate_blue_box_text = 'donate_blue_box_text';
 
   $fares_panel = 'fares_panel';
   $fares_top_image = 'fares_top_image';
@@ -92,4 +94,14 @@
   $home_info_card_2_desc = 'home_info_card_2_desc';
   $home_info_card_3_desc = 'home_info_card_3_desc';
   $home_info_card_4_desc = 'home_info_card_4_desc';
+
+  $contact_panel = 'contact_panel';
+  $contact_header = 'contact_section';
+  $contact_middle_section = 'contact_middle_section';
+  $contact_header_image = 'contact_header_image';
+  $contact_name = 'contact_name';
+  $contact_position = 'contact_position';
+  $contact_phone = 'contact_phone';
+  $contact_phone2 = 'contact_phone2';
+  $contact_email = 'contact_email';
 ?>
