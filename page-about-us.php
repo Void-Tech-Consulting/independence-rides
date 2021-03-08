@@ -24,8 +24,8 @@
     <img class="quotation-mark-right" src="<?php echo get_template_directory_uri();?>/images/quotation marks right.png">
   </div>
   <div class="video-container">
-  <span id="copy-write"></span>
-    <iframe id="video-screenshot" src="<?php echo get_theme_mod($about_us_video)?>"></iframe>
+  <span id="about_us_video"></span>
+    <iframe id="video-screenshot" src="<?php echo wp_get_attachment_url(get_theme_mod($about_us_video))?>"></iframe>
   </span>
   </div>
 </div>
@@ -37,7 +37,7 @@
 <div class="about-us-bottom-section" style="background-image: url(<?php echo wp_get_attachment_url( get_theme_mod( $about_us_image) )?>)">
   <div class="image-text-container">
     <p class="image-text">
-    <span id="copy-write"><?php  echo get_theme_mod($about_us_image_text); ?></span>
+    <span id="copy-write"><?php  echo nl2br(get_theme_mod($about_us_image_text)); ?></span>
     </p>
   </div>
 </div>

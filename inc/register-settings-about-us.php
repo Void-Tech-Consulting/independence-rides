@@ -65,18 +65,30 @@ $wp_customize->add_control($about_us_quote, array(
 
   // Video
   $wp_customize->selective_refresh->add_partial($about_us_video, array(
-    'selector' => 'span#copy-write', // You can also select a css class
+    'selector' => 'span#about_us_video', // You can also select a css class
     'render_callback' => 'check_copy_right_text',
-));
+  ));
   $wp_customize->add_setting($about_us_video, array(
-    'default' => 'https://www.youtube.com/embed/A0Wyx-OOX4A',
-    'sanitize_callback' => 'sanitize_text_field',
+    'default' => 'http://independencerides.local/wp-content/uploads/2021/02/Independence-Rides_Hi.mp4',
+    'transport' => 'refresh',
+    'sanitize_callback' => 'absint'
   ));
-
-  $wp_customize->add_control($about_us_video, array(
-    'label' => 'Video',
+  $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, $about_us_video,
+    array(
+    'label' => __( 'Video' ),
+    'description' => esc_html__( 'Main image of the home page' ),
     'section' => $about_us_middle_section,
-  ));
+    'mime_type' => 'video',
+    'button_labels' => array( // Optional.
+        'select' => __( 'Select Video' ),
+        'change' => __( 'Change Video' ),
+        'remove' => __( 'Remove' ),
+        'default' => __( 'Default' ),
+        'placeholder' => __( 'No video selected' ),
+        'frame_title' => __( 'Select Video' ),
+        'frame_button' => __( 'Choose Video' ),
+    )
+  )));
 
    // Middle Paragraph
    $wp_customize->selective_refresh->add_partial($about_us_mid_paragraph, array(
@@ -105,7 +117,7 @@ $wp_customize->add_setting($about_us_image_text, array(
   A key feature is ‘door-through-door’ and ‘arm-through-arm’ assistance. 
     This means we provide personal walking assistance as needed from the 
     departure door to the car, and from the car through the destination door.',
-    'sanitize_callback' => 'sanitize_text_field'
+    // 'sanitize_callback' => 'sanitize_text_field'
 ));
 $wp_customize->add_control($about_us_image_text, array(
   'label' => 'Image Text',

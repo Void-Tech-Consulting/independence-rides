@@ -306,12 +306,12 @@
 
 .home-section-1
 {
-    text-align: center;
+    /* text-align: center;
     width: 100%;
     height: 100%;
     background-image: url(../images/homepage-cover-photo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 @media(max-width: 1220px)
@@ -375,7 +375,7 @@
     margin-bottom: 2%;
 }
 
-/* 
+/*
 .footer
 {
     margin-top: 10rem;
@@ -452,4 +452,5 @@
 .footer-image
 {
     margin-top: 5rem;
-} */
+}
+*/

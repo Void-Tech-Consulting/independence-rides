@@ -142,6 +142,7 @@ html {
 
 .footer-contact
 {
+    max-width: 225px;
     font-size: 2rem;
     color: #5C6E93;
 }
@@ -151,7 +152,10 @@ html {
     color: #807C7C;
     font-size: 2rem;
     margin-top: 3rem;
-
+}
+.footer-link{
+    color: #807C7C;
+    font-size: 2rem;
 }
 
 .footer-section
