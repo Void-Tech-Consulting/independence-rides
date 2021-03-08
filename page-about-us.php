@@ -25,7 +25,10 @@
   </div>
   <div class="video-container">
   <span id="about_us_video"></span>
-    <iframe id="video-screenshot" src="<?php echo wp_get_attachment_url(get_theme_mod($about_us_video))?>"></iframe>
+    <!-- <iframe id="video-screenshot" src="<?php echo wp_get_attachment_url(get_theme_mod($about_us_video))?>"></iframe> -->
+    <video id="video-screenshot" controls>
+      <source src="<?php echo wp_get_attachment_url(get_theme_mod($about_us_video))?>" type="video/mp4">
+    </video>
   </span>
   </div>
 </div>
