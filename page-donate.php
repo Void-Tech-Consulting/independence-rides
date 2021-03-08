@@ -1,5 +1,6 @@
 <?php 
   get_header(); 
+  require get_template_directory() . '/inc/section_vars.php';
 ?>
 
 <head>
@@ -14,9 +15,7 @@
 
   <div class="donate-blue-box-section">
     <div class="donate-blue-box-middle">
-      <div class="donate-box-text">
-      Help make a difference in the Detroit community.
-      </div>
+      <div class="donate-box-text"><span id="donate_blue_box_text"><?php  echo get_theme_mod($donate_blue_box_text); ?></span></div>
       <div class="donate-box-line">
       </div>
     </div>
