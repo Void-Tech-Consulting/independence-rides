@@ -27,6 +27,27 @@ function about_us_customizer($wp_customize) {
     'panel' => $about_us_panel,
   ));
 
+  //header img
+  $wp_customize->add_setting($about_us_header_image, array(
+    'default' => '',
+    'transport' => 'refresh'
+  ));    
+  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $about_us_header_image,
+  array(
+  'label' => __( 'Header Image' ),
+  'description' => esc_html__( 'Header image of the About Us page' ),
+  'section' => $about_us_top_section,
+  'button_labels' => array( // Optional.
+      'select' => __( 'Select Image' ),
+      'change' => __( 'Change Image' ),
+      'remove' => __( 'Remove' ),
+      'default' => __( 'Default' ),
+      'placeholder' => __( 'No image selected' ),
+      'frame_title' => __( 'Select Image' ),
+      'frame_button' => __( 'Choose Image' ),
+  )
+  )));
+
   // Top Desc
   $wp_customize->selective_refresh->add_partial($about_us_top_desc, array(
     'selector' => 'span#copy-write', // You can also select a css class
