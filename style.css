@@ -302,16 +302,18 @@ html {
 
 .dashicons-menu-alt3{
   display: none;
-  background-color: #555;
   padding: 20px;
 }
+
 /* mobile breakpoint start */
 @media screen and (max-width: 750px) {
   /* navbar css for mobile start */
   .dashicons-menu-alt3 {
     display: block;
-    background-color: transparent;
-    padding: 0;
+  }
+
+  .dashicons-menu-alt3:before {
+    content: "\f349";
   }
 
   .nav-links {

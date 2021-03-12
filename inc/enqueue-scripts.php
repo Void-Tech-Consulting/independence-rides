@@ -54,4 +54,11 @@ function add_styles() {
   wp_enqueue_style( "contact", get_theme_file_uri('/css/contact.css'));
 
 }
+
+    /* Add Dashicons in WordPress Front-end */
+    add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+    function load_dashicons_front_end() {
+      wp_enqueue_style( 'dashicons' );
+    }
+    
 add_action('wp_enqueue_scripts', 'add_styles');
