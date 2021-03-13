@@ -219,6 +219,22 @@ function giving_rides_customizer($wp_customize) {
       'render_callback' => 'check_copy_right_text'
     ));
 
+    $wp_customize->selective_refresh->add_partial($giving_rides_info_bullet, array(
+      'selector' => 'span#giving-rides-info-bullet',
+      'render_callback' => 'check_copy_right_text'
+    ));
+  
+    $wp_customize->add_setting($giving_rides_info_bullet, array(
+      'sanitize_callback' => 'sanitize_text_field',
+      'default' => 'We make sure that the vehicle and all occupants are fully insured according to Michigan state law.'
+    ));
+    $wp_customize->add_control($giving_rides_info_bullet, array(
+      'label' => 'Bullet',
+      'type' => 'textarea',
+      'section' => $giving_rides_important_info_section,
+      'settings' => $giving_rides_info_bullet
+    ));
+
     $wp_customize->add_setting($giving_rides_info_icon_text_one, array(
       'sanitize_callback' => 'sanitize_text_field',
       'default' => 'In nearly all cases the drivers will be providing the rides in their own vehicles.'

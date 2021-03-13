@@ -37,6 +37,7 @@
   $giving_rides_step_two_description = 'giving_rides_step_two_description';
   $giving_rides_step_three_description = 'giving_rides_step_three_description';
   $giving_rides_steps_img = 'giving_rides_steps_img';
+  $giving_rides_info_bullet = 'giving_rides_info_bullet';
   $giving_rides_info_icon_text_one = 'giving_rides_info_icon_text_one';
   $giving_rides_info_icon_text_two = 'giving_rides_info_icon_text_two';
   $giving_rides_info_icon_text_three = 'giving_rides_info_icon_text_three';
