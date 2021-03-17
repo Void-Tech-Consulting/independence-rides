@@ -73,7 +73,9 @@
 </div>
     <div class="important-info">Important Information</div>
     <ul class="info-list">
-      <li class="info-list-item">We make sure that the vehicle and all occupants are fully insured according to Michigan state law. </li>
+      <span id="giving-rides-info-bullet">
+      <li class="info-list-item"><?php echo get_theme_mod($giving_rides_info_bullet); ?></li>
+      </span>
       <li class="info-list-item">All drivers are able to help carry groceries, and provide walking assistance to any rider who desires it. </li>
       <li class="info-list-item">Independence Rides is a 501(c)(3) public charity to help keep rides affordable.</li>
       <li class="info-list-item">This service is in collaboration with ITNAmerica, a national nonprofit senior transportation service. </li>
