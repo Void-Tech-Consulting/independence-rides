@@ -72,14 +72,31 @@
   </div>
 </div>
     <div class="important-info">Important Information</div>
-    <ul class="info-list">
-      <span id="giving-rides-info-bullet">
-      <li class="info-list-item"><?php echo get_theme_mod($giving_rides_info_bullet); ?></li>
-      </span>
-      <li class="info-list-item">All drivers are able to help carry groceries, and provide walking assistance to any rider who desires it. </li>
-      <li class="info-list-item">Independence Rides is a 501(c)(3) public charity to help keep rides affordable.</li>
-      <li class="info-list-item">This service is in collaboration with ITNAmerica, a national nonprofit senior transportation service. </li>
-    </ul>
+
+    <!-- Repeatable bullet section -->
+      <?php
+        require 'inc/section_vars.php';   
+        // get_bullet_data is in /inc/template_functions.php
+        $data  = get_bullet_data($giving_rides_info_bullet);
+        if(!empty( $data ) ) { 
+          ?>  
+            <ul class="info-list">
+          <?php
+            foreach ( $data as $k => $f ) {  
+              // Make sure to use a semicolon; when using php on multiple lines
+              $bulletId = 'bullet'.$k;
+              ?>
+               <span id="giving-rides-info-bullet">
+                <li class="info-list-item" <?php echo "data-bullet-id=\"".$k."\"" ?>>
+                  <?php echo $f['bullet']?> 
+                </li>
+              </span>
+        <?php
+            }
+        ?>
+            </ul>
+  <?php } ?>
+
     <div class="info-icon-list">
       <div class="info-icon-box">
         <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png"></img>

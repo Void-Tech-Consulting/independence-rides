@@ -2,6 +2,7 @@
 
 function giving_rides_customizer($wp_customize) {
     require 'section_vars.php';
+    
 
     $wp_customize->add_panel($giving_rides_panel,
     array(
@@ -219,22 +220,52 @@ function giving_rides_customizer($wp_customize) {
       'render_callback' => 'check_copy_right_text'
     ));
 
+
+    # REPEATABLE BULLET SECTION - IMPORTANT INFO
+
     $wp_customize->selective_refresh->add_partial($giving_rides_info_bullet, array(
       'selector' => 'span#giving-rides-info-bullet',
       'render_callback' => 'check_copy_right_text'
     ));
-  
-    $wp_customize->add_setting($giving_rides_info_bullet, array(
-      'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'We make sure that the vehicle and all occupants are fully insured according to Michigan state law.'
-    ));
-    $wp_customize->add_control($giving_rides_info_bullet, array(
-      'label' => 'Bullet',
-      'type' => 'textarea',
-      'section' => $giving_rides_important_info_section,
-      'settings' => $giving_rides_info_bullet
-    ));
 
+    $wp_customize->add_setting(
+      $giving_rides_info_bullet,
+      array(
+          'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+          'transport' => 'refresh',
+      ) );
+
+      $wp_customize->add_control($giving_rides_info_bullet, array(
+        'label' => 'Bullet',
+        'type' => 'textarea',
+        'section' => $giving_rides_important_info_section,
+        'settings' => $giving_rides_info_bullet
+      ));
+
+
+      $wp_customize->add_control(
+        new Onepress_Customize_Repeatable_Control(
+            $wp_customize,
+            $giving_rides_info_bullet,
+            array(
+                'label' 		=> esc_html__('Bullet'),
+                'description'   => '',
+                'section'       => $giving_rides_important_info_section,
+                'live_title_id' => '',
+                'title_format'  => esc_html__('[live_title]'), // [live_title]
+                'max_item'      => 10, // Maximum item can add
+                'limited_msg' 	=> wp_kses_post( __( 'Max items added' ) ),
+                'fields'    => array(
+                    'bullet'  => array(
+                        'title' => esc_html__('Bullet'),
+                        'type'  =>'textarea',
+                     ),
+                ),
+            )
+        )
+    );
+
+    # BOTTOM ICON LIST 
     $wp_customize->add_setting($giving_rides_info_icon_text_one, array(
       'sanitize_callback' => 'sanitize_text_field',
       'default' => 'In nearly all cases the drivers will be providing the rides in their own vehicles.'
@@ -282,5 +313,9 @@ function giving_rides_customizer($wp_customize) {
       'selector' => 'span#giving-rides-info-icon-text-three',
       'render_callback' => 'check_copy_right_text'
     ));
+
+
+
+
   }
   add_action( 'customize_register', 'giving_rides_customizer' );
