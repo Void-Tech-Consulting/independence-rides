@@ -142,4 +142,19 @@ if ( ! function_exists( 'get_example_data' ) ) {
 		));
 	}
 }
+
+if ( ! function_exists( 'get_bullet_data' ) ) {
+	/**
+	 * Get Example Data
+	 *
+	 * @since 1.1.4
+	 * @return array
+	 */
+	function get_bullet_data($section) {
+		return template_data($section, array(
+						'bullet' => '',
+		));
+	}
+}
+
 ?>

@@ -363,5 +363,7 @@ function index_customizer($wp_customize) {
   )));
   // #### End of learn more links
 
+  
+
 }
 add_action( 'customize_register', 'index_customizer' );
