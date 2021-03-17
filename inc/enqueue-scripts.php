@@ -52,7 +52,12 @@ function add_styles() {
   wp_enqueue_style( "about-us", get_theme_file_uri('/css/about-us.css'));
   wp_enqueue_style( "donate", get_theme_file_uri('/css/donate.css'));
   wp_enqueue_style( "contact", get_theme_file_uri('/css/contact.css'));
-
+  wp_enqueue_style( "slick", get_theme_file_uri('/css/slick.css'));
+  wp_enqueue_style( "slick-theme", get_theme_file_uri('/css/slick-theme.css'));
+  wp_enqueue_style( 'slick-theme-css', untrailingslashit( get_template_directory_uri() ) . '/css/slick-theme.css', ['slick-css'], false, 'all' );
+  wp_enqueue_script( 'nav', get_template_directory_uri() . '/js/nav.js',   array( 'jquery' ) );
+  wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ));
+  wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', ['jquery'], false, true );
 }
 
     /* Add Dashicons in WordPress Front-end */
