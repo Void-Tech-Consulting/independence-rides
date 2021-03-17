@@ -1,9 +1,36 @@
 /* home css styles */
 
 /* next steps styling*/
-.next-step-section {
+
+.ctest{
+    background-image: url("../images/givingrides.png");
+    height: 200px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    
+}
+
+.ctest p {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.carousel{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    height: 200px;
+}
+
+.homepage-section{
     padding-top: 10rem;
-    padding-bottom: 10rem;
     width: 60%;
     margin: 0 auto;
 }
@@ -114,7 +141,7 @@
 /* responsive design */
 
 @media only screen and (max-width: 1350px) {
-    .next-step-section {
+    .homepage-section {
         width: 70%;
     }
     .next-step-header {
