@@ -56,7 +56,7 @@ function receiving_rides_customizer($wp_customize) {
     'label' => 'Blue Box Left Text',
     'type' => 'textarea',
     'section' => $receiving_rides_middle_section,
-    'settings' => $blue_box_left_text
+    'settings' => $receiving_rides_blue_box_left_text
   ));
 
   $wp_customize->selective_refresh->add_partial($receiving_rides_blue_box_left_text, array(
@@ -73,7 +73,7 @@ function receiving_rides_customizer($wp_customize) {
     'label' => 'Blue Box Right Text',
     'type' => 'textarea',
     'section' => $receiving_rides_middle_section,
-    'settings' => $blue_box_right_text
+    'settings' => $receiving_rides_blue_box_right_text
   ));
 
   $wp_customize->selective_refresh->add_partial($receiving_rides_blue_box_right_text, array(

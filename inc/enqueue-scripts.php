@@ -58,6 +58,7 @@ function add_styles() {
   wp_enqueue_script( 'nav', get_template_directory_uri() . '/js/nav.js',   array( 'jquery' ) );
   wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ));
   wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', ['jquery'], false, true );
+  wp_enqueue_script( 'nav', get_template_directory_uri() . '/js/nav.js',   array( 'jquery' ) );
 }
 
     /* Add Dashicons in WordPress Front-end */

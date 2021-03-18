@@ -74,6 +74,10 @@
     border-left: 1px solid black;
 }
 
+.fares-steps-section { 
+    height: 125rem;
+}
+
 @media only screen and (max-width: 1200px) {
     .blue-box{
         /* font-size:1.7rem; */

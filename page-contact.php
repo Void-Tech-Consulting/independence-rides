@@ -3,12 +3,7 @@
   require get_template_directory() . '/inc/section_vars.php';
 ?>
 
-<head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
 
-<body>
   <div class="top-section" style="background: url(<?php echo get_theme_mod($contact_header_image) ?>); background-repeat: no-repeat; background-size: cover;">
     <h1 class="section-1-title" id="contact-header-font">Contact Us</h1>
   </div>
@@ -23,7 +18,9 @@
       <span id="contact_email"><p class="contact-blue-box-text"><?php echo get_theme_mod($contact_email); ?></p></span>
       </div>
     </div>
-    <div class="contact-middle-right"></div>
+    <div class="contact-middle-right">
+        <?php echo do_shortcode("[forminator_form id='147']"); ?>
+    </div>
   </div>
 
   <div class="contact-footer-mobile">
@@ -37,8 +34,6 @@
       <span id="contact_email"><p class="contact-blue-box-text"><?php echo get_theme_mod($contact_email); ?></p></span>
     </div>
   </div>
-  
-</body>
 
 
 <?php get_footer(); ?>

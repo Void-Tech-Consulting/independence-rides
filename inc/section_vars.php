@@ -117,6 +117,8 @@
   $home_info_card_2_desc = 'home_info_card_2_desc';
   $home_info_card_3_desc = 'home_info_card_3_desc';
   $home_info_card_4_desc = 'home_info_card_4_desc';
+  $home_carousel_section = 'home_carousel_section';
+  $home_carousel_item = 'home_carousel_item';
 
   $contact_panel = 'contact_panel';
   $contact_header = 'contact_section';
@@ -127,4 +129,7 @@
   $contact_phone = 'contact_phone';
   $contact_phone2 = 'contact_phone2';
   $contact_email = 'contact_email';
+
+
+
 ?>

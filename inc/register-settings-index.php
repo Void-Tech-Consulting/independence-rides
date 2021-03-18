@@ -363,6 +363,49 @@ function index_customizer($wp_customize) {
   )));
   // #### End of learn more links
 
+
+  # Carouosel Section
+
+  $wp_customize->add_section($home_carousel_section, array(
+    'title' => 'Carousel',
+    'panel' => $home_panel,
+  ));
+
+  $wp_customize->add_setting(
+    $home_carousel_item,
+    array(
+        'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+        'transport' => 'refresh',
+    ) );
+
+  $wp_customize->add_control(
+      new Onepress_Customize_Repeatable_Control(
+          $wp_customize,
+          $home_carousel_item,
+          array(
+              'label' 		=> esc_html__('Image'),
+              'description'   => '',
+              'section'       => $home_carousel_section,
+              'live_title_id' => 'carousel-item',
+              'title_format'  => esc_html__('[live_title]'), // [live_title]
+              'max_item'      => 20, // Maximum item can add
+              'limited_msg' 	=> wp_kses_post( __( 'Max items added' ) ),
+              'fields'    => array(
+
+                  'image'  => array(
+                      'title' => esc_html__('Image'),
+                      'type'  =>'media',
+                  ),
+                  'title'  => array(
+                      'title' => esc_html__('Title'),
+                      'type'  =>'text',
+                  ),
+              ),
+          )
+      )
+  );
+
+
   
 
 }

@@ -3,11 +3,7 @@
   require get_template_directory() . '/inc/section_vars.php';
 ?>
 
-<head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
+
 <span id="receiving-rides-cover-img">
 <div id="receiving-rides-top" class="top-section" style="background: url(<?php echo get_theme_mod($receiving_rides_header_image) ?>); background-repeat: no-repeat; background-size: cover;">
   <div class="top-info">
@@ -70,8 +66,5 @@
     </div>
   </div>
 </div>
-
-
-</body>
 
 <?php get_footer(); ?>

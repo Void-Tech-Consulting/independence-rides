@@ -157,4 +157,19 @@ if ( ! function_exists( 'get_bullet_data' ) ) {
 	}
 }
 
+if ( ! function_exists( 'get_carousel_data' ) ) {
+	/**
+	 * Get Example Data
+	 *
+	 * @since 1.1.4
+	 * @return array
+	 */
+	function get_carousel_data($section) {
+		return template_data($section, array(
+						'image' => '',
+						'title' => '',
+		));
+	}
+}
+
 ?>

@@ -97,6 +97,8 @@
             </ul>
   <?php } ?>
 
+   <!-- End of Repeatable bullet section -->
+
     <div class="info-icon-list">
       <div class="info-icon-box">
         <img class = "info-icon-image" src = "<?php echo get_template_directory_uri();?>/images/wheel-icon.png"></img>

@@ -3,22 +3,25 @@
 /* next steps styling*/
 
 .ctest{
-    background-image: url("../images/givingrides.png");
+    /* background-image: url("../images/givingrides.png"); */
     height: 200px;
     width: 10px;
     background-repeat: no-repeat;
     background-size: cover; 
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-    
 }
 
-.ctest p {
+.ctest-img {
+    height: 100%;
+    width: 100%;
+}
+
+.ctest-txt {
     font-size: 2rem;
     color: white;
     text-align: center;
-    margin-top: 7rem;
+    position: absolute;
+    top: 45%;
+    margin-left: 1.5%;
 }
 
 .carousel{
@@ -35,7 +38,6 @@
     margin: 0 auto;
 }
 .next-step-header {
-    font-family: SeoulHangang;
     font-style: normal;
     font-weight: normal;
     font-size: 3.6rem;
@@ -201,6 +203,9 @@
         padding: 0.5rem;
         font-size: 1.0rem;
         line-height: 1.3rem;
+    }
+    .ctest-txt {
+        margin-left: 2.5%;
     }
 }
 

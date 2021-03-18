@@ -22,18 +22,7 @@
 
 
 jQuery(document).ready(function ($) {
-  // hello team!!
-  //   $('.carousel').slick({
-  //     // prev arrow
 
-  //     prevArrow:"<img class='a-left control-c prev slick-prev' src='../images/arrow-left.png'>",
-  //       nextArrow:"<img class='a-right control-c next slick-next' src='../images/arrow-right.png'>"
-
-  // // prevArrow:'<span class="dashicons dashicons-arrow-left-alt2"></span>',
-  // // // next arrow
-
-  // // nextArrow:'<span class="dashicons dashicons-arrow-right-alt2"></span>',
-  //   });
   $('.carousel').slick({
     infinite: true,
     slidesToShow: 3,
@@ -44,7 +33,7 @@ jQuery(document).ready(function ($) {
     nextArrow:'<i class="fas fa-chevron-right slick-next" type="button"></i>',
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           centerMode: false,
           slidesToShow: 2,

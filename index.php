@@ -99,13 +99,74 @@ Example with default video if $home_top_vid isn't set
 <div class="homepage-section">
   <h1 class="next-step-header">Where can we take you?</h1>
   <div class="next-step-header-line"></div>
-  <div class="slider carousel">
-    <div class="ctest"> <p>Belle Isle</p> </div>
+
+      <!-- Repeatable Carousel section -->
+      <?php
+        require 'inc/section_vars.php';   
+        // get_bullet_data is in /inc/template_functions.php
+        $data  = get_bullet_data($home_carousel_item);
+        if(!empty( $data ) ) { 
+          ?>  
+             <div class="slider carousel">
+          <?php
+            foreach ( $data as $k => $f ) {  
+              // Make sure to use a semicolon; when using php on multiple lines
+              $imgId = 'img'.$k;
+              ?>
+              <!-- <div class="ctest" <?php echo "data-img-id=\"".$k."\""?>
+                style="background-image: url( <?php echo $f['image']['url']?>)">
+                <p>
+                  <?php echo $f['title']?> 
+                </p>
+              </div> -->
+              <div class="ctest">
+       
+              <img class="ctest-img" src="<?php echo $f['image']['url']?>">
+              </img> 
+              <p class="ctest-txt">
+                  <?php echo $f['title']?> 
+                </p>
+                </div>
+            
+        <?php
+            }
+        ?>
+            </div>
+  <?php } ?>
+
+      <!-- End of Repeatable Carousel section -->
+
+
+
+
+  <!-- <div class="slider carousel">
+    <div class="ctest">
+              <img class="ctest-img" src="url("../images/givingrides.png")">
+              </img> 
+              <p class="ctest-txt">
+                  Belle Isle
+                </p>
+    </div>
+    <div class="ctest">
+              <img class="ctest-img" src="url("../images/givingrides.png")">
+              </img> 
+              <p class="ctest-txt">
+                  Belle Isle
+                </p>
+    </div>
+    <div class="ctest">
+              <img class="ctest-img" src="url("../images/givingrides.png")">
+              </img> 
+              <p class="ctest-txt">
+                  Belle Isle
+                </p>
+    </div> -->
+
+
+    <!-- <div class="ctest"> <p>Belle Isle</p> </div>
     <div class="ctest"> <p>Detroit Institute of Art</p></div>
     <div class="ctest"><p>Midtown</p></div>
-    <!-- <div class="ctest">Justin</div> -->
-    <!-- <div class="ctest">Lydia</div> -->
-    <div class="ctest">GEON</div>
+    <div class="ctest">GEON</div> -->
   </div>
 </div>
 

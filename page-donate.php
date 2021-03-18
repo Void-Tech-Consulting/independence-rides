@@ -3,10 +3,10 @@
   require get_template_directory() . '/inc/section_vars.php';
 ?>
 
-<head>
+<!-- <head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
+</head> -->
 
 <body>
   <div class="top-section" style="background: url(<?php echo get_theme_mod('donate_header_image') ?>); background-repeat: no-repeat; background-size: cover;">

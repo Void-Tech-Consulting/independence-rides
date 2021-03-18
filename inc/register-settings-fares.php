@@ -22,7 +22,7 @@ function fares_customizer($wp_customize) {
     'panel' => $fares_panel,
   ));
   $wp_customize->add_section($fares_middle, array(
-    'title' => 'Middle Area',
+    'title' => 'Paragraph',
     'panel' => $fares_panel,
   ));
   $wp_customize->add_section($fares_charges, array(
@@ -90,6 +90,7 @@ function fares_customizer($wp_customize) {
   $wp_customize->add_control($fares_blue_left, array(
     'label' => 'Blue Box Left',
     'section' => $fares_blue_box,
+    'type' => 'textarea',
   ));
   $wp_customize->selective_refresh->add_partial($fares_blue_left, array(
     'selector' => 'span#fares_blue_left', // You can also select a css class
@@ -103,6 +104,7 @@ function fares_customizer($wp_customize) {
   $wp_customize->add_control($fares_blue_right, array(
     'label' => 'Blue Box Right',
     'section' => $fares_blue_box,
+    'type' => 'textarea',
   ));
   $wp_customize->selective_refresh->add_partial($fares_blue_right, array(
     'selector' => 'span#fares_blue_right', // You can also select a css class
@@ -117,6 +119,7 @@ function fares_customizer($wp_customize) {
   $wp_customize->add_control($fares_paragraph, array(
     'label' => 'Paragraph',
     'section' => $fares_middle,
+    'type' => 'textarea',
   ));
   $wp_customize->selective_refresh->add_partial($fares_paragraph, array(
     'selector' => 'span#fares_paragraph', // You can also select a css class

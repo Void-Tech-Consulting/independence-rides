@@ -20,7 +20,7 @@
   <span id="fares_paragraph"><p class="page-paragraph"><?php  echo get_theme_mod($fares_paragraph); ?></p></span>
 
   <div class="header-banner">Charges are as follows</div>
-    <div class="steps-section">
+    <div class="steps-section fares-steps-section">
       <div class="steps-content">
         <div class="fares-steps-body">
           <div class="fares-steps-timeline">

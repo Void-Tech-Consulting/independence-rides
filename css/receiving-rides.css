@@ -42,7 +42,6 @@
     display: flex;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    height: 125rem;
 }
 
 .steps-content {
@@ -139,7 +138,7 @@
 
 .page-paragraph {
     width: 60%;
-    padding-top: 17.5rem;
+    padding-top: 10rem;
     padding-bottom: 10rem;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
