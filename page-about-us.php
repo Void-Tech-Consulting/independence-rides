@@ -5,9 +5,13 @@
 
 <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
 
-<section class="home-section-1 about-us-header">
+<!-- <section class="home-section-1 about-us-header">
   <h1 class="section-1-title"> About Us </h1>
-</section>
+</section> -->
+
+<div class="top-section" style="background: url(<?php echo get_theme_mod($about_us_header_image) ?>); background-repeat: no-repeat; background-size: cover;">
+    <h1 class="section-1-title">About Us</h1>
+</div>
 
 <div class="about-us-text-box">
   <h1 class="header-text">Why we are here</h1>

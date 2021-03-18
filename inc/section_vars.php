@@ -93,6 +93,7 @@
   $about_us_image_text = 'about_us_image_text';
   $about_us_image = 'about_us_image';
   $about_us_panel = 'about_us_panel';
+  $about_us_header_image = 'about_us_header_image';
 
 
   $home_panel = 'home_panel';
