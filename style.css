@@ -268,9 +268,15 @@ html {
 /* Drop-down menu in nav bar */
 .nav-links li:hover > .sub-menu {
   display: block;
+  position: absolute;
 }
 
 .nav-links > li > a:hover {
+  background-color: white;
+  color: #5C6E93;
+}
+
+.nav-links > li:hover a{
   background-color: white;
   color: #5C6E93;
 }
@@ -288,6 +294,7 @@ html {
 
 .sub-menu .menu-item a {
   background-color: white;
+  color: #5C6E93;
 } 
 
 .sub-menu .menu-item a:hover {
