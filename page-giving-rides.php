@@ -38,39 +38,48 @@
       <span id="giving-rides-steps-img">
         <img class="steps-img"src="<?php echo get_theme_mod($giving_rides_steps_img); ?>"> 
       </span>
-      <div class="steps-timeline">
-        <ul class="steps-timeline-list">
-          <li class="steps-bullet">
-          <span id="giving-rides-step-one-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($giving_rides_timeline_step_one); ?> </h3>
-            </span>
-            <span id="giving-rides-step-one-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($giving_rides_step_one_description) ?></h4>
-            </span>
-            <button class="steps-button" type="button">Application</button>
-          </li>
-          <li class="steps-bullet">
-          <span id="giving-rides-step-two-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($giving_rides_timeline_step_two); ?></h3>
-            </span>
-            <span id="giving-rides-step-two-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($giving_rides_step_two_description) ?></h4>
-            </span>
-            <br>
-          </li>
-          <li class="steps-bullet">
-          <span id="giving-rides-step-three-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($giving_rides_timeline_step_three); ?></h3>
-            </span>
-            <span id="giving-rides-step-three-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($giving_rides_step_three_description) ?></h4>
-            </span>
-          </li>
-        </ul>
-      </div>
+
+
+   <!-- Repeatable Step section -->
+          <?php
+        require 'inc/section_vars.php';   
+        // get_bullet_data is in /inc/template_functions.php
+        $data  = get_timeline_data($giving_rides_step);
+        if(!empty( $data ) ) { 
+          ?>  
+              <div class="steps-timeline">
+                <ul class="steps-timeline-list">
+          <?php
+            foreach ( $data as $k => $f ) {  
+              // Make sure to use a semicolon; when using php on multiple lines
+              $bulletId = 'bullet'.$k;
+              ?>
+                <li class="steps-bullet">
+                <span id="giving-rides-step">
+                  <h3 class="steps-subtitle">   <?php echo $f['step']?>  </h3>
+                  </span>
+                <span id="giving-rides-step">
+                  <h4 class="steps-sub-info">  <?php echo $f['descript']?>  </h4>
+                </span>
+                <button class="steps-button" type="button">Application</button>
+                </li>
+
+
+             
+        <?php
+            }
+        ?>
+               </ul>
+              </div>
+  <?php } ?>
+
+   <!-- End of Repeatable Step section -->
+
     </div>
   </div>
 </div>
+
+
     <div class="important-info">Important Information</div>
 
     <!-- Repeatable bullet section -->

@@ -172,4 +172,21 @@ if ( ! function_exists( 'get_carousel_data' ) ) {
 	}
 }
 
+if ( ! function_exists( 'get_timeline_data' ) ) {
+	/**
+	 * Get Example Data
+	 *
+	 * @since 1.1.4
+	 * @return array
+	 */
+	function get_timeline_data($section) {
+		return template_data($section, array(
+						'step' => '',
+						'descript' => '',
+		));
+	}
+}
+
+
+
 ?>
