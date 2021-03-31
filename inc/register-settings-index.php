@@ -70,6 +70,26 @@ function index_customizer($wp_customize) {
     'type' => 'textarea'
   ));
 
+
+  // Get Started Button
+  $wp_customize->add_setting($home_get_started_button, array(
+    'default' => '',
+    'sanitize_callback' => 'sanitize_text_field',
+  ));
+  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $home_get_started_button,
+  array(
+      'label' => 'Get Started Button',
+      'section' => $home_header,
+      'type' => 'dropdown-pages'
+  )));
+  $wp_customize->selective_refresh->add_partial($home_get_started_button, array(
+    'selector' => 'span#home_get_started_button', // You can also select a css class
+    'render_callback' => 'check_copy_right_text',
+  ));
+
+
+
+
   $wp_customize->add_section($home_cards, array(
     'title' => 'Cards with Icons',
     'panel' => $home_panel,
@@ -300,6 +320,11 @@ function index_customizer($wp_customize) {
     'render_callback' => 'check_copy_right_text',
   ));
 
+
+
+
+
+
   // #### ALL OF THE LEARN MORE LINKS
   $wp_customize->add_setting($home_giving_link, array(
     'default' => '',
@@ -400,10 +425,66 @@ function index_customizer($wp_customize) {
                       'title' => esc_html__('Title'),
                       'type'  =>'text',
                   ),
+                  'hover-txt-a'  => array(
+                    'title' => esc_html__('Hover Text A'),
+                    'type'  =>'text',
+                  ),
+                  'hover-txt-b'  => array(
+                    'title' => esc_html__('Hover Text B'),
+                    'type'  =>'text',
+                  ),
               ),
           )
       )
   );
+
+  # Service Area Section
+
+    $wp_customize->add_section($home_service_area_section, array(
+      'title' => 'Service Area',
+      'panel' => $home_panel,
+    ));
+
+    $wp_customize->selective_refresh->add_partial($home_service_area_img, array(
+      'selector' => 'span#home_service_area_img', // You can also select a css class
+      'render_callback' => 'check_copy_right_text',
+    ));
+    $wp_customize->add_setting($home_service_area_img, array(
+      'default' => 'http://independencerides.local/wp-content/uploads/2021/02/ir-service-area.png',
+      'transport' => 'refresh',
+      'sanitize_callback' => 'esc_url_raw'
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $home_service_area_img,
+      array(
+      'label' => __( 'Service Area Image' ),
+      'description' => esc_html__( 'Main image of the home page' ),
+      'section' => $home_service_area_section,
+      'button_labels' => array( // Optional.
+          'select' => __( 'Select Image' ),
+          'change' => __( 'Change Image' ),
+          'remove' => __( 'Remove' ),
+          'default' => __( 'Default' ),
+          'placeholder' => __( 'No image selected' ),
+          'frame_title' => __( 'Select Image' ),
+          'frame_button' => __( 'Choose Image' ),
+      )
+    )));
+
+    $wp_customize->selective_refresh->add_partial($home_service_area_txt, array(
+      'selector' => 'span#home_service_area_txt', // You can also select a css class
+      'render_callback' => 'check_copy_right_text',
+      ));
+     $wp_customize->add_setting($home_service_area_txt, array(
+      'default' => ' The Woodward Corridor from the Detroit River to 15 Mile Road in Birmingham.
+      With your help, we plan to grow to serve all of Wayne, Oakland, and Macomb Counties.',
+      'sanitize_callback' => 'sanitize_text_field'
+      ));
+      $wp_customize->add_control($home_service_area_txt, array(
+        'label' => 'Service Area Text',
+        'section' => $home_service_area_section,
+        'type' => 'textarea'
+      ));
+  
 
 
   

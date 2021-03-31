@@ -50,6 +50,32 @@ function giving_rides_customizer($wp_customize) {
       'selector' => 'span#giving-rides-cover-img',
       'render_callback' => 'check_copy_right_text'
     ));
+
+    $wp_customize->selective_refresh->add_partial($giving_rides_apply_button, array(
+      'selector' => 'span#giving_rides_apply_button',
+      'render_callback' => 'check_copy_right_text'
+    ));
+    
+    $wp_customize->add_setting($giving_rides_apply_button, array(
+      'sanitize_callback' => 'sanitize_text_field',
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $giving_rides_apply_button, array(
+      'label' => 'PDF',
+      'section' => $giving_rides_cover_section,
+      'settings' => $giving_rides_apply_button,
+      'button_labels' => array(
+        'select' => 'Select PDF',
+        'change' => 'Change PDF',
+        'remove' => 'Remove',
+        'default' => 'Default',
+        'placeholder' => 'No PDF selected',
+        'frame_title' => 'Select PDF',
+        'frame_button' => 'Choose PDF',
+     )
+    )));
+  
   
     $wp_customize->add_setting($giving_rides_blue_box_left, array(
       'sanitize_callback' => 'sanitize_text_field',
@@ -107,10 +133,12 @@ function giving_rides_customizer($wp_customize) {
       'default' => '',
       'transport' => 'refresh'
     ));
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $giving_rides_steps_img, array(
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, $giving_rides_steps_img, array(
       'label' => 'Image',
       'section' => $giving_rides_steps_section,
       'settings' => $giving_rides_steps_img,
+      'width' => 456,
+      'height' => 668,
       'button_labels' => array(
         'select' => 'Select Image',
         'change' => 'Change Image',
@@ -127,99 +155,59 @@ function giving_rides_customizer($wp_customize) {
       'render_callback' => 'check_copy_right_text'
     ));
 
-    $wp_customize->add_setting($giving_rides_timeline_step_one, array(
-      'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'Step One'
-    ));
-    $wp_customize->add_control($giving_rides_timeline_step_one, array(
-      'label' => 'Header',
-      'section' => $giving_rides_steps_section,
-      'settings' => $giving_rides_timeline_step_one
-    ));
-  
-    $wp_customize->selective_refresh->add_partial($giving_rides_timeline_step_one, array(
-      'selector' => 'span#giving-rides-step-one-header',
-      'render_callback' => 'check_copy_right_text'
-    ));
-  
-    $wp_customize->add_setting($giving_rides_step_one_description, array(
-      'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'Complete an application to ensure we have complete contact information.'
-    ));
-    $wp_customize->add_control($giving_rides_step_one_description, array(
-      'label' => 'Description',
-      'type' => 'textarea',
-      'section' => $giving_rides_steps_section,
-      'settings' => $giving_rides_step_one_description
-    ));
-  
-    $wp_customize->selective_refresh->add_partial($giving_rides_step_one_description, array(
-      'selector' => 'span#giving-rides-step-one-text',
-      'render_callback' => 'check_copy_right_text'
-    ));
-  
-    $wp_customize->add_setting($giving_rides_timeline_step_two, array(
-      'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'Step Two'
-    ));
-    $wp_customize->add_control($giving_rides_timeline_step_two, array(
-      'label' => 'Header',
-      'section' => $giving_rides_steps_section,
-      'settings' => $giving_rides_timeline_step_two
-    ));
-  
-    $wp_customize->selective_refresh->add_partial($giving_rides_timeline_step_two, array(
-      'selector' => 'span#giving-rides-step-two-header',
-      'render_callback' => 'check_copy_right_text'
-    ));
-  
-    $wp_customize->add_setting($giving_rides_step_two_description, array(
-      'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'Pass criminal background and driving record checks and complete training.'
-    ));
-    $wp_customize->add_control($giving_rides_step_two_description, array(
-      'label' => 'Description',
-      'type' => 'textarea',
-      'section' => $giving_rides_steps_section,
-      'settings' => $giving_rides_step_two_description
-    ));
-  
-    $wp_customize->selective_refresh->add_partial($giving_rides_step_two_description, array(
-      'selector' => 'span#giving-rides-step-two-text',
-      'render_callback' => 'check_copy_right_text'
-    ));
-  
-    $wp_customize->add_setting($giving_rides_timeline_step_three, array(
-      'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'Step Three'
-    ));
-    $wp_customize->add_control($giving_rides_timeline_step_three, array(
-      'label' => 'Header',
-      'section' => $giving_rides_steps_section,
-      'settings' => $giving_rides_timeline_step_three
-    ));
-  
-    $wp_customize->selective_refresh->add_partial($giving_rides_timeline_step_three, array(
-      'selector' => 'span#giving-rides-step-three-header',
-      'render_callback' => 'check_copy_right_text'
-    ));
-  
-    $wp_customize->add_setting($giving_rides_step_three_description, array(
-      'sanitize_callback' => 'sanitize_text_field',
-      'default' => 'Provide rides when requested and earn mileage credits.'
-    ));
-    $wp_customize->add_control($giving_rides_step_three_description, array(
-      'label' => 'Description',
-      'type' => 'textarea',
-      'section' => $giving_rides_steps_section,
-      'settings' => $giving_rides_step_three_description
-    ));
-  
-    $wp_customize->selective_refresh->add_partial($giving_rides_step_three_description, array(
-      'selector' => 'span#giving-rides-step-three-text',
+
+    # REPEATABLE STEP SECTION - IMPORTANT INFO
+
+    $wp_customize->selective_refresh->add_partial($giving_rides_step, array(
+      'selector' => 'span#giving-rides-step',
       'render_callback' => 'check_copy_right_text'
     ));
 
+    $wp_customize->add_setting(
+      $giving_rides_step,
+      array(
+          'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+          'transport' => 'refresh',
+      ) );
+
+
+      $wp_customize->add_control(
+        new Onepress_Customize_Repeatable_Control(
+            $wp_customize,
+            $giving_rides_step,
+            array(
+                'label' 		=> esc_html__('Step'),
+                'description'   => '',
+                'section'       => $giving_rides_steps_section,
+                'live_title_id' => '',
+                'title_format'  => esc_html__('[live_title]'), // [live_title]
+                'max_item'      => 10, // Maximum item can add
+                'limited_msg' 	=> wp_kses_post( __( 'Max items added' ) ),
+                'fields'    => array(
+                  'step'  => array(
+                    'title' => esc_html__('Step'),
+                    'type'  =>'text',
+                  ),
+                  'descript'  => array(
+                      'title' => esc_html__('Description'),
+                      'type'  =>'textarea',
+                  ),
+                  'pdf'  => array(
+                    'title' => esc_html__('PDF'),
+                    'type'  =>'media',
+                ),
+                'button'  => array(
+                  'title' => esc_html__('Button Label'),
+                  'type'  =>'text',
+              ),
+                ),
+            )
+        )
+    );
+
+    # END OF REPEATABLE STEP SECTION - IMPORTANT INFO
+
+   
 
     # REPEATABLE BULLET SECTION - IMPORTANT INFO
 
@@ -234,14 +222,6 @@ function giving_rides_customizer($wp_customize) {
           'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
           'transport' => 'refresh',
       ) );
-
-      $wp_customize->add_control($giving_rides_info_bullet, array(
-        'label' => 'Bullet',
-        'type' => 'textarea',
-        'section' => $giving_rides_important_info_section,
-        'settings' => $giving_rides_info_bullet
-      ));
-
 
       $wp_customize->add_control(
         new Onepress_Customize_Repeatable_Control(
@@ -264,6 +244,8 @@ function giving_rides_customizer($wp_customize) {
             )
         )
     );
+
+    # END OF REPEATABLE BULLET SECTION - IMPORTANT INFO
 
     # BOTTOM ICON LIST 
     $wp_customize->add_setting($giving_rides_info_icon_text_one, array(

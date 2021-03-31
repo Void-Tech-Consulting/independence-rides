@@ -8,7 +8,11 @@
 <div id="receiving-rides-top" class="top-section" style="background: url(<?php echo get_theme_mod($receiving_rides_header_image) ?>); background-repeat: no-repeat; background-size: cover;">
   <div class="top-info">
     <h1 class="top-header">Let's go for a ride!</h1>
-    <button class="apply-button" type="button">Apply Now</button>
+    <span id="receiving_rides_apply_button">
+      <a href=" <?php echo get_theme_mod($receiving_rides_apply_button) ?>">                  
+        <button class="apply-button" type="button"> Apply Now </button>
+      </a>
+    </span>
   </div>
 </div>
 </span>
@@ -31,40 +35,50 @@
     </div>
     <div class="steps-body">
       <span id="receiving-rides-steps-img">
-        <img class="steps-img"src="<?php echo get_theme_mod($receiving_rides_steps_img); ?>"> 
+        <img class="steps-img"src="<?php echo wp_get_attachment_url(get_theme_mod($receiving_rides_steps_img)); ?>"> 
       </span>
-      <div class="steps-timeline">
-        <ul class="steps-timeline-list">
-          <li class="steps-bullet">
-            <span id="receiving-rides-step-one-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($receiving_rides_timeline_step_one); ?> </h3>
-            </span>
-            <span id="receiving-rides-step-one-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($receiving_rides_step_one_description) ?></h4>
-            </span>
-            <button class="steps-button" type="button">Application</button>
-          </li>
-          <li class="steps-bullet">
-            <span id="receiving-rides-step-two-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($receiving_rides_timeline_step_two); ?></h3>
-            </span>
-            <span id="receiving-rides-step-two-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($receiving_rides_step_two_description) ?></h4>
-            </span>
-              <button class="steps-button" type="button">Membership</button>
-          </li>
-          <li class="steps-bullet">
-            <span id="receiving-rides-step-three-header">
-              <h3 class="steps-subtitle"><?php echo get_theme_mod($receiving_rides_timeline_step_three); ?></h3>
-            </span>
-            <span id="receiving-rides-step-three-text">
-            <h4 class="steps-sub-info"><?php echo get_theme_mod($receiving_rides_step_three_description) ?></h4>
-            </span>
-          </li>
-        </ul>
-      </div>
+
+        <!-- Repeatable Step section -->
+        <?php
+      require 'inc/section_vars.php';
+      // get_bullet_data is in /inc/template_functions.php
+      $data  = get_receiving_rides_timeline_data($receiving_rides_step);
+      if (!empty($data)) {
+      ?>
+        <div class="steps-timeline">
+          <ul class="steps-timeline-list">
+            <?php
+            foreach ($data as $k => $f) {
+              // Make sure to use a semicolon; when using php on multiple lines
+              $bulletId = 'bullet' . $k;
+            ?>
+              <li class="steps-bullet">
+                <span id="receiving-rides-step">
+                  <h3 class="steps-subtitle"> <?php echo $f['step'] ?> </h3>
+                </span>
+                <span id="receiving-rides-step">
+                  <h4 class="steps-sub-info"> <?php echo $f['descript'] ?> </h4>
+                </span>
+                <?php if ($f['pdf']['url'] != '') { ?>
+                  <a href="<?php echo $f['pdf']['url'] ?>">                  
+                    <button class="steps-button" type="button"> <?php echo $f['button'] ?> </button>
+                  </a>
+                <?php } ?>
+              </li>
+
+
+
+            <?php
+            }
+            ?>
+          </ul>
+        </div>
+      <?php } ?>
+
+      <!-- End of Repeatable Step section -->
+
+        </div>
     </div>
   </div>
-</div>
 
 <?php get_footer(); ?>

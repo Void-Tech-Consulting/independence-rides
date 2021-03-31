@@ -168,8 +168,62 @@ if ( ! function_exists( 'get_carousel_data' ) ) {
 		return template_data($section, array(
 						'image' => '',
 						'title' => '',
+						'hover-txt-a' => '',
+						'hover-txt-b' => '',
 		));
 	}
 }
 
-?>
+if ( ! function_exists( 'get_giving_rides_timeline_data' ) ) {
+	/**
+	 * Get Example Data
+	 *
+	 * @since 1.1.4
+	 * @return array
+	 */
+	function get_giving_rides_timeline_data($section) {
+		return template_data($section, array(
+						'step' => '',
+						'descript' => '',
+						'pdf' => '',
+						'button' => '',
+		));
+	}
+}
+
+if ( ! function_exists( 'get_receiving_rides_timeline_data' ) ) {
+	/**
+	 * Get Example Data
+	 *
+	 * @since 1.1.4
+	 * @return array
+	 */
+	function get_receiving_rides_timeline_data($section) {
+		return template_data($section, array(
+						'step' => '',
+						'descript' => '',
+						'pdf' => '',
+						'button' => '',
+		));
+	}
+}
+
+if ( ! function_exists( 'get_faress_timeline_data' ) ) {
+	/**
+	 * Get Example Data
+	 *
+	 * @since 1.1.4
+	 * @return array
+	 */
+	function get_fares_timeline_data($section) {
+		return template_data($section, array(
+						'step' => '',
+						'bullet-one' => '',
+						'bullet-two' => '',
+						'bullet-three' => '',
+						'bullet-four' => '',
+						'img' => '',
+		));
+	}
+}
+
