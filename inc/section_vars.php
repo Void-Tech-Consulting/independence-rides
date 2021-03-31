@@ -131,6 +131,10 @@
   $contact_phone2 = 'contact_phone2';
   $contact_email = 'contact_email';
 
-
-
+  $drive_panel = 'drive_panel';
+  $drive_header = 'drive_header';
+  $drive_middle = 'drive_middle';
+  $drive_blue_left = 'drive_blue_left';
+  $drive_blue_right = 'drive_blue_right';
+  $drive_header_image = 'drive_header_image';
 ?>
