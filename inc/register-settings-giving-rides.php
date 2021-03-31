@@ -50,6 +50,32 @@ function giving_rides_customizer($wp_customize) {
       'selector' => 'span#giving-rides-cover-img',
       'render_callback' => 'check_copy_right_text'
     ));
+
+    $wp_customize->selective_refresh->add_partial($giving_rides_apply_button, array(
+      'selector' => 'span#giving_rides_apply_button',
+      'render_callback' => 'check_copy_right_text'
+    ));
+    
+    $wp_customize->add_setting($giving_rides_apply_button, array(
+      'sanitize_callback' => 'sanitize_text_field',
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $giving_rides_apply_button, array(
+      'label' => 'PDF',
+      'section' => $giving_rides_cover_section,
+      'settings' => $giving_rides_apply_button,
+      'button_labels' => array(
+        'select' => 'Select PDF',
+        'change' => 'Change PDF',
+        'remove' => 'Remove',
+        'default' => 'Default',
+        'placeholder' => 'No PDF selected',
+        'frame_title' => 'Select PDF',
+        'frame_button' => 'Choose PDF',
+     )
+    )));
+  
   
     $wp_customize->add_setting($giving_rides_blue_box_left, array(
       'sanitize_callback' => 'sanitize_text_field',
@@ -107,10 +133,12 @@ function giving_rides_customizer($wp_customize) {
       'default' => '',
       'transport' => 'refresh'
     ));
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $giving_rides_steps_img, array(
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, $giving_rides_steps_img, array(
       'label' => 'Image',
       'section' => $giving_rides_steps_section,
       'settings' => $giving_rides_steps_img,
+      'width' => 456,
+      'height' => 668,
       'button_labels' => array(
         'select' => 'Select Image',
         'change' => 'Change Image',
@@ -142,13 +170,6 @@ function giving_rides_customizer($wp_customize) {
           'transport' => 'refresh',
       ) );
 
-      $wp_customize->add_control($giving_rides_step, array(
-        'label' => 'Step',
-        'type' => 'textarea',
-        'section' => $giving_rides_steps_section,
-        'settings' => $giving_rides_step
-      ));
-
 
       $wp_customize->add_control(
         new Onepress_Customize_Repeatable_Control(
@@ -171,6 +192,14 @@ function giving_rides_customizer($wp_customize) {
                       'title' => esc_html__('Description'),
                       'type'  =>'textarea',
                   ),
+                  'pdf'  => array(
+                    'title' => esc_html__('PDF'),
+                    'type'  =>'media',
+                ),
+                'button'  => array(
+                  'title' => esc_html__('Button Label'),
+                  'type'  =>'text',
+              ),
                 ),
             )
         )
@@ -194,14 +223,6 @@ function giving_rides_customizer($wp_customize) {
           'transport' => 'refresh',
       ) );
 
-      $wp_customize->add_control($giving_rides_info_bullet, array(
-        'label' => 'Bullet',
-        'type' => 'textarea',
-        'section' => $giving_rides_important_info_section,
-        'settings' => $giving_rides_info_bullet
-      ));
-
-
       $wp_customize->add_control(
         new Onepress_Customize_Repeatable_Control(
             $wp_customize,
@@ -223,6 +244,8 @@ function giving_rides_customizer($wp_customize) {
             )
         )
     );
+
+    # END OF REPEATABLE BULLET SECTION - IMPORTANT INFO
 
     # BOTTOM ICON LIST 
     $wp_customize->add_setting($giving_rides_info_icon_text_one, array(

@@ -7,7 +7,11 @@
     background-size: cover;" class="top-section"></span>
     <div class="top-info">
       <h1 class="top-header">How much does a ride cost?</h1>
-      <button class="apply-button" type="button" onclick="window.open('<?php echo (get_theme_mod($fares_top_button))?>','_blank')">Apply Now</button>
+      <span id="fares_apply_button">
+        <a href=" <?php echo get_theme_mod($fares_apply_button) ?>">                  
+          <button class="apply-button" type="button"> Apply Now </button>
+        </a>
+      </span>
     </div>
   </div>
   
@@ -23,14 +27,83 @@
     <div class="steps-section fares-steps-section">
       <div class="steps-content">
         <div class="fares-steps-body">
+          
+        <!-- Repeatable Step section -->
+        <?php
+        require 'inc/section_vars.php';
+        // get_bullet_data is in /inc/template_functions.php
+        $data  = get_fares_timeline_data($fares_step);
+        if (!empty($data)) {
+        ?>
+          <div class="fares-steps-timeline">
+            <ul class="steps-timeline-list">
+              <?php
+              foreach ($data as $k => $f) {
+                // Make sure to use a semicolon; when using php on multiple lines
+                // $bulletId = 'bullet' . $k;
+              ?>
+                <li class="steps-bullet">
+                  <span id="fares-step">
+                    <h3 class="steps-subtitle"> <?php echo $f['step'] ?> </h3>
+                  </span>
+                  
+                  <ul class="sub-list">
+                  <span id="fares-step">
+                    <?php if ($f['bullet-one'] != '') { ?>
+                      <li class="sub-list-item"><?php echo $f['bullet-one'] ?></li>
+                    <?php } ?>
+                    <?php if ($f['bullet-two'] != '') { ?>
+                      <li class="sub-list-item"><?php echo $f['bullet-two'] ?></li>
+                    <?php } ?>
+                    <?php if ($f['bullet-three'] != '') { ?>
+                      <li class="sub-list-item"><?php echo $f['bullet-three'] ?></li>
+                    <?php } ?>
+                    <?php if ($f['bullet-four'] != '') { ?>
+                      <li class="sub-list-item"><?php echo $f['bullet-four'] ?></li>
+                    <?php } ?>
+                  </span>
+                  </ul>
+                  <?php if ($f['img']['url'] != '') { ?>
+                    <div id="fares-map" style="background: url(<?php echo $f['img']['url']?>); background-repeat: no-repeat; background-size: contain;"></div>
+                    <?php } ?>
+                </li>
+              <?php
+              }
+              ?>
+            </ul>
+          </div>
+        <?php } ?>
+
+      <!-- End of Repeatable Step section -->
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
           <div class="fares-steps-timeline">
             <ul class="steps-timeline-list">
               <li class="steps-bullet">
                 <span id="fares_charges_bullet1"><h3 class="steps-subtitle"><?php  echo get_theme_mod($fares_charges_bullet1); ?></h3></span>
-                <!-- <h3 class="steps-subtitle">Rides starting and ending within the initial service area (see map below)</h3> -->
+              
                 <ul class="sub-list">
                   <span id="fares_charges_minibullet1"><li class="sub-list-item"><?php  echo get_theme_mod($fares_charges_minibullet1); ?></li></span>
-                  <!-- <li class="sub-list-item">Flat $10 fare (one way)</li> -->
+                
                 </ul>
                 <span id="fares_charges_map"><img id="fares-map" style="background: url(<?php echo get_theme_mod($fares_charges_map)?>); background-repeat: no-repeat; background-size: contain;"></span>
               </li>
@@ -58,7 +131,7 @@
           </div>
         </div>
       </div>
-   </div>
+   </div> -->
 
 
 

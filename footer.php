@@ -14,10 +14,6 @@
     <div class="footer-contact">
     <span id="contact_us_text"><p class="info-footer"><?php echo nl2br(get_theme_mod($contact_us_text))?></p></span>
     </div>
-    <!-- <div class="footer-section">
-      <h3 class="footer-title contact-us-title">Contact Us</h3>
-      <span id="copy-write"><p class="info-footer"><?//php echo nl2br(get_theme_mod($contact_us_text))?></p></span>
-    </div> -->
   </div>
   <div class="footer-section">
       <h3 class="footer-title">Our Mission </h3>

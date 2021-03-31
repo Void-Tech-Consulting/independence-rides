@@ -56,31 +56,30 @@ function fares_customizer($wp_customize) {
     'render_callback' => 'check_copy_right_text',
   ));
 
-  $wp_customize->add_setting( $fares_top_button, array(
-        'default' => 'http://independencerides.local/wp-content/uploads/2021/02/MemberApp06Dec19b-3.pdf',
-        'transport' => 'refresh',
-        'sanitize_callback' => 'absint'
+  $wp_customize->selective_refresh->add_partial($fares_apply_button, array(
+    'selector' => 'span#fares_apply_button',
+    'render_callback' => 'check_copy_right_text'
   ));
-  $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, $fares_top_button,
-    array(
-        'label' => __( 'Fares Top Button Link' ),
-        'description' => esc_html__( 'This is the description for the Media Control' ),
-        'section' => $fares_top,
-        'mime_type' => 'pdf',  // Required. Can be image, audio, video, application, text
-        'button_labels' => array( // Optional
-          'select' => __( 'Select File' ),
-          'change' => __( 'Change File' ),
-          'default' => __( 'Default' ),
-          'remove' => __( 'Remove' ),
-          'placeholder' => __( 'No file selected' ),
-          'frame_title' => __( 'Select File' ),
-          'frame_button' => __( 'Choose File' ),
-        )
+  
+  $wp_customize->add_setting($fares_apply_button, array(
+    'sanitize_callback' => 'sanitize_text_field',
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $fares_apply_button, array(
+    'label' => 'PDF',
+    'section' => $fares_top,
+    'settings' => $fares_apply_button,
+    'button_labels' => array(
+      'select' => 'Select PDF',
+      'change' => 'Change PDF',
+      'remove' => 'Remove',
+      'default' => 'Default',
+      'placeholder' => 'No PDF selected',
+      'frame_title' => 'Select PDF',
+      'frame_button' => 'Choose PDF',
+   )
   )));
-  $wp_customize->selective_refresh->add_partial($fares_top_button, array(
-    'selector' => 'span#fares_top_button', // You can also select a css class
-    'render_callback' => 'check_copy_right_text',
-  ));
 
   // Blue box section
   $wp_customize->add_setting($fares_blue_left, array(
@@ -126,58 +125,122 @@ function fares_customizer($wp_customize) {
     'render_callback' => 'check_copy_right_text',
   ));
 
-  // Charges section
-  $wp_customize->add_setting($fares_charges_bullet1, array(
-    'default' => 'Rides starting and ending within the initial service area (see map below)',
-    'sanitize_callback' => 'sanitize_text_field',
-    'transport' => 'postMessage'
-  ));
-  $wp_customize->add_control($fares_charges_bullet1, array(
-    'label' => 'First bullet title',
-    'section' => $fares_charges,
-  ));
-  $wp_customize->selective_refresh->add_partial($fares_charges_bullet1, array(
-    'selector' => 'span#fares_charges_bullet1', // You can also select a css class
-    'render_callback' => 'check_copy_right_text',
-  ));
+  // // Charges section
+  // $wp_customize->add_setting($fares_charges_bullet1, array(
+  //   'default' => 'Rides starting and ending within the initial service area (see map below)',
+  //   'sanitize_callback' => 'sanitize_text_field',
+  //   'transport' => 'postMessage'
+  // ));
+  // $wp_customize->add_control($fares_charges_bullet1, array(
+  //   'label' => 'First bullet title',
+  //   'section' => $fares_charges,
+  // ));
+  // $wp_customize->selective_refresh->add_partial($fares_charges_bullet1, array(
+  //   'selector' => 'span#fares_charges_bullet1', // You can also select a css class
+  //   'render_callback' => 'check_copy_right_text',
+  // ));
 
-  $wp_customize->add_setting($fares_charges_minibullet1, array(
-    'default' => 'Flat $10 fare (one way)',
-    'sanitize_callback' => 'sanitize_text_field',
-  ));
-  $wp_customize->add_control($fares_charges_minibullet1, array(
-    'label' => 'First bullet description',
-    'section' => $fares_charges,
-  ));
-  $wp_customize->selective_refresh->add_partial($fares_charges_minibullet1, array(
-    'selector' => 'span#fares_charges_minibullet1', // You can also select a css class
-    'render_callback' => 'check_copy_right_text',
-  ));
+  // $wp_customize->add_setting($fares_charges_minibullet1, array(
+  //   'default' => 'Flat $10 fare (one way)',
+  //   'sanitize_callback' => 'sanitize_text_field',
+  // ));
+  // $wp_customize->add_control($fares_charges_minibullet1, array(
+  //   'label' => 'First bullet description',
+  //   'section' => $fares_charges,
+  // ));
+  // $wp_customize->selective_refresh->add_partial($fares_charges_minibullet1, array(
+  //   'selector' => 'span#fares_charges_minibullet1', // You can also select a css class
+  //   'render_callback' => 'check_copy_right_text',
+  // ));
 
-  $wp_customize->add_setting($fares_charges_map, array(
-    'default' => 'http://independencerides.local/wp-content/uploads/2021/02/service-area.png',
-    'transport' => 'refresh',
-    'sanitize_callback' => 'esc_url_raw'
-  ));
-  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $fares_charges_map,
-    array(
-    'label' => __( 'First bullet map' ),
-    'description' => esc_html__( 'Map of initial service area' ),
-    'section' => $fares_charges,
-    'button_labels' => array( // Optional.
-        'select' => __( 'Select Image' ),
-        'change' => __( 'Change Image' ),
-        'remove' => __( 'Remove' ),
-        'default' => __( 'Default' ),
-        'placeholder' => __( 'No image selected' ),
-        'frame_title' => __( 'Select Image' ),
-        'frame_button' => __( 'Choose Image' ),
-    )
-  )));
-  $wp_customize->selective_refresh->add_partial($fares_charges_map, array(
-    'selector' => 'span#fares_charges_map', // You can also select a css class
-    'render_callback' => 'check_copy_right_text',
-  ));
+  // $wp_customize->add_setting($fares_charges_map, array(
+  //   'default' => 'http://independencerides.local/wp-content/uploads/2021/02/service-area.png',
+  //   'transport' => 'refresh',
+  //   'sanitize_callback' => 'esc_url_raw'
+  // ));
+  // $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $fares_charges_map,
+  //   array(
+  //   'label' => __( 'First bullet map' ),
+  //   'description' => esc_html__( 'Map of initial service area' ),
+  //   'section' => $fares_charges,
+  //   'button_labels' => array( // Optional.
+  //       'select' => __( 'Select Image' ),
+  //       'change' => __( 'Change Image' ),
+  //       'remove' => __( 'Remove' ),
+  //       'default' => __( 'Default' ),
+  //       'placeholder' => __( 'No image selected' ),
+  //       'frame_title' => __( 'Select Image' ),
+  //       'frame_button' => __( 'Choose Image' ),
+  //   )
+  // )));
+  // $wp_customize->selective_refresh->add_partial($fares_charges_map, array(
+  //   'selector' => 'span#fares_charges_map', // You can also select a css class
+  //   'render_callback' => 'check_copy_right_text',
+  // ));
+
+
+
+
+# REPEATABLE STEP SECTION 
+
+
+$wp_customize->add_setting(
+  $fares_step,
+  array(
+      'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+      'transport' => 'refresh',
+  ) );
+
+
+$wp_customize->add_control(
+  new Onepress_Customize_Repeatable_Control(
+      $wp_customize,
+      $fares_step,
+      array(
+          'label' 		=> esc_html__('Step'),
+          'description'   => '',
+          'section'       => $fares_charges,
+          'live_title_id' => '',
+          'title_format'  => esc_html__('[live_title]'), // [live_title]
+          'max_item'      => 10, // Maximum item can add
+          'limited_msg' 	=> wp_kses_post( __( 'Max items added' ) ),
+          'fields'    => array(
+            'step'  => array(
+              'title' => esc_html__('Step'),
+              'type'  =>'text',
+            ),
+            'bullet-one'  => array(
+                'title' => esc_html__('Bullet One'),
+                'type'  =>'textarea',
+            ),
+            'bullet-two'  => array(
+              'title' => esc_html__('Bullet Two'),
+              'type'  =>'textarea',
+            ),
+            'bullet-three'  => array(
+              'title' => esc_html__('Bullet Three'),
+              'type'  =>'textarea',
+            ),
+            'bullet-four'  => array(
+              'title' => esc_html__('Bullet Four'),
+              'type'  =>'textarea',
+            ),
+            'img'  => array(
+              'title' => esc_html__('Image'),
+              'type'  =>'media',
+            ),
+          ),
+      )
+  )
+);
+
+$wp_customize->selective_refresh->add_partial($fares_step, array(
+  'selector' => 'span#fares-step',
+  'render_callback' => 'check_copy_right_text'
+));
+
+# END OF REPEATABLE STEP SECTION
+
 }
 
 add_action( 'customize_register', 'fares_customizer' );

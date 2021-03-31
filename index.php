@@ -26,12 +26,7 @@ Example with default video if $home_top_vid isn't set
 </iframe> -->
 
 <span id="home_header_img">
-  <section class="home-section-1" style="background: url(<?php echo get_theme_mod($home_header_img) ?>); background-repeat: no-repeat;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;">
+  <section class="home-section-1" style="background: url(<?php echo get_theme_mod($home_header_img) ?>); background-repeat: no-repeat; background-size: cover;">
     <div class="section-1-heading">
       <span id="home_header_title">
         <h1 class="section-1-title"> <?php echo nl2br(get_theme_mod($home_header_title)) ?> </h1>
@@ -39,9 +34,9 @@ Example with default video if $home_top_vid isn't set
       <span id="home_header_p">
         <p class="title-text"><?php echo get_theme_mod($home_header_p) ?> </p>
       </span>
-      <div class="get-started-button">
-        <p>Get Started</p>
-      </div>
+      <span id="home_get_started_button">
+        <button type="button" class="get-started-button"><a href="<?php echo get_permalink(get_theme_mod($home_get_started_button)); ?>">Get Started</a></button>
+      </span>
     </div>
   </section>
 </span>
@@ -120,12 +115,17 @@ Example with default video if $home_top_vid isn't set
                 </p>
               </div> -->
               <div class="ctest">
-       
-              <img class="ctest-img" src="<?php echo $f['image']['url']?>">
+              <img class="ctest-img" src="<?php echo $f['image']['url']?>"> 
               </img> 
-              <p class="ctest-txt">
+              <p class="ctest-txt non-hover-txt">
                   <?php echo $f['title']?> 
-                </p>
+              </p>
+              <p class="ctest-txt hover-txt-a">
+                  <?php echo $f['hover-txt-a']?> 
+              </p>
+              <p class="ctest-txt hover-txt-b">
+                  <?php echo $f['hover-txt-b']?> 
+              </p>
                 </div>
             
         <?php
@@ -136,37 +136,6 @@ Example with default video if $home_top_vid isn't set
 
       <!-- End of Repeatable Carousel section -->
 
-
-
-
-  <!-- <div class="slider carousel">
-    <div class="ctest">
-              <img class="ctest-img" src="url("../images/givingrides.png")">
-              </img> 
-              <p class="ctest-txt">
-                  Belle Isle
-                </p>
-    </div>
-    <div class="ctest">
-              <img class="ctest-img" src="url("../images/givingrides.png")">
-              </img> 
-              <p class="ctest-txt">
-                  Belle Isle
-                </p>
-    </div>
-    <div class="ctest">
-              <img class="ctest-img" src="url("../images/givingrides.png")">
-              </img> 
-              <p class="ctest-txt">
-                  Belle Isle
-                </p>
-    </div> -->
-
-
-    <!-- <div class="ctest"> <p>Belle Isle</p> </div>
-    <div class="ctest"> <p>Detroit Institute of Art</p></div>
-    <div class="ctest"><p>Midtown</p></div>
-    <div class="ctest">GEON</div> -->
   </div>
 </div>
 
@@ -206,7 +175,7 @@ Example with default video if $home_top_vid isn't set
       <button type="button" class="learn-more-button learn-more-button-white"><a href="<?php echo get_permalink(get_theme_mod($home_donate_link)); ?>">Learn more</a></button>
     </div>
     <div class="next-step-box" id="fares-page-box">
-      <div class="box-header box-header-black">Fares</div>
+      <div class="box-header box-hefader-black">Fares</div>
       <span id="home_fares_box">
         <p class="box-description box-description-black"><?php echo get_theme_mod($home_fares_box); ?></p>
       </span>
@@ -221,5 +190,23 @@ Example with default video if $home_top_vid isn't set
     </div>
   </div>
 </div>
+
+<div class="homepage-section">
+  <h1 class="next-step-header">Service Area</h1>
+  <div class="next-step-header-line"></div>
+
+  <span id="home_service_area_txt">
+    <div class="home-service-area-txt">
+        <?php echo get_theme_mod($home_service_area_txt) ?>
+    </div>
+  </span>
+  <span id="home_service_area_img">
+    <div class="home-service-area-img" style="background: url(<?php echo get_theme_mod($home_service_area_img) ?>); background-repeat: no-repeat; background-size: contain; background-position: center top">
+    </div>
+  </span>
+</div>
+
+
+
 
 <?php get_footer(); ?>
