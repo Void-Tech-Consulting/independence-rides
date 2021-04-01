@@ -52,6 +52,7 @@ function add_styles() {
   wp_enqueue_style( "about-us", get_theme_file_uri('/css/about-us.css'));
   wp_enqueue_style( "donate", get_theme_file_uri('/css/donate.css'));
   wp_enqueue_style( "contact", get_theme_file_uri('/css/contact.css'));
+  wp_enqueue_style( "apply-to-ride", get_theme_file_uri('/css/apply-to-ride.css'));
   wp_enqueue_style( "slick", get_theme_file_uri('/css/slick.css'));
   wp_enqueue_style( "slick-theme", get_theme_file_uri('/css/slick-theme.css'));
   wp_enqueue_style( 'slick-theme-css', untrailingslashit( get_template_directory_uri() ) . '/css/slick-theme.css', ['slick-css'], false, 'all' );
