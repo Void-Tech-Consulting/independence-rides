@@ -41,7 +41,7 @@
     <div class="steps-body steps-body-drive">
       <div class="steps-timeline">
         <ul class="steps-timeline-list">
-          <li class="steps-bullet">
+          <li class="steps-single-bullet">
             <h3 class="steps-subtitle drive-list-text">Download the following form</h3>
             <h4 class="steps-sub-info">Please send your questions or comments here.</h4>
           </li>
