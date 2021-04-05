@@ -10,7 +10,13 @@
     <h1 class="top-header">Let's go for a ride!</h1>
     <span id="receiving_rides_apply_button">
       <a href=" <?php echo get_theme_mod($receiving_rides_apply_button) ?>">                  
-        <button class="apply-button" type="button"> Apply Now </button>
+        <button id="receiving-rides-apply-button" class="apply-button" type="button"> Apply Now </button>
+        <!-- <script>
+          var btn = document.getElementById('receiving-rides-apply-button');
+          btn.addEventListener('click', function() {
+            document.location.href = "page-apply-to-drive,php";
+          });
+        </script> -->
       </a>
     </span>
   </div>
