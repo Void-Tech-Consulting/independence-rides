@@ -31,16 +31,12 @@ jQuery(document).ready(function ($) {
     dots: false,
     prevArrow:'<i class="fas fa-chevron-left slick-prev" type="button"></i>',
     nextArrow:'<i class="fas fa-chevron-right slick-next" type="button"></i>',
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          centerMode: false,
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+    // responsive: [
+    //   {
+    //     breakpoint: 900,
+    //     settings: "unslick"
+    //   }
+    // ]
   });
 
   $(".dashicons").on("click", function () {

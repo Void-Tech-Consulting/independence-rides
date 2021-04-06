@@ -102,36 +102,66 @@ Example with default video if $home_top_vid isn't set
         $data  = get_bullet_data($home_carousel_item);
         if(!empty( $data ) ) { 
           ?>  
+         <!-- Desktop Carousel  -->
              <div class="slider carousel">
           <?php
             foreach ( $data as $k => $f ) {  
               // Make sure to use a semicolon; when using php on multiple lines
               $imgId = 'img'.$k;
-              ?>
-              <!-- <div class="ctest" <?php echo "data-img-id=\"".$k."\""?>
-                style="background-image: url( <?php echo $f['image']['url']?>)">
-                <p>
+          ?>
+               <div class="ctest" <?php echo "data-img-id=\"".$k."\""?>
+                style="background-image: url( <?php echo $f['image']['url']?>); ; background-repeat: no-repeat; background-size: cover;">
+                <p class="ctest-txt non-hover-txt">
                   <?php echo $f['title']?> 
                 </p>
-              </div> -->
-              <div class="ctest">
-              <img class="ctest-img" src="<?php echo $f['image']['url']?>"> 
-              </img> 
-              <p class="ctest-txt non-hover-txt">
-                  <?php echo $f['title']?> 
-              </p>
-              <p class="ctest-txt hover-txt-a">
+                <p class="ctest-txt hover-txt-a">
                   <?php echo $f['hover-txt-a']?> 
-              </p>
-              <p class="ctest-txt hover-txt-b">
+                </p>
+                <p class="ctest-txt hover-txt-b">
                   <?php echo $f['hover-txt-b']?> 
-              </p>
-                </div>
-            
-        <?php
+                </p> 
+               </div>
+          <?php
             }
-        ?>
+          ?>
+
             </div>
+
+          <!-- Mobile Version  -->
+          <div class="where-take-you-mobile">
+          <?php
+            foreach ( $data as $k => $f ) {  
+              if ($k < 4) {
+              // Make sure to use a semicolon; when using php on multiple lines
+              $imgId = 'img'.$k;
+          ?>
+          <?php
+                if ($k == 0 || $k == 2) {
+          ?>
+          <div class="ctest-mobile-row">
+          <?php } ?>
+               <div class="ctest-mobile" <?php echo "data-img-id=\"".$k."\""?>
+                style="background-image: url( <?php echo $f['image']['url']?>); ; background-repeat: no-repeat; background-size: cover;">
+                <p class="ctest-txt non-hover-txt">
+                  <?php echo $f['title']?> 
+                </p>
+               </div>
+          <?php
+                if ($k == 1 || $k == 3) {
+          ?>
+          </div>
+          <?php } ?>
+          <?php
+            } }
+          ?>
+          </div>
+
+
+
+
+
+
+          
   <?php } ?>
 
       <!-- End of Repeatable Carousel section -->
