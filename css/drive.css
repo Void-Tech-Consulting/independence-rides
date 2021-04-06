@@ -1,0 +1,14 @@
+.steps-body-drive{
+    margin-left: 25rem;
+}
+
+/* .drive-list-text{
+    font-size: 2rem;
+} */
+.steps-single-bullet {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1rem;
+    list-style-type: square;
+    font-size: 4rem;
+}
