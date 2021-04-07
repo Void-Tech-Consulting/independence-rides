@@ -10,6 +10,12 @@ require get_template_directory() . '/inc/section_vars.php';
       <span id="giving_rides_apply_button">
         <a href=" <?php echo get_theme_mod($giving_rides_apply_button) ?>">
           <button class="apply-button" type="button"> Apply Now </button>
+          <!-- <script>
+          var btn = document.getElementById('receiving-rides-apply-button');
+          btn.addEventListener('click', function() {
+            document.location.href = "page-apply-to-drive,php";
+          });
+        </script> -->
         </a>
       </span>
     </div>
