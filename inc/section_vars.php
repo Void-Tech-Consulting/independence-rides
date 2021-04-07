@@ -151,6 +151,11 @@
   $apply_to_ride_header = 'apply_to_ride_header';
   $apply_to_ride_header_image = 'apply_to_ride_header_image';
 
-
-
+  $drive_panel = 'drive_panel';
+  $drive_header = 'drive_header';
+  $drive_middle = 'drive_middle';
+  $drive_blue_left = 'drive_blue_left';
+  $drive_blue_right = 'drive_blue_right';
+  $drive_header_image = 'drive_header_image';
+  $drive_download_button = 'drive_download_button';
 ?>
