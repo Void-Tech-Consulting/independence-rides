@@ -1,6 +1,6 @@
 <?php
 
-function drive_customizer($wp_customize) {
+function apply_to_drive_customizer($wp_customize) {
     require 'section_vars.php';
 
     $wp_customize->add_panel($drive_panel,
@@ -102,4 +102,4 @@ function drive_customizer($wp_customize) {
 
 
   }
-  add_action( 'customize_register', 'drive_customizer' );
+  add_action( 'customize_register', 'apply_to_drive_customizer' );

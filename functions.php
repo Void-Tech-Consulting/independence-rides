@@ -18,6 +18,6 @@
   require get_template_directory() . '/inc/customizer.php';
   require get_template_directory() . '/inc/template_functions.php';
 
-  require get_template_directory() . '/inc/register-settings-drive.php';
+  require get_template_directory() . '/inc/register-settings-apply-to-drive.php';
 ?>
 

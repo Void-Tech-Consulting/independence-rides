@@ -150,6 +150,11 @@
   $apply_to_ride_panel = 'apply_to_ride_panel';
   $apply_to_ride_header = 'apply_to_ride_header';
   $apply_to_ride_header_image = 'apply_to_ride_header_image';
+  $apply_to_ride_middle = 'apply_to_ride_middle';
+  $apply_to_ride_blue_left = 'apply_to_ride_blue_left';
+  $apply_to_ride_blue_right = 'apply_to_ride_blue_right';
+  $apply_to_ride_header_image = 'apply_to_ride_header_image';
+  $apply_to_ride_download_button = 'apply_to_ride_download_button';
 
   $drive_panel = 'drive_panel';
   $drive_header = 'drive_header';

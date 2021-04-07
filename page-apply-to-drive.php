@@ -3,20 +3,15 @@
   require get_template_directory() . '/inc/section_vars.php';
 ?>
 
-<!-- <head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head> -->
-
 <body>
   <div class="top-section" style="background: url(<?php echo get_theme_mod('drive_header_image') ?>); background-repeat: no-repeat; background-size: cover;">
     <h1 class="section-1-title">Apply to be a Driver</h1>
   </div>
 
   <div class="blue-box">
-          <span class="intro-text" id="fares_blue_left"><?php  echo get_theme_mod($drive_blue_left); ?></span>
+          <span class="intro-text" id="drive_blue_left"><?php  echo get_theme_mod($drive_blue_left); ?></span>
           <div class="intro-vertline"></div>
-          <span class="intro-text" id="fares_blue_right"><?php  echo get_theme_mod($drive_blue_right); ?></span>
+          <span class="intro-text" id="drive_blue_right"><?php  echo get_theme_mod($drive_blue_right); ?></span>
   </div>
 
   <div class="header-banner">Option 1</div>
