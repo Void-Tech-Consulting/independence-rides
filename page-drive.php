@@ -25,7 +25,11 @@
         <ul class="steps-timeline-list">
           <li class="steps-bullet">
             <h3 class="steps-subtitle drive-list-text">Download the following form</h3>
-            <button class="steps-button" type="button">Download</button>
+            <span id="drive_download_button">
+            <a href="<?php echo get_theme_mod($drive_download_button) ?>">
+              <button class="steps-button" type="button">Download</button>
+            </a>
+            </span>
           </li>
           <li class="steps-bullet">
             <h3 class="steps-subtitle drive-list-text">Submit the completed form here</h3>

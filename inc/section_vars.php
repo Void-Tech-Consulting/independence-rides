@@ -153,4 +153,5 @@
   $drive_blue_left = 'drive_blue_left';
   $drive_blue_right = 'drive_blue_right';
   $drive_header_image = 'drive_header_image';
+  $drive_download_button = 'drive_download_button';
 ?>

@@ -73,5 +73,33 @@ function drive_customizer($wp_customize) {
         'selector' => 'span#drive_blue_right',
         'render_callback' => 'check_copy_right_text'
     ));
+    $wp_customize->selective_refresh->add_partial($drive_download_button, array(
+      'selector' => 'span#drive_download_button',
+      'render_callback' => 'check_copy_right_text'
+    ));
+    
+    $wp_customize->add_setting($drive_download_button, array(
+      'sanitize_callback' => 'sanitize_text_field',
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $drive_download_button, array(
+      'label' => 'PDF',
+      'section' => $drive_middle,
+      'settings' => $drive_download_button,
+      'button_labels' => array(
+        'select' => 'Select PDF',
+        'change' => 'Change PDF',
+        'remove' => 'Remove',
+        'default' => 'Default',
+        'placeholder' => 'No PDF selected',
+        'frame_title' => 'Select PDF',
+        'frame_button' => 'Choose PDF',
+     )
+    )));
+
+
+
+
   }
   add_action( 'customize_register', 'drive_customizer' );

@@ -117,9 +117,10 @@ Example with default video if $home_top_vid isn't set
                 <p class="ctest-txt hover-txt-a">
                   <?php echo $f['hover-txt-a']?> 
                 </p>
-                <p class="ctest-txt hover-txt-b">
-                  <?php echo $f['hover-txt-b']?> 
-                </p> 
+                <a class="ctest-txt hover-txt-b"
+                  href="<?php echo $f['hover-txt-b']?>">
+                  <?php echo $f['hover-txt-b']?>
+                </a> 
                </div>
           <?php
             }
@@ -140,12 +141,14 @@ Example with default video if $home_top_vid isn't set
           ?>
           <div class="ctest-mobile-row">
           <?php } ?>
+               <a href="<?php echo $f['hover-txt-b']?>">
                <div class="ctest-mobile" <?php echo "data-img-id=\"".$k."\""?>
                 style="background-image: url( <?php echo $f['image']['url']?>); ; background-repeat: no-repeat; background-size: cover;">
                 <p class="ctest-txt non-hover-txt">
                   <?php echo $f['title']?> 
                 </p>
                </div>
+               </a>
           <?php
                 if ($k == 1 || $k == 3) {
           ?>
@@ -154,14 +157,7 @@ Example with default video if $home_top_vid isn't set
           <?php
             } }
           ?>
-          </div>
-
-
-
-
-
-
-          
+          </div>    
   <?php } ?>
 
       <!-- End of Repeatable Carousel section -->
