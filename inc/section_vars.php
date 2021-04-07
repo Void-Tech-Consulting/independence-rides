@@ -147,6 +147,10 @@
   $contact_phone2 = 'contact_phone2';
   $contact_email = 'contact_email';
 
+  $apply_to_ride_panel = 'apply_to_ride_panel';
+  $apply_to_ride_header = 'apply_to_ride_header';
+  $apply_to_ride_header_image = 'apply_to_ride_header_image';
+
   $drive_panel = 'drive_panel';
   $drive_header = 'drive_header';
   $drive_middle = 'drive_middle';
