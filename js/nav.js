@@ -44,21 +44,20 @@ jQuery(document).ready(function ($) {
     document.getElementsByClassName('nav-links')[0].classList.toggle("open");
   });
 
-
-  // $(".menu-item-has-children").on("click", function () {
-  //   var menu = this.querySelector('.sub-menu');
-  //   var actives = document.querySelectorAll('.sub-active');
-  //   console.log(actives);
-  //   actives.forEach(el => {
-  //     if (el !== menu) {
-  //       el.classList.remove("sub-active");
-  //     }
-  //   });
-  //   menu.classList.toggle("sub-active");
-  // });
-  // $("a[href='#'").on("click", function (e) {
-  //   e.preventDefault();
-  // });
+  $(".menu-item-has-children").on("click", function () {
+    var menu = this.querySelector('.sub-menu');
+    var actives = document.querySelectorAll('.sub-active');
+    console.log(actives);
+    actives.forEach(el => {
+      if (el !== menu) {
+        el.classList.remove("sub-active");
+      }
+    });
+    menu.classList.toggle("sub-active");
+  });
+  $("a[href='#'").on("click", function (e) {
+    e.preventDefault();
+  });
 
 
   

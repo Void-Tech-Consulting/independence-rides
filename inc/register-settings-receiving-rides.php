@@ -55,20 +55,12 @@ function receiving_rides_customizer($wp_customize) {
     'sanitize_callback' => 'sanitize_text_field',
     'default' => ''
   ));
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $receiving_rides_apply_button, array(
-    'label' => 'PDF',
-    'section' => $receiving_rides_cover_section,
-    'settings' => $receiving_rides_apply_button,
-    'button_labels' => array(
-      'select' => 'Select PDF',
-      'change' => 'Change PDF',
-      'remove' => 'Remove',
-      'default' => 'Default',
-      'placeholder' => 'No PDF selected',
-      'frame_title' => 'Select PDF',
-      'frame_button' => 'Choose PDF',
-   )
+
+  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $receiving_rides_apply_button,
+  array(
+      'label' => __( 'Link' ),
+      'section' => $receiving_rides_middle_section,
+      'type' => 'dropdown-pages'
   )));
 
 
@@ -188,9 +180,9 @@ $wp_customize->add_control(
                 'title' => esc_html__('Description'),
                 'type'  =>'textarea',
             ),
-            'pdf'  => array(
-              'title' => esc_html__('PDF'),
-              'type'  =>'media',
+            'link'  => array(
+              'title' => esc_html__('Link'),
+              'type'  =>'url',
           ),
           'button'  => array(
             'title' => esc_html__('Button Label'),

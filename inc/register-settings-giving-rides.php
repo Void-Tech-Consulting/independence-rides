@@ -60,22 +60,13 @@ function giving_rides_customizer($wp_customize) {
       'sanitize_callback' => 'sanitize_text_field',
       'default' => ''
     ));
-    
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $giving_rides_apply_button, array(
-      'label' => 'PDF',
-      'section' => $giving_rides_cover_section,
-      'settings' => $giving_rides_apply_button,
-      'button_labels' => array(
-        'select' => 'Select PDF',
-        'change' => 'Change PDF',
-        'remove' => 'Remove',
-        'default' => 'Default',
-        'placeholder' => 'No PDF selected',
-        'frame_title' => 'Select PDF',
-        'frame_button' => 'Choose PDF',
-     )
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $giving_rides_apply_button,
+    array(
+        'label' => __( 'Link' ),
+        'section' => $giving_rides_cover_section,
+        'type' => 'dropdown-pages'
     )));
-  
   
     $wp_customize->add_setting($giving_rides_blue_box_left, array(
       'sanitize_callback' => 'sanitize_text_field',
@@ -171,6 +162,7 @@ function giving_rides_customizer($wp_customize) {
       ) );
 
 
+
       $wp_customize->add_control(
         new Onepress_Customize_Repeatable_Control(
             $wp_customize,
@@ -192,9 +184,9 @@ function giving_rides_customizer($wp_customize) {
                       'title' => esc_html__('Description'),
                       'type'  =>'textarea',
                   ),
-                  'pdf'  => array(
-                    'title' => esc_html__('PDF'),
-                    'type'  =>'media',
+                  'link'  => array(
+                    'title' => esc_html__('Link'),
+                    'type'  =>'url',
                 ),
                 'button'  => array(
                   'title' => esc_html__('Button Label'),

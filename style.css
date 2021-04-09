@@ -241,10 +241,6 @@ color: inherit;
   align-items: center;
 }
 
-/* .nav-links li a:hover {
-  color: #5C6E93;
-  background-color: white;
-} */
 
 /* Donate & Contact us */
 .nav-links > li:last-child a, .nav-links > li:nth-last-child(2) a{
@@ -269,24 +265,23 @@ color: inherit;
 }
 
 
-/* Drop-down menu in nav bar */
-.nav-links li:hover > .sub-menu {
-  display: block;
-  position: absolute;
+@media screen and (min-width: 801px) {
+/* Drop-down menu in big nav bar */
+  .nav-links li:hover > .sub-menu {
+    display: block;
+    position: absolute;
+  }
+  .nav-links li:hover:not(:last-child):not(:nth-last-child(2)) {
+    background-color: white;
+    color: #5C6E93;
+  }
 }
-
-.nav-links > li:hover:not(:last-child):not(:nth-last-child(2)) {
-  background-color: white;
-  color: #5C6E93;
-}
-
 
 .sub-menu {
   display: none;
   top: 8.6rem;
   z-index: 99999;
 }
-
 
 .sub-menu .menu-item li {
   font-size: 1.6rem;
@@ -298,10 +293,12 @@ color: inherit;
   width: 20rem;
 } 
 
+
 .sub-menu li:hover a{
   background-color: #5C6E93;
   color: white;
 }
+
 
 .dashicons-menu-alt3{
   display: none;
@@ -354,15 +351,14 @@ color: inherit;
   }
 
 
-  /* Drop-down menu in nav bar */
-
+  /* Drop-down menu in mobile nav bar */
 
   .sub-menu .menu-item a {
     width: 100%;
   } 
 
-
   .nav-links li:hover > .sub-menu {
+    /* display: none; */
     position: inherit;
   }
   
@@ -371,6 +367,27 @@ color: inherit;
     flex-direction: column;
     width: 100%;
   }
+
+  .sub-menu .menu-item a {
+    background-color: #5C6E93;
+    color: white;
+  } 
+  
+  .sub-menu .menu-item a:hover{
+    background-color:white;
+    color: #5C6E93;
+  }
+
+  .menu-item-has-children  {
+    background-color: #5C6E93;
+    color: white;
+  }
+
+  .nav-links li:hover:not(:last-child):not(:nth-last-child(2)):not(.menu-item-has-children) {
+    background-color: white;
+    color: #5C6E93;
+  }
+
 
   /* Donate/Contact Us Buttons */
   .nav-links > li:last-child a, .nav-links > li:nth-last-child(2) a {

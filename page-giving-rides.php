@@ -8,14 +8,8 @@ require get_template_directory() . '/inc/section_vars.php';
     <div class="top-info">
       <h1 class="top-header">Can you lend a hand?</h1>
       <span id="giving_rides_apply_button">
-        <a href=" <?php echo get_theme_mod($giving_rides_apply_button) ?>">
+        <a href=" <?php echo get_permalink(get_theme_mod($giving_rides_apply_button)) ?>">
           <button class="apply-button" type="button"> Apply Now </button>
-          <!-- <script>
-          var btn = document.getElementById('receiving-rides-apply-button');
-          btn.addEventListener('click', function() {
-            document.location.href = "page-apply-to-drive,php";
-          });
-        </script> -->
         </a>
       </span>
     </div>
@@ -71,8 +65,8 @@ require get_template_directory() . '/inc/section_vars.php';
                 <span id="giving-rides-step">
                   <h4 class="steps-sub-info"> <?php echo $f['descript'] ?> </h4>
                 </span>
-                <?php if ($f['pdf']['url'] != '') { ?>
-                  <a href="<?php echo $f['pdf']['url'] ?>">
+                <?php if ($f['link'] != '') { ?>
+                  <a href="<?php echo $f['link'] ?>">
                     <button class="steps-button" type="button"> <?php echo $f['button'] ?> </button>
                   </a>
                 <?php } ?>

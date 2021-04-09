@@ -185,7 +185,7 @@ if ( ! function_exists( 'get_giving_rides_timeline_data' ) ) {
 		return template_data($section, array(
 						'step' => '',
 						'descript' => '',
-						'pdf' => '',
+						'link' => '',
 						'button' => '',
 		));
 	}
@@ -202,13 +202,13 @@ if ( ! function_exists( 'get_receiving_rides_timeline_data' ) ) {
 		return template_data($section, array(
 						'step' => '',
 						'descript' => '',
-						'pdf' => '',
+						'link' => '',
 						'button' => '',
 		));
 	}
 }
 
-if ( ! function_exists( 'get_faress_timeline_data' ) ) {
+if ( ! function_exists( 'get_fares_timeline_data' ) ) {
 	/**
 	 * Get Example Data
 	 *
